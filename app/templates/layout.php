@@ -20,7 +20,9 @@
 			</ul>
 		</nav>
 		<header>
-			<h1><?= $this->e($title) ?></h1>
+		<hr>
+			<h2><?= $this->e($title) ?></h2>
+			<hr>
 		</header>
 
 		<section>

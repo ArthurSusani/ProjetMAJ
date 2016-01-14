@@ -3,13 +3,11 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -47,6 +45,27 @@ table {
 	border-spacing: 0;
 }
 
+
+/*--------------------------Register----------------------------*/
+
+#form_register .input_div{
+	float: left;
+	width: 48%;
+}
+
+#form_register input{
+	width: 40%;
+	width: 96%;
+	margin-bottom: 20px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#form_register #button{
+	text-align: center;
+	padding: 10px;
+
+}
 
 
 /*---------------------------ANIMATION---------------------------*/

@@ -3,7 +3,7 @@
 <?php $this->start('main_content') ?>
 	<h2>Let's register.</h2>
 
-	<form action="#" method="post" accept-charset="utf-8">
+	<form action="#" method="post" accept-charset="utf-8" id="form_register">
 		<div class="input_div">
 			<label for="firstname">Prénom</label>
 			<input type="text" name="firstname" value="" placeholder="Votre prenom">
@@ -41,7 +41,7 @@
 		</div>
 		<div class="clearfix"></div>
 		<div id="button">
-			<button type="submit">Enregister</button>
+			<button type="submit" class="btn">Enregister</button>
 		</div>
 
 	</form>
