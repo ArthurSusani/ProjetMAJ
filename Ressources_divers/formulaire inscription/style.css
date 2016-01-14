@@ -1,0 +1,24 @@
+body{
+	font-family: 'Cinzel', serif;
+}
+
+.container{
+	width:800px;
+	margin: auto;
+}
+.container .input_div{
+	float: left;
+	width: 48%;
+}
+
+input{
+	width: 40%;
+	width: 96%;
+	margin-bottom: 20px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#button{
+	text-align: center;
+}

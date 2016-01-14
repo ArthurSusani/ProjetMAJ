@@ -1,0 +1,31 @@
+-------------Groupe: Julien BAUDOUIN, Arthur SUSANI, Mylène SOMBRIN
+
+-------------Nom de projet: Site de reservation de chambre d'un hotel
+
+-------------But du site: Réserver une chambre d'hotel pour le gérantd de l'hotel.
+
+-----------Fonctionnalités principales: 
+-Afficher le plan de chaque étage de l'hotel (pour chaque étage on affiche toutes les chambre sous forme d'un plan). Les chambre libres sont affichées d'une couleur différente par rapport aux chambres réservées.
+-Les clients de l'hotel peuvent réserver eux-même leur chambre: pour cela ils doivent nécaissrement enregistrer leur compte personnel.
+-Les clients pourront laisser une appréciation sur leur séjour (commentaire).
+-Possibilité d'afficher le site en plusieurs langues.
+
+
+------------recommandations prévues:
+
+-en front office: l'utilisateur pour créer son compte, on affiche le site vitrine, les commentaires des précédents clients. Il ne voit pas les reservation de chambre.
+-en back office:
+	un utilisateur pour modifier son compte, créer une reservation et la modifier.
+	L'administrateur/gérant de l'hotel peut modifier les données clients (comptes clients, reservations, commentaires)
+
+-le site utilisera une base de données SQL pour stocker les infos: (table pour les chambres, les clients, reservations)
+-on modèlise les tables de la base SQL sous forme d'objets (une classe pour chaque table).
+-On utilisera l'archi MVC et le framework W
+-On utilisera l'api google maps pour afficher la position de l'hotel sur une carte.
+-On utilisera AJAX pour que le client puisse laisser un commentaire via un petit formulaire
+-Le site sera commenté et accessible sur github.
+-Niveau sécurité: Les champs des formulaires seront vérifiés pour empecher les failles XSS, les requetes SQL seront des requetes préparées pour empecher les injections SQL.
+
+----------Répartitions des taches:
+
+

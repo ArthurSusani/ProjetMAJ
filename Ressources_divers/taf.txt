@@ -1,0 +1,9 @@
+- Apparence de la Page : Mylène
+- DB : Mylène
+- reservation (formulaire, plan et agenda)
+- gestion des connexion
+- Inscription 
+- gestion des commentaires
+- gestion github
+- gestion MVC
+- 

@@ -1,0 +1,4 @@
+Table : 
+	utilisateur 	(id, nom, prenom, mail, adresse, date de naissance, avatar)
+	chambre 	(id, lit, nombre de place pour dormir, prix, (étage), description)
+	reservation 	(id, date debut, date fin,id utilisateur, date creation de la reserv, prix total)
