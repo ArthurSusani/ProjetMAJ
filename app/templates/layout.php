@@ -6,12 +6,13 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="<?= $this->assetUrl('js/script.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 </head>
 <body>
 	<div class="container">
 		<nav>
-			<ul>
+			<ul class="list-inline">
 				<li><a href="<?=  $this->url('home') ?>">Accueil</a></li>
 				<li><a href="<?=  $this->url('introduct_index') ?>">Présentation</a></li>
 				<li><a href="<?=  $this->url('booking_index') ?>">Réservation</a></li>
