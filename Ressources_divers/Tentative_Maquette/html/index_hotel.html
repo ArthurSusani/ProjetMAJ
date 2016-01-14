@@ -9,11 +9,12 @@
 		<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="../css/jquery.fancybox.css" type="text/css" media="screen" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/javascript.js" type="text/javascript" charset="utf-8" async defer></script>
-		<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script src="../js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
 
 	</head>
 	<body>
@@ -21,7 +22,8 @@
 
 		<nav>
 			<div class="container">
-			<!-- affichage du logo, cela décale tout si je l'affiche -->
+			<a href="" title=""><img src="../img/logo-chrome.png" alt="Logo hotel" width="100" height="100" /></a>
+				<!-- affichage du logo, cela décale tout si je l'affiche -->
 				<!-- <a href="" title=""><img src="../img/logo-chrome.png" alt="Logo hotel" width="100" height="100" /></a> -->
 				<!-- début du premier menu de navigation en haut a droite -->
 				<ul> 
@@ -81,24 +83,35 @@
 		</header>
 		<div id="cadreCentre">
 			<p>Diaporama de notre Hotel</p>
-			<a id="single_image" href="image_big.jpg"><img src="image_small.jpg" alt=""/>lien image1</a>
+			<a class="fancybox" rel="gallery1" href="../img/img1.jpg" title="Chambre1">
+				<img src="../img/img1_m.jpg" alt="" />
+			</a>
+			<a class="fancybox" rel="gallery1" href="../img/img2.jpg" title="Chambre2">
+				<img src="../img/img2_m.jpg" alt="" />
+			</a>
+			<a class="fancybox" rel="gallery1" href="../img/img3.jpg" title="Chambre3">
+				<img src="../img/img3_m.jpg" alt="" />
+			</a>
+			<a class="fancybox" rel="gallery1" href="../img/img4.jpg" title="Chambre4">
+				<img src="../img/img4_m.jpg" alt="" />
+			</a>
 		</div>
 
 		<div class="clearfix"></div>
 
-	
 
 
-	<div class="clearfix"></div>
 
-	<footer>
-		<a href="#">Retour en haut</a>
-		<div class="container">
-			<p>©2015 - WebForce 3 ®</p>
-		</div>
-	</footer>
+		<div class="clearfix"></div>
 
-	<div class="clearfix"></div>
+		<footer>
+			<a href="#">Retour en haut</a>
+			<div class="container">
+				<p>©2015 - WebForce 3 ®</p>
+			</div>
+		</footer>
 
-</body>
-</html>
+		<div class="clearfix"></div>
+
+	</body>
+	</html>
