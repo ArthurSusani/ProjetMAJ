@@ -13,10 +13,10 @@
 	<div class="container">
 		<nav>
 			<ul class="list-inline">
-				<li><a href="<?=  $this->url('home') ?>">Accueil</a></li>
-				<li><a href="<?=  $this->url('introduct_index') ?>">Présentation</a></li>
-				<li><a href="<?=  $this->url('booking_index') ?>">Réservation</a></li>
-				<li><a href="<?=  $this->url('log_register') ?>">Inscription</a></li>
+				<li class="col-sm-3"><a href="<?=  $this->url('home') ?>">Accueil</a></li>
+				<li class="col-sm-3"><a href="<?=  $this->url('introduct_index') ?>">Présentation</a></li>
+				<li class="col-sm-3"><a href="<?=  $this->url('booking_index') ?>">Réservation</a></li>
+				<li class="col-sm-3"><a href="<?=  $this->url('log_register') ?>">Inscription</a></li>
 			</ul>
 		</nav>
 		<header>
