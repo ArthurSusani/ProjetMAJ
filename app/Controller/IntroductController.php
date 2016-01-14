@@ -19,7 +19,10 @@
 			$this->show("introduct/area");
 		}
 
-
+		public function index()
+		{
+			$this->show("introduct/index");
+		}
 		/*public function details($idToDisplay)
 		{
 			$accountsManager = new \Manager\AccountsManager();
