@@ -26,9 +26,9 @@ body{
 
 nav{
 	width: 100%;
+	position: fixed;
 	background-image: url('../img/backgroundHotel.jpg');
 	padding-top: 49px;
-	position: fixed;
 	top:0;
 	font-family: 'Cinzel', serif;
 }
