@@ -30,7 +30,7 @@ class DefaultController extends Controller
 		$this->show('default/whoarewe');
 	}
 
-	public function whoarewe()
+	public function comment()
 	{
 		$this->show('default/comment');
 	}
