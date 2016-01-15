@@ -10,7 +10,7 @@
 		<?php
 
 			
-			if(1){ // user deconnecter 
+			if(!isset($_SESSION['logon'])){ // user deconnecter 
 				$url =  $this->url('booking_map');
 				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> BLABLA </a>" ." blablabla";
 			}else{ 
