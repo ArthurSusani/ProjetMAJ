@@ -1,0 +1,2 @@
+Pour faire un menu déroulant en bootstrap: http://etienner.fr/css/menu-deroulant-drop-down-menu-responsive-avec-twitter-bootstrap
+Outil online pour faire des zone sur une image: http://imagemap-generator.dariodomi.de/
