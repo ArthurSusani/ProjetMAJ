@@ -11,6 +11,15 @@ class BookingController extends \W\Controller\Controller
 		$this->show("booking/index");
 	}
 
+	public function error()
+	{
+		$this->show("booking/error");
+	}
+
+	public function map()
+	{
+		$this->show("booking/map");
+	}
 
 
 
