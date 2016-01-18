@@ -1,6 +1,6 @@
-<?php $this->layout('layout', ['title' => 'Inscription !']) ?>
+<?php $this->layout('layout', ['title' => 'Inscription !'])?>
 
-<?php $this->start('main_content') ?>
+<?php $this->start('main_content')?>
 	<h2>Let's register.</h2>
 
 	<form action="#" method="post" accept-charset="utf-8" id="form_register">
@@ -15,15 +15,15 @@
 		<div class="clearfix"></div>
 		<div class="input_div">
 			<label for="address">Adresse </label>
-			<input type="text" name="address" value="" placeholder="Votre adresse">	
+			<input type="text" name="address" value="" placeholder="Votre adresse">
 		</div>
 		<div class="input_div">
 			<label for="city">Ville </label>
-			<input type="text" name="city" value="" placeholder="Votre ville">	
+			<input type="text" name="city" value="" placeholder="Votre ville">
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">
-			<label for="birthday">Date de naissance</label>	
+			<label for="birthday">Date de naissance</label>
 			<input type="text" name="birthday" value="" placeholder="Votre date de naissance">
 		</div>
 		<div class="input_div">
@@ -41,9 +41,11 @@
 		</div>
 		<div class="clearfix"></div>
 		<div id="button">
-			<button type="submit" class="btn">Enregister</button>
+			<button type="submit" class="btn" name="save" value="send">Enregister</button>
 		</div>
-
 	</form>
-	
-<?php $this->stop('main_content') ?>
+ <?php
+//var_dump($_POST);
+?>
+
+<?php $this->stop('main_content')?>
