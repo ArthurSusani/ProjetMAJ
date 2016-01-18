@@ -67,6 +67,15 @@ table {
 
 }
 
+#form_register p{
+	visibility: hidden;
+	color: #F70B0B;
+}
+#form_register label{
+	font-size: 20px;
+}
+
+
 
 /*---------------------------ANIMATION---------------------------*/
 

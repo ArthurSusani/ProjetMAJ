@@ -1,21 +1,28 @@
 <?php $this->layout('layout', ['title' => 'Inscription !'])?>
 
 <?php $this->start('main_content')?>
-	<h2>Let's register.</h2>
+<!-- ajout d'un code javascript pour vérifier le formulaire -->
+<script src="<?=$this->assetUrl('js/checkForm.js')?>" type="text/javascript" charset="utf-8" async defer></script>
+	<h2>Enregistrment compte client</h2>
 
 	<form action="#" method="post" accept-charset="utf-8" id="form_register">
 		<div class="input_div">
-			<label for="firstname">Prénom</label>
+			<label for="firstname">Prénom</label><p>Veuillez entrer votre prénom!</p>
 			<input type="text" name="firstname" value="" placeholder="Votre prenom">
+
 		</div>
 		<div class="input_div">
-			<label for="lastname">Nom</label>
+			<label for="lastname">Nom</label><p>Veuillez entrer votre nom!</p>
 			<input type="text" name="lastname" value="" placeholder="Votre nom">
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">
-			<label for="address">Adresse </label>
-			<input type="text" name="address" value="" placeholder="Votre adresse">
+			<label for="address">Adresse postale</label>
+			<input type="text" name="address" value="" placeholder="rue...">
+		</div>
+		<div class="input_div">
+			<label for="postalCode">Code postal</label>
+			<input type="text" name="postalCode" value="" placeholder="#####">
 		</div>
 		<div class="input_div">
 			<label for="city">Ville </label>
@@ -23,8 +30,8 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">
-			<label for="birthday">Date de naissance</label>
-			<input type="text" name="birthday" value="" placeholder="Votre date de naissance">
+			<label for="birthday">Date de naissance (format: jour/mois/année 00/00/0000)</label>
+			<input type="date" name="birthday" value="">
 		</div>
 		<div class="input_div">
 			<label for="mail">Votre E-mail</label>
@@ -44,8 +51,6 @@
 			<button type="submit" class="btn" name="save" value="send">Enregister</button>
 		</div>
 	</form>
- <?php
-//var_dump($_POST);
-?>
+
 
 <?php $this->stop('main_content')?>
