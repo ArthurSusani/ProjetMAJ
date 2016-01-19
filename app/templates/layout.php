@@ -12,6 +12,18 @@
 <body>
 	<div class="container">
 		<nav>
+			<ul>
+			<?php
+				if (isset($_SESSION['role'] == "admin" ||isset($_SESSION['role'] == "user"  )) {
+					# code...
+				}else{
+					
+				}
+
+
+			?>
+			</ul>
+
 			<ul class="list-inline">
 				<li class="col-sm-3"><a href="<?=  $this->url('home') ?>">Accueil</a></li>
 				<li class="col-sm-3"><a href="<?=  $this->url('introduct_index') ?>">Présentation</a></li>

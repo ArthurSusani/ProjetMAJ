@@ -67,13 +67,25 @@ table {
 
 }
 
+#form_register p{
+	visibility: hidden;
+	color: #F70B0B;
+}
+#form_register label{
+	font-size: 20px;
+}
+
+
 
 /*---------------------------ANIMATION---------------------------*/
 
 .wallpaper{
 	width: 1000px;
-	height: 500px;
-	animation: 20s switchwallpaper infinite;
+	height: 400px;
+	animation: 20s switchwallpaper infinite; 
+	/*attention fonctionne avec chrome mais pas sur firefox (différence de gestion de CSS3)
+	voir ici: http://stackoverflow.com/questions/12685133/background-image-for-firefox-in-css3-animations*/
+
 }
 
 @keyframes switchwallpaper {
