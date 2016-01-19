@@ -2,3 +2,4 @@ Pour faire un menu déroulant en bootstrap: http://etienner.fr/css/menu-deroulant
 Outil online pour faire des zone sur une image: http://imagemap-generator.dariodomi.de/
 Site d'hotel qui peut servir de modèle: http://inovahospitality.com/
 Générateur de QRcode: http://fr.qr-code-generator.com/
+Diaporama en Jquery: https://openclassrooms.com/courses/simplifiez-vos-developpements-javascript-avec-jquery/textes-et-images
