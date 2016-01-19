@@ -51,10 +51,5 @@ class LogController extends \W\Controller\Controller {
 
 	}
 
-	/*public function details($idToDisplay)
-		{
-			$accountsManager = new \Manager\AccountsManager();
-			$accountToDisplay = $accountsManager->find($idToDisplay);
-			$this->show('accounts/details', ['account' => $accountToDisplay]);
-		}*/
+
 }

@@ -12,8 +12,8 @@ $w_routes = array(
 	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
 	['GET', 	'/log/register', 		'Log#register', 	'log_register'], 				
 	['POST', 	'/log/config', 			'Log#config', 		'log_config'], 	
-	['POST', 	'/log/connect/error', 	'Log#config', 		'log_error'], 		
-	['POST', 	'/log/connect/confirm', 'Log#config', 		'log_confirm'], 	
+	['GET|POST', 	'/log/connect/error', 	'Log#logIn', 		'log_error'], 		
+	['GET|POST', 	'/log/connect/confirm', 'Log#logIn', 		'log_confirm'], 	
 
 //----------------------------- Présentation-------------------------------
 	['GET', 	'/introduct/index', 	'Introduct#index', 	'introduct_index'], 

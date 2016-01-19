@@ -1,3 +1,8 @@
+<?php
+
+	
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,15 +18,15 @@
 	<div class="container">
 		<nav>
 			<ul>
-			<?php
-				if (isset($_SESSION['role'] == "admin" ||isset($_SESSION['role'] == "user"  )) {
-					# code...
-				}else{
-					
-				}
-
-
-			?>
+				<?php if (isset($_SESSION['role'])):
+					if ($_SESSION['role'] == "user" || $_SESSION['role'] == "admin"): ?>
+						<p> Bonjour <?php echo $_SESSION['lastname'] ?>, bienvenue parmis nous !<p>
+						<li><a href= "<?= $this->url('log_disconnect') ?>">Deconnection</a></li>
+						<?php endif; ?>
+						<?php else: ?>
+					<li><a href="<?= $this->url('log_register') ?>">S'enregistrer</a></li>
+					<li><a href="<?= $this->url('log_connect') ?>">Se connecter</a></li>
+				<?php endif; ?>
 			</ul>
 
 			<ul class="list-inline">
