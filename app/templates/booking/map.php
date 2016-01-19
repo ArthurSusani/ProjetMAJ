@@ -2,10 +2,11 @@
 
 <?php $this->start('main_content') ?>
 
-
-<form action="<?= $this->url('booking_pay') ?>" method="get" accept-charset="utf-8">
+<form action="<?= $this->url('booking_pay') ?>" method="post" accept-charset="utf-8">
 	<input type="date" name="date_start" value="" placeholder="">
 	<input type="date" name="date_end"	 value="" placeholder="">
+	<input type="text" name="number" value="" placeholder="">
+	
 	<button type="submit">Confirmer</button>
 </form>
 

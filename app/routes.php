@@ -25,7 +25,8 @@
 		['GET', 	'/booking/index', 		'booking#index', 	'booking_index'],	  
 		['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 		['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
-		['POST', 	'/booking/map/pay/', 	'booking#pay', 		'booking_pay'],
+		['GET|POST', 	'/booking/map/pay/[:id]', 	'booking#pay', 		'booking_pay'],
+		['GET|POST', 	'/booking/bill', 	'booking#bill', 		'booking_bill'],		
 		['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
 
 

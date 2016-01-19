@@ -4,18 +4,28 @@
 
 	class BookingManager extends \W\Manager\Manager
 	{
-		public function create($id, $id_user, $id_room, $begin, $end, $validate, $price)
+		public function create($id_user, $id_room, $begin, $end, $validate, $price)
 		{
-			if (!is_numeric($id_user) || !is_numeric($id_room) ||!is_numeric($id) || empty($todoName)){
+			if (!is_numeric($id_user) || !is_numeric($id_room) || empty($begin) || empty($end) || empty($validate) || empty($price)){
+			return false;
+		}
+		$sql = 'INSERT INTO ' . $this->table . '( id_user, id_room, begin, end, validate, price ) VALUES(:id_user, :id_room, :begin, :end, :validate, :price)';
+		$sth = $this->dbh->prepare($sql);
+		$sth->bindValue(':id_user', $id_user);
+		$sth->bindValue(':id_room', $id_room);
+		$sth->bindValue(':begin', $begin);
+		$sth->bindValue(':end', $end);
+		$sth->bindValue(':validate', $validate);
+		$sth->bindValue(':price', $price);
+
+		$sth->execute();
+		echo "stfu";
+		if(!empty($this->dbh->lastInsertId())){
+			return $this->dbh->lastInsertId();
+		}else{
 			return false;
 		}
 
-		$sql = 'INSERT INTO ' . $this->table . '(name, id_list) VALUES(:todoname, :idlist)';
-		$sth = $this->dbh->prepare($sql);
-		$sth->bindValue(':todoname', $todoName);
-		$sth->bindValue(':idlist', $todoListId);
-		$sth->execute();
 
-		return $this->dbh->lastInsertId();
 		}
 	}
