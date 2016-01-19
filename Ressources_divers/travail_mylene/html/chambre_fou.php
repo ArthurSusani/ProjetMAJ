@@ -1,28 +1,19 @@
 <?php 
 	require_once '../inc/function.php';
 	$rooms=getAllRooms($pdo);
+	include '../inc/header.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Chambres</title>
-	<link rel="stylesheet" href="../css/chambre.css">
-	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-</head>
-<body>
 	<div id="rooms">
 		<h2>Les chambres</h2>
 		<nav>
 			<ul>
-				<li>Séléctionner une chambre</li><br>
-				<li><a href="chambre_roi.php" title="">Chambre du roi</a></li>
-				<li><a href="chambre_dame.php" title="">Chambre de la dame</a></li>
-				<li><a href="chambre_fou.php" title="">Chambre du fou</a></li>
-				<li><a href="chambre_cavalier.php" title="">Chambre du cavalier</a></li>
-				<li><a href="chambre_tour.php" title="">Chambre de la tour</a></li>
+				<li>Séléctionner une chambre :</li><br>
+				<span class="glyphicon glyphicon-king"></span><li><a href="chambre_roi.php" title="">Chambre du roi</a></li>
+				<span class="glyphicon glyphicon-queen"></span><li><a href="chambre_dame.php" title="">Chambre de la dame</a></li>
+				<span class="glyphicon glyphicon-bishop"></span><li><a href="chambre_fou.php" title="">Chambre du fou</a></li>
+				<span class="glyphicon glyphicon-knight"></span><li><a href="chambre_cavalier.php" title="">Chambre du cavalier</a></li>
+				<span class="glyphicon glyphicon-tower"></span><li><a href="chambre_tour.php" title="">Chambre de la tour</a></li>
 			</ul>
 		</nav>
 		<div class="chambre">

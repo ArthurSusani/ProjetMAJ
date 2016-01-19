@@ -1,6 +1,3 @@
-<?php 
-	require_once '../inc/function.php'
-?>	
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -41,10 +38,10 @@
 					<!-- début du premier menu de navigation en haut a droite -->
 					<ul> 
 						<li><a href="#inscription" title="">
-						<span class="glyphicon glyphicon-pencil"></span>
-						Inscription</a></li>
+						<span class="glyphicon glyphicon-user"></span>
+						Bienvenue</a></li>
 						<li><a href="#connexion" title="">
-						<span class="glyphicon glyphicon-off"></span>Connexion</a></li>
+						<span class="glyphicon glyphicon-off"></span>Déconnexion</a></li>
 						<li><a href="#langages" title="">Langue</a></li>
 					</ul>
 				</nav>
@@ -54,31 +51,10 @@
 				<nav>
 					<!-- 2ème barre de navigation -->
 					<ul>
-						<li><a href="index_hotel.php" title="Accueil">Accueil</a></li>
-						<!-- code pour faire un petit menu déroulant avec bootstrap -->
-						<li class="dropdown">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">Présentation<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="presentation.php">Notre hôtel</a></li>
-								<li><a href="chambre.php">Nos chambres</a></li>
-							</ul>
-						</li>
-						<!-- fin d'un menu déroulant avec bootstrap -->
-						<li class="dropdown">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">Réservation<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Par internet</a></li>
-								<li><a href="#">Par téléphone</a></li>
-							</ul>
-						</li>
-						<li><a href="" title="Avis"><span class="glyphicon glyphicon-comment"></span>Avis</a></li>
-						<li class="dropdown">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">A propos<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="contact.php">Contact</a></li>
-								<li><a href="about.php">Qui sommes nous</a></li>
-							</ul>
-						</li>				
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#">Mes réservations</a></li>
+						<li><a href="contact.php"><span class="glyphicon glyphicon-comment"></span>Mes avis</a></li>
+						<li><a href="about.php"><span class="glyphicon glyphicon-cog"></span>Paramétres</a></li>			
 					</ul>
 				</nav>
 			</div>

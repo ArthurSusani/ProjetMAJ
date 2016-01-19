@@ -2,32 +2,47 @@
 	width: 1200px;
 	margin-left: auto;
     margin-right: auto;
-	font-family: 'Raleway', sans-serif;
+	border-top: 1px solid white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid white;
+	background-color: white;
+	height: 600px;
 }
 
-img{
+#rooms>img{
 	display: block;
 	margin-left: auto;
     margin-right: auto;
 }
 
-nav{
+#rooms>nav{
 	float: left;
 }
 
-h2{
+#rooms>h2{
 	text-align: center;
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
 }
 
-h3{
+.chambre>h3{
 	text-align: center;
+	font-family: 'Lobster', cursive;
 }
 
-li {
+#rooms>nav>ul>li {
 	list-style: none;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
-a {
+#rooms>nav>ul>li:nth-of-type(1){
+	list-style: none;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+#rooms>nav>ul>li>a {
 	color: black;
 	text-decoration: none;
 }
@@ -38,20 +53,31 @@ a {
 	width: 650px;
 }
 
-p {
+.chambre>p {
 	text-align: justify;
 	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
-.service {
-	float: left;
-	padding-left: 80px;
+.chambre {
+	list-style: none;
 }
 
-div:nth-of-type(4) {
+
+
+.service>p:nth-of-type(1){
+
+}
+
+.service>p:nth-of-type(2){
+
+}
+
+/*div:nth-of-type(4) {
 	padding-left: 175px;
 }
 
 div:nth-of-type(5) {
 	padding-left: 105px;
 }
+*/
