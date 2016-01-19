@@ -2,7 +2,9 @@
 
 namespace Controller;
 
-class LogController extends \W\Controller\Controller {
+class LogController extends \W\Controller\Controller 
+{
+
 	public function config() {
 		$logManager = new \Manager\LogManager();
 		$accounts = $logManager->findAll('owner');
@@ -44,12 +46,36 @@ class LogController extends \W\Controller\Controller {
 		}
 		$this->show("log/register");
 
-		// if (isset($_POST['send'])) {
-		// 	var_dump($_POST);
-		// 	echo 'entré dans le formulaire';
-		// }
-
 	}
 
+	public function connect()
+	{
+		$this->show("log/connect");
+	}
 
+	public function confirm()
+	{
+		$account = $_POST['account'];
+		$password = $_POST['pwdVal'];
+		$authentifManager = new \W\Security\authentificationManager();
+		$account = strip_tags(trim($account));
+		$confirmConnect = $authentifManager->isValidLoginInfo($account, $password);
+		if (!empty($confirmConnect)) {
+			$authentifManager->logUserIn($account);
+
+			$this->show('default/home');
+		} $this->show("log/connect/error");
+	}
+
+	public function error()
+	{
+		echo "Impossible de ce connecter, mauvais mdp ou mauvais login";
+	}
+
+	public function disconnect()
+	{
+		$authentifManager = new \W\Security\authentificationManager();
+		$authentifManager->logUserOut();
+		$this->show('default/home');
+	}
 }
