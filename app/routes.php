@@ -10,7 +10,7 @@ $w_routes = array(
 //----------------------------- Gestion Compte-----------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
 	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
-	['GET', 	'/log/register', 		'Log#register', 	'log_register'], 				
+	['GET|POST', 	'/log/register', 		'Log#register', 	'log_register'], 				
 	['POST', 	'/log/config', 			'Log#config', 		'log_config'], 	
 	['POST', 	'/log/connect/error', 	'Log#config', 		'log_error'], 		
 	['POST', 	'/log/connect/confirm', 'Log#config', 		'log_confirm'], 	

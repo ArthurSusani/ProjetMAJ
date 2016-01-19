@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 13 Janvier 2016 à 15:56
+-- Généré le :  Mar 19 Janvier 2016 à 15:46
 -- Version du serveur :  5.6.25
 -- Version de PHP :  5.6.11
 
@@ -34,6 +34,64 @@ CREATE TABLE IF NOT EXISTS `booking` (
   `end` date NOT NULL,
   `validate` date NOT NULL,
   `price` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `firstname` int(11) NOT NULL,
+  `lastname` int(11) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `logs`
+--
+
+CREATE TABLE IF NOT EXISTS `logs` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `adressClient` varchar(100) NOT NULL,
+  `postcodeClient` varchar(5) NOT NULL,
+  `cityClient` varchar(30) NOT NULL,
+  `telephone` varchar(10) NOT NULL,
+  `mail` varchar(50) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `birthday` date NOT NULL,
+  `role` enum('admin','user','','') NOT NULL DEFAULT 'user'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `logs`
+--
+
+INSERT INTO `logs` (`id`, `firstname`, `lastname`, `adressClient`, `postcodeClient`, `cityClient`, `telephone`, `mail`, `password`, `birthday`, `role`) VALUES
+(11, 'julien', 'baudouin', '15, rue Henri dunant', '54150', 'briey', '', 'baudouinjulien@free.fr', '$2y$10$rO3ZZApA.XTaXxOSqLag3eLjNkJZinyH8NlPTbTJwyyMwSdq7Vtw.', '1983-01-03', 'user'),
+(0, 'rehdrtgbh', 'rgsnhrtgbhn', 'gfbhtbt', '56746', 'eththbdte', '', 'ggg@x', '$2y$10$DdU4A/d/6POkLff7sn/1Fu59cJq.cIOIX19co17kVTjrDwXC/gJYO', '2016-01-06', 'user');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `opinion`
+--
+
+CREATE TABLE IF NOT EXISTS `opinion` (
+  `id` int(11) NOT NULL,
+  `id_booking` int(11) NOT NULL,
+  `comment` text NOT NULL,
+  `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -92,6 +150,19 @@ ALTER TABLE `booking`
   ADD KEY `id_user` (`id_user`);
 
 --
+-- Index pour la table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `opinion`
+--
+ALTER TABLE `opinion`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_user` (`id_booking`);
+
+--
 -- Index pour la table `rooms`
 --
 ALTER TABLE `rooms`
@@ -113,6 +184,16 @@ ALTER TABLE `users`
 ALTER TABLE `booking`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT pour la table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT pour la table `opinion`
+--
+ALTER TABLE `opinion`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT pour la table `rooms`
 --
 ALTER TABLE `rooms`
@@ -132,6 +213,12 @@ ALTER TABLE `users`
 ALTER TABLE `booking`
   ADD CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `booking_ibfk_2` FOREIGN KEY (`id_room`) REFERENCES `rooms` (`id`);
+
+--
+-- Contraintes pour la table `opinion`
+--
+ALTER TABLE `opinion`
+  ADD CONSTRAINT `opinion_ibfk_1` FOREIGN KEY (`id_booking`) REFERENCES `booking` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

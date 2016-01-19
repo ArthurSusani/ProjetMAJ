@@ -38,7 +38,7 @@
 		</div>
 		<div class="input_div">
 			<label for="mail">Votre E-mail</label><p>Veuillez entrer votre mail!</p>
-			<input  type="text" name="mail" value="" placeholder="Votre courriel">
+			<input  type="email" name="mail" value="" placeholder="Votre courriel">
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">

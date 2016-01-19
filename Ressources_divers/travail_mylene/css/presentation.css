@@ -8,6 +8,7 @@
 	border-right: 1px solid black;
 	border-bottom: 1px solid white;
 	background-color: white;
+	height: 950px;
 }
 
 #presentation>h2{
@@ -20,15 +21,17 @@
 	text-align: justify;
 	text-align: center;
 	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 17px;
+	font-size: 18px;
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.flexslider{
-	width: 600px;
-	height: 400px;
+#presentation .flexslider{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 500px;
 }
 
 .js #requirejs{

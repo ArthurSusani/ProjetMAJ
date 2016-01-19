@@ -17,22 +17,29 @@ body{
 	width: 100%;
 	font-family: 'Cinzel', serif;
 	border: 1px solid gray;
+	padding-top: 10px;
 }
 
 #menu2{
 	width: 100%;
 	background-color: white;
-	padding-top: 40px;
+	padding-top: 50px;
 	height: 80px;
 	font-family: 'Cinzel', serif;
-	padding-right: auto;
-	padding-left: auto;
 	border: 1px solid gray;
 	font-weight: bold;
 }
 
+#menu1>nav{
+	float: right;
+}
+
 #menu2 ul>li>a{
 	color: black;
+}
+
+#menu2>nav {
+	float: right;
 }
 
 .container{
