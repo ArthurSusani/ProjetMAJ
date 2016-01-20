@@ -12,7 +12,21 @@
 <body>
 	<div class="container">
 		<nav>
+<<<<<<< HEAD
 
+=======
+			<ul>
+				<?php if (isset($_SESSION['user'])):
+					if ($_SESSION['user'] == "ytreza" || $_SESSION['role'] == "admin"): ?>
+						
+						<li><a href="<?= $this->url('log_disconnect') ?>">Deconnection</a></li>
+						<?php endif; ?>
+						<?php else: ?>
+					<li><a href="<?= $this->url('log_register') ?>">S'enregistrer</a></li>
+					<li><a href="<?= $this->url('log_connect') ?>">Se connecter</a></li>
+				<?php endif; ?>
+			</ul>
+>>>>>>> 14c492a514d87cc79a5cb5ce21ccd3cd684f593a
 
 			<ul class="list-inline">
 				<li class="col-sm-3"><a href="<?=  $this->url('home') ?>">Accueil</a></li>

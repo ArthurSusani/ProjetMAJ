@@ -3,17 +3,18 @@
 $w_routes = array(
 	['GET', 	'/', 					'Default#home', 	'home'], 					 				
 	['GET', 	'/about', 				'Default#about', 	'about'],			 				
-	['GET', 	'/contact', 			'Default#contact', 	'contact'], 		 				
+	['GET|POST','/contact', 			'Default#contact', 	'contact'], 		 				
 	['GET', 	'/whoarewe', 			'Default#whoarewe', 'whoarewe'], 	 				
 	['GET', 	'/comment', 			'Default#comment', 	'comment'], 	 	 				
 
 //----------------------------- Gestion Compte-----------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
 	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
-	['GET|POST', 	'/log/register', 		'Log#register', 	'log_register'], 				
+	['GET|POST','/log/register', 		'Log#register', 	'log_register'], 				
 	['POST', 	'/log/config', 			'Log#config', 		'log_config'], 	
-	['POST', 	'/log/connect/error', 	'Log#config', 		'log_error'], 		
-	['POST', 	'/log/connect/confirm', 'Log#config', 		'log_confirm'], 	
+	['GET|POST','/log/connect/error', 	'Log#error', 		'log_error'], 		
+	['GET|POST','/log/connect/confirm', 'Log#confirm', 		'log_confirm'], 
+	['GET|POST','/log/disconnect', 		'Log#disconnect', 	'log_disconnect'], 	
 
 //----------------------------- Présentation-------------------------------
 	['GET', 	'/introduct/index', 	'Introduct#index', 	'introduct_index'], 
@@ -25,7 +26,7 @@ $w_routes = array(
 	['GET', 	'/booking/index', 		'booking#index', 	'booking_index'],	  
 	['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 	['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
-	['GET|POST', 	'/booking/map/pay/[:id]', 	'booking#pay', 		'booking_pay'],
-	['GET|POST', 	'/booking/bill', 	'booking#bill', 		'booking_bill'],		
+	['GET|POST','/booking/map/pay/[:id]','booking#pay', 	'booking_pay'],
+	['GET|POST','/booking/bill', 		'booking#bill', 	'booking_bill'],		
 	['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
 );

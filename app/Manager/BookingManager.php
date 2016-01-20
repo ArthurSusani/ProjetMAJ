@@ -19,7 +19,7 @@
 		$sth->bindValue(':price', $price);
 
 		$sth->execute();
-		echo "stfu";
+
 		if(!empty($this->dbh->lastInsertId())){
 			return $this->dbh->lastInsertId();
 		}else{

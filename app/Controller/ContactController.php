@@ -7,7 +7,7 @@ class ContactController extends \W\Controller\Controller {
 		$contactManager = new \Manager\ContactManager();
 	}
 
-	/*public function insertcontact(){
+	public function contact(){
 		$sql = 'INSERT INTO contact(title,firstname,lastname,phone,mail,subject,message) VALUES (:title,:firstname,:lastname,:phone,:mail,:subject,:message)';
 		$sth = $this->dbh->prepare($sql);
 		$sth->bindValue(':title', $title);
@@ -18,4 +18,4 @@ class ContactController extends \W\Controller\Controller {
 		$sth->bindValue(':subject', $subject);
 		$sth->bindValue(':message', $message);
 		$sth->execute();
-	}*/
+	}
