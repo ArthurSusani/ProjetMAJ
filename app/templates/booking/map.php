@@ -39,7 +39,7 @@
 			</select>
 			<p id="stageRoomSelect">Vous ètes au rez de chaussée</p>
 		</section>
-
+		<input type="hidden" name="data" value="">
 
 	<button type="submit">Confirmer</button>
 </form>

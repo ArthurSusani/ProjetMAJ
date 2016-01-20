@@ -13,7 +13,8 @@ $(function() {
 
 	var nbRoomLock = 0;
 	var etage = 0
-
+	var roomSelects= [];
+	var countSelect = 0;
 
 	console.log('roomScan load');
 
@@ -37,8 +38,26 @@ $(function() {
 		});
 	}
 
+	roomValid =function(){
+
+		roomLock.forEach( function(element, index) {
+
+			roomLock[etage].forEach(function(element, index){
+
+				if (roomLock[etage][index][0] == 1) {
+
+					countSelect++;
+
+					roomSelects.push(index);
+
+					console.log(roomSelects);
+					
+				}
+			});
+		]);
+	}
+
 	roomSelect = function(){
-		console.log(etage);
 		var id = $(this).attr('id');
 		var clrId = id.replace(/\D+/g,'');
 		if (roomLock[etage][clrId][0] == 0) {
@@ -51,6 +70,7 @@ $(function() {
 			nbRoomLock--;
 		}
 		nbRoomView(nbRoomLock);
+		roomValid();
 	}
 
 	switchStage = function(){
@@ -70,5 +90,7 @@ $(function() {
 
 	$('.chambre').on('click', roomSelect );
 	$('#ascenseur').on('change', switchStage);
+
+	
 
 });

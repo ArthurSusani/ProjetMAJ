@@ -18,22 +18,15 @@ class BookingController extends \W\Controller\Controller
 
 	public function map()
 	{
-	if(isset($_SESSION['logon'])){
-		if($_SESSION['logon'] == false){
 			$this->show("booking/map");
-
-		}else{
-			// Page d'erreur ? Redirection page de connection ? d'inscription ?
-		}
-	}else{$this->show("booking/map");}//En attente des session
 	}
 
 	public function pay()
 	{
 		$BookingManager = new \Manager\BookingManager();
 
-		$id_room = 1;
-		$id_user = 1;//$_SESSION['id'];
+		$id_room = 45;
+		$id_user = $_SESSION['id'];
 		$begin = $_POST['date_start'];
 		$end = $_POST['date_end'];
 		$validate = date("Y-m-d");
