@@ -1,0 +1,1 @@
+-Voir avec Maxime pour intégrer Html2PDF dans le projet, l'install avec composer require dans le dossier ProjetMAJ ne fonctionne pas, quand on lance les examples, il met une erreur qu'il ne trouve pas l'autoload.
