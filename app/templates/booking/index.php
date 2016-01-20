@@ -10,13 +10,14 @@
 		<?php
 
 			
-			if(!isset($_SESSION['logon'])){ // user deconnecter 
+			if(isset($_SESSION['role'])){ // user deconnecter 
 				$url =  $this->url('booking_map');
 				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> BLABLA </a>" ." blablabla";
 			}else{ 
 				$url =  $this->url('log_register');
 				echo "blablabla USER NOT CONNECT ". "<a href='$url' title='Inscription'> BLABLA </a>" ." blablabla";
 			}
+			
 		?>
 		</p>
 <?php $this->stop('main_content') ?>
