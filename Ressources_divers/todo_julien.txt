@@ -1,0 +1,4 @@
+-Voir avec Maxime pour intégrer Html2PDF dans le projet, l'install avec composer require dans le dossier ProjetMAJ ne fonctionne pas, quand on lance les examples, il met une erreur qu'il ne trouve pas l'autoload.
+-avancer dans la page réservation pour faire afficher le choix de la chambre avec le code de arthur
+	-Faire le lien avec la table bookings
+	-Générer une facture

@@ -18,4 +18,6 @@ class LogsManager extends \W\Manager\Manager {
 		$result = $sth->fetch(\PDO::FETCH_ASSOC);
 		return $result['id'];
 	}
+
+
 }
