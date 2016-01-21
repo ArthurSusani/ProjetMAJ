@@ -8,15 +8,18 @@
 	<p>
 		blablabla bla blabla blabla bla blablabla !
 		<?php
-
-			
-			if(!isset($_SESSION['logon'])){ // user deconnecter 
+			if(isset($_SESSION['role'])){ // user deconnecter 
 				$url =  $this->url('booking_map');
-				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> BLABLA </a>" ." blablabla";
+			
+				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> Réservation </a>" ." blablabla";
+
 			}else{ 
 				$url =  $this->url('log_register');
-				echo "blablabla USER NOT CONNECT ". "<a href='$url' title='Inscription'> BLABLA </a>" ." blablabla";
+				echo "<a href='$url' title='Inscription'> Inscription </a><br>";
+				$url2= $this->url('log_connect');
+				echo "blablabla USER NOT CONNECT ". "<a href='$url' title='Inscription'> Connection </a>";
 			}
+
 		?>
 		</p>
 <?php $this->stop('main_content') ?>

@@ -60,11 +60,18 @@ class LogController extends \W\Controller\Controller
 		$authentifManager = new \W\Security\authentificationManager();
 		$account = strip_tags(trim($account));
 		$confirmConnect = $authentifManager->isValidLoginInfo($account, $password);
+
 		if (!empty($confirmConnect)) {
 			$authentifManager->logUserIn($account);
-
+			$this->returnUser($account);
 			$this->show('default/home');
 		} $this->show("log/connect/error");
+	}
+
+	public function returnUser($user)
+	{
+		$manager = new \Manager\LogsManager();
+		$manager->returnInfoUsers($user);
 	}
 
 	public function error()
@@ -76,6 +83,8 @@ class LogController extends \W\Controller\Controller
 	{
 		$authentifManager = new \W\Security\authentificationManager();
 		$authentifManager->logUserOut();
+		$manager = new \Manager\LogsManager();
+		$manager->deleteInfoUsers();
 		$this->show('default/home');
 	}
 }

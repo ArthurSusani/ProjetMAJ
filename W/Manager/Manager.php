@@ -76,6 +76,17 @@ abstract class Manager
 		return $sth->fetch();
 	}
 
+	public function findByMail($mail)
+	{
+
+		$sql = "SELECT * FROM " . $this->table . " WHERE mail = :mail LIMIT 1";
+		$sth = $this->dbh->prepare($sql);
+		$sth->bindValue(":mail", $mail);
+		$sth->execute();
+
+		return $sth->fetch();
+	}
+
 	/**
 	 * Récupère toutes les lignes de la table
 	 * @param   $orderBy La colonne en fonction de laquelle trier
@@ -177,4 +188,35 @@ abstract class Manager
 		$sth->bindValue(":id", $id);
 		return $sth->execute();
 	}
+
+	public function returnInfoUsers($user){
+		$infoUser = $this->findByMail($user);
+		$_SESSION['id'] = 				$infoUser['id'];
+		$_SESSION['firstname'] = 		$infoUser['firstname'];
+		$_SESSION['lastname'] = 		$infoUser['lastname'];
+		$_SESSION['adressClient'] = 	$infoUser['adressClient'];
+		$_SESSION['postcodeClient'] = 	$infoUser['postcodeClient'];
+		$_SESSION['cityClient'] = 		$infoUser['cityClient'];
+		$_SESSION['telephone'] = 		$infoUser['telephone'];
+		$_SESSION['mail'] = 			$infoUser['mail'];
+		$_SESSION['birthday'] = 		$infoUser['birthday'];
+		$_SESSION['role'] = 			$infoUser['role'];
+	}
+	
+	public function deleteInfoUsers()
+	{
+		unset($_SESSION['id']);
+		unset($_SESSION['firstname']);
+		unset($_SESSION['lastname']);
+		unset($_SESSION['adressClient']);
+		unset($_SESSION['postcodeClient']);
+		unset($_SESSION['cityClient']);
+		unset($_SESSION['telephone']);
+		unset($_SESSION['birthday']);
+		unset($_SESSION['role']);
+		unset($_SESSION['mail']);
+	}
+
 }
+
+
