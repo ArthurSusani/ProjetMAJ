@@ -2,31 +2,38 @@
 
 namespace Controller;
 
-class BookingController extends \W\Controller\Controller {
-	public function index() {
+
+
+class BookingController extends \W\Controller\Controller
+{
+	public function index()
+	{
 		$this->show("booking/index");
 	}
 
-	public function error() {
+	public function error()
+	{
 		$this->show("booking/error");
 	}
 
-	public function map() {
-		if (isset($_SESSION['logon'])) {
-			if ($_SESSION['logon'] == false) {
-				$this->show("booking/map");
+	public function map()
+	{
+	if(isset($_SESSION['logon'])){
+		if($_SESSION['logon'] == false){
+			$this->show("booking/map");
 
-			} else {
-				// Page d'erreur ? Redirection page de connection ? d'inscription ?
-			}
-		} else { $this->show("booking/map");} //En attente des session
+		}else{
+			// Page d'erreur ? Redirection page de connection ? d'inscription ?
+		}
+	}else{$this->show("booking/map");}//En attente des session
 	}
-	//methode pay du controleur booking (réservation) qui enregistre une reservation en BDD
-	public function pay() {
+	
+	public function pay()
+	{
 		$BookingManager = new \Manager\BookingManager();
 
 		$id_room = 1;
-		$id_user = 1; //$_SESSION['id'];
+		$id_user = 1;//$_SESSION['id'];
 		$begin = $_POST['date_start'];
 		$end = $_POST['date_end'];
 		$validate = date("Y-m-d");
@@ -35,8 +42,10 @@ class BookingController extends \W\Controller\Controller {
 		$this->redirectToRoute('booking_bill', ['id' => $num]);
 	}
 
-	public function bill() {
-		$this->show("booking/bill");
+	public function bill()
+	{
+		$this->show("booking/bill" );
 	}
+
 
 }
