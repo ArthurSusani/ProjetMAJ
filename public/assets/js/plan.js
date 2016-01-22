@@ -10,6 +10,7 @@ $(function() {
 				//0 : libre
 				//1 : selectionné 	rgba(125,255,125,0)
 				//2 : reservé 		rgba(255,80,80,0.25)
+				//2ème indice=prix de la chambre
 
 	var nbRoomLock = 0;
 	var etage = 0
@@ -54,7 +55,7 @@ $(function() {
 					
 				}
 			});
-		]);
+		});
 	}
 
 	roomSelect = function(){

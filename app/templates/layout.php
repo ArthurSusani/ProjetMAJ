@@ -13,9 +13,7 @@
 <body>
 	<div class="container">
 		<nav>
-<<<<<<< HEAD
 
-=======
 			<ul>
 				<?php if (isset($_SESSION['user'])): ?>
 						
@@ -30,7 +28,6 @@
 
 				<?php endif; ?>
 			</ul>
->>>>>>> 14c492a514d87cc79a5cb5ce21ccd3cd684f593a
 
 			<ul class="list-inline">
 				<li class="col-sm-3"><a href="<?=  $this->url('home') ?>">Accueil</a></li>
