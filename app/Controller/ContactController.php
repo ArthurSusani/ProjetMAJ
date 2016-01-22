@@ -1,21 +1,20 @@
 <?php
 	
-namespace Controller;
+	namespace Controller;
 
-class ContactController extends \W\Controller\Controller {
-	public function config() {
-		$contactManager = new \Manager\ContactManager();
-	}
+	class ContactController extends \W\Controller\Controller {
+		
+		public function contact()
+		{
+			if(isset($_POST['send'])){
+				$contactManager = new \Manager\ContactManager();
+				$contactManager->insertcontact($_POST['title'],$_POST['firstname'],$_POST['lastname'],$_POST['phone'],$_POST['mail'],$_POST['subject'],$_POST['message']);
+			}
+			$this->show("contact/contact");
+		}
 
-	public function contact(){
-		$sql = 'INSERT INTO contact(title,firstname,lastname,phone,mail,subject,message) VALUES (:title,:firstname,:lastname,:phone,:mail,:subject,:message)';
-		$sth = $this->dbh->prepare($sql);
-		$sth->bindValue(':title', $title);
-		$sth->bindValue(':firstname', $firstname);
-		$sth->bindValue(':lastname', $lastname);
-		$sth->bindValue(':phone', $phone);
-		$sth->bindValue(':mail', $mail);
-		$sth->bindValue(':subject', $subject);
-		$sth->bindValue(':message', $message);
-		$sth->execute();
+		public function whoarewe()
+		{
+			$this->show("contact/whoarewe");
+		}
 	}

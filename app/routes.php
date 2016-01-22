@@ -2,11 +2,13 @@
 	
 $w_routes = array(
 	['GET', 	'/', 					'Default#home', 	'home'], 					 				
-	['GET', 	'/about', 				'Default#about', 	'about'],			 				
-	['GET|POST','/contact', 			'Default#contact', 	'contact'], 		 				
-	['GET', 	'/whoarewe', 			'Default#whoarewe', 'whoarewe'], 	 				
-	['GET', 	'/comment', 			'Default#comment', 	'comment'], 	 	 				
+	['GET', 	'/about', 				'Default#about', 	'about'],
+	['GET', 	'/comment', 			'Default#comment', 	'comment'],
 
+//----------------------------- Contact ----------------------------------			 				
+	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'], 		 				
+	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 	 				
+	 	 	 				
 //----------------------------- Gestion Compte-----------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
 	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					

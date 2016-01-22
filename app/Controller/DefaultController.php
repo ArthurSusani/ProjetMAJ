@@ -20,16 +20,6 @@ class DefaultController extends Controller
 		$this->show('default/about');
 	}
 
-	public function contact()
-	{
-		$this->show('default/contact');
-	}
-
-	public function whoarewe()
-	{
-		$this->show('default/whoarewe');
-	}
-
 	public function comment()
 	{
 		$this->show('default/comment');
