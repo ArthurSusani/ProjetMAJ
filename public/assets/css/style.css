@@ -7,7 +7,8 @@ body{
 	background: #8e9eab; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to top, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+    background-size: 450%;
+    background-repeat: no-repeat;   
 }
 
 #menu1{
@@ -45,9 +46,14 @@ body{
 .container{
 	width: 1200px;
 	height: 1000px;
-	padding-left: auto;
-	padding-right: auto;
+
 	box-sizing: border-box;
+	border-top:1px solid black;
+}
+
+div .container{
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 .clearfix{
@@ -85,7 +91,7 @@ body{
 */
 
 #accueil{
-	background-image: url('../img/hotel_front.jpg');
+	background-image: url(../img/hotel_front.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1200px 700px;
@@ -136,17 +142,18 @@ body{
 }
 
 #map {
-	width:585px;
+	width:600px;
 	height:300px;
 	float: left;
 	border: 1px solid black;
+	border-right:0px;
 }
 
 #adresse {
 	float: right;
 	background-color: white;
 	height: 300px;
-	width: 585px;
+	width: 600px;
 	border: 1px solid black;
 	font-family: 'Cinzel', serif;
 	font-weight: bold;

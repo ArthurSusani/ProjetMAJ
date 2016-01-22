@@ -20,7 +20,7 @@ class BookingController extends \W\Controller\Controller
 	{
 			$this->show("booking/map");
 	}
-
+	
 	public function pay()
 	{
 		$BookingManager = new \Manager\BookingManager();

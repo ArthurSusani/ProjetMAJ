@@ -1,12 +1,11 @@
 <?php
-	
-	namespace Manager;
 
-	class BookingManager extends \W\Manager\Manager
-	{
-		public function create($id_user, $id_room, $begin, $end, $validate, $price)
-		{
-			if (!is_numeric($id_user) || !is_numeric($id_room) || empty($begin) || empty($end) || empty($validate) || empty($price)){
+namespace Manager;
+
+class BookingManager extends \W\Manager\Manager {
+	//fonction qui permet de creer une reservation d'une chambre
+	public function create($id_user, $id_room, $begin, $end, $validate, $price) {
+		if (!is_numeric($id_user) || !is_numeric($id_room) || empty($begin) || empty($end) || empty($validate) || empty($price)) {
 			return false;
 		}
 		$sql = 'INSERT INTO ' . $this->table . '( id_user, id_room, begin, end, validate, price ) VALUES(:id_user, :id_room, :begin, :end, :validate, :price)';
@@ -20,12 +19,11 @@
 
 		$sth->execute();
 
-		if(!empty($this->dbh->lastInsertId())){
+		if (!empty($this->dbh->lastInsertId())) {
 			return $this->dbh->lastInsertId();
-		}else{
+		} else {
 			return false;
 		}
 
-
-		}
 	}
+}

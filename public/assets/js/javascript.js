@@ -1,7 +1,7 @@
 $(function(){
 	console.log('Dom Loaded');
 
-	$('form').on("submit", function(evt){
+	$('form #cont').on("submit", function(evt){
 		// Variable qui confirme ou infirme l'envoi du formulaire
 		var sendit=true;
 
@@ -84,7 +84,7 @@ $(function(){
 					$('[name=message]').parent().append('<p>'+data['errors']['message']+'</p>');
 				};
 
-				// Si il n'y a aucune erreur, le script renvoi succes à true, on supprime le formulaire et ajoutons un message de confirmation .
+				// Si il n'y a aucune erreur, le script renvoi succes à true, on supprime le formulaire et ajoutons un message de confirmation.
 				if (data['success']==true){
 					$('form').remove();
 					$('#inscriptions').append('<p id="valid">“Merci, votre demande a bien été prise en compte"</p>')
