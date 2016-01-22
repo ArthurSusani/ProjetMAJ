@@ -21,5 +21,14 @@
 		$sth->bindValue(':message', $message);
 
 		$sth->execute();
+		}
+
+		public function viewcomplain(){
+			$sql = 'SELECT * FROM contact';
+			$sth = $this->dbh->prepare($sql);
+			$sth->execute();
+
+			$result = $sth->fetchAll(\PDO::FETCH_ASSOC);
+			return $result;
+		}
 	}
-}

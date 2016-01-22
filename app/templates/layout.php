@@ -29,6 +29,9 @@
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
+
+
+
 	</head>
 	<body>
 		
@@ -43,6 +46,7 @@
 
 							<li><a href="<?= $this->url('log_disconnect') ?>" title="">
 							<span class="glyphicon glyphicon-remove"></span> Deconnexion</a></li>
+
 
 						<?php if ($_SESSION["user"]["role"] == "admin"): ?>
 
