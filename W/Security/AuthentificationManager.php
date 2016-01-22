@@ -42,7 +42,7 @@ class AuthentificationManager
 		$app = getApp();
 
 		//retire le mot de passe de la session
-		//unset( $user[$app->getConfig('security_password_property')] );
+		unset( $user[$app->getConfig('security_password_property')] );
 		$_SESSION["user"] = $user;
 	}
 

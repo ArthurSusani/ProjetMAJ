@@ -1,0 +1,83 @@
+#rooms{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+	border-top: 1px solid white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid white;
+	background-color: white;
+	height: 600px;
+}
+
+#rooms>img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#rooms>nav{
+	float: left;
+}
+
+#rooms>h2{
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+}
+
+.chambre>h3{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+#rooms>nav>ul>li {
+	list-style: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#rooms>nav>ul>li:nth-of-type(1){
+	list-style: none;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+#rooms>nav>ul>li>a {
+	color: black;
+	text-decoration: none;
+}
+
+.chambre {
+	float: left;
+	padding-left: 150px;
+	width: 650px;
+}
+
+.chambre>p {
+	text-align: justify;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.chambre {
+	list-style: none;
+}
+
+
+
+.service>p:nth-of-type(1){
+
+}
+
+.service>p:nth-of-type(2){
+
+}
+
+/*div:nth-of-type(4) {
+	padding-left: 175px;
+}
+
+div:nth-of-type(5) {
+	padding-left: 105px;
+}
+*/

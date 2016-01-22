@@ -20,7 +20,7 @@ class AuthorizationManager
 	{
 		$app = getApp();
 		$roleProperty = $app->getConfig('security_role_property');
-
+		
 		//récupère les données en session sur l'utilisateur
 		$authentificationManager = new AuthentificationManager();
 		$loggedUser = $authentificationManager->getLoggedUser();
@@ -28,6 +28,7 @@ class AuthorizationManager
 		//si utilisateur non connecté
 		if (!$loggedUser){
 			//redirige vers le login
+
 			$this->redirectToLogin();
 		}
 

@@ -59,14 +59,17 @@ class LogController extends \W\Controller\Controller
 		$password = $_POST['pwdVal'];
 		$authentifManager = new \W\Security\authentificationManager();
 		$account = strip_tags(trim($account));
-		$confirmConnect = $authentifManager->isValidLoginInfo($account, $password);
+		$userId = $authentifManager->isValidLoginInfo($account, $password);
 
-		if (!empty($confirmConnect)) {
-			$authentifManager->logUserIn($account);
-			$this->returnUser($account);
+		if (!empty($userId)) {
+			$usersManager = new \Manager\LogsManager();
+			$user = $usersManager->find($userId);
+			$authentifManager->logUserIn($user);
 			$this->show('default/home');
-		} $this->show("log/connect/error");
+		} 
+		$this->show("log/connect/error");
 	}
+
 
 	public function returnUser($user)
 	{
