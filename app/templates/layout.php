@@ -28,6 +28,8 @@
 		<script src="<?= $this->assetUrl('js/jquery.fancybox.pack.js') ?>" type="text/javascript" ></script>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
+		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
+
 
 
 	</head>
@@ -42,22 +44,25 @@
 					<ul> 
 						<?php if(isset($_SESSION['user'])): ?>
 
-						<li><a href="<?= $this->url('log_disconnect') ?>" title="">
-						<span class="glyphicon glyphicon-remove"></span> Deconnexion</a></li>
+							<li><a href="<?= $this->url('log_disconnect') ?>" title="">
+							<span class="glyphicon glyphicon-remove"></span> Deconnexion</a></li>
 
 
 						<?php if ($_SESSION["user"]["role"] == "admin"): ?>
 
-						<li><a href="<?= $this->url('setting_index') ?>" title="">
-						<span class="glyphicon glyphicon-wrench"></span> Configuration</a></li>
+							<li><a href="<?= $this->url('setting_index') ?>" title="">
+							<span class="glyphicon glyphicon-wrench"></span> Configuration</a></li>
 
 						<?php endif; ?>	
 						<?php else: ?>
-						<li><a href="<?= $this->url('log_register') ?>" title="">
-						<span class="glyphicon glyphicon-pencil"></span> Inscription</a></li>
-						<li><a href="<?= $this->url('log_connect') ?>" title="">
-						<span class="glyphicon glyphicon-off"></span> Connexion</a></li>
+
+							<li><a href="<?= $this->url('log_register') ?>" title="">
+							<span class="glyphicon glyphicon-pencil"></span> Inscription</a></li>
+							<li><a href="<?= $this->url('log_connect') ?>" title="">
+							<span class="glyphicon glyphicon-off"></span> Connexion</a></li>
+
 						<?php endif; ?>	
+
 						<li><a href="#langages" title="language">Langue</a></li>
 					</ul>
 				</nav>
@@ -80,8 +85,8 @@
 						<li class="dropdown">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="<?=  $this->url('booking_index') ?>">Réservation<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Par internet</a></li>
-								<li><a href="#">Par téléphone</a></li>
+								<li><a href="<?= $this->url('booking_index') ?>">Par internet</a></li>
+								<li><a href="<?= $this->url('booking_phone') ?>">Par téléphone</a></li>
 							</ul>
 						</li>
 						<li><a href="<?=  $this->url('comment') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
@@ -106,8 +111,12 @@
 				</section>
 		
 		<footer>
+		<br>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 		</div>
+
+
 </body>
 </html>
 

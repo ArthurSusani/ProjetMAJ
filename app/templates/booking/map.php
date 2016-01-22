@@ -41,7 +41,7 @@
 		</section>
 		<input type="hidden" name="data" value="">
 
-	<button type="submit">Confirmer</button>
+	<button type="submit" id="submitMap">Confirmer</button>
 </form>
 
 <?php $this->stop('main_content') ?>

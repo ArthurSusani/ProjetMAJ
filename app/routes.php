@@ -31,8 +31,9 @@ $w_routes = array(
 	['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 	['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
 	['GET|POST','/booking/map/pay/[:id]','booking#pay', 	'booking_pay'],
-	['GET|POST','/booking/bill', 		'booking#bill', 	'booking_bill'],		
+	['GET|POST','/booking/bill/[:id]', 		'booking#bill', 	'booking_bill'],		
 	['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
+	['GET', 	'/booking/phone', 		'booking#phone', 	'booking_phone'],	
 	
 //---------------------------- Option -------------------------------------
 	['GET', 	'/setting/index', 'setting#index', 	'setting_index'],
