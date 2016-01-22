@@ -7,7 +7,7 @@
 				<p>Bienvenue sur le site de l'hotel webforce3<br>
 				Pour réserver une chambre merci de bien vouloir créer un compte !</p>
 
-				<a href="#inscriptions" >Inscription</a>
+				<a href="<?= $this->url('log_register') ?>" >Inscription</a>
 			</div>
 		
 			<div id="map">

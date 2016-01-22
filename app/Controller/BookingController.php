@@ -40,5 +40,9 @@ class BookingController extends \W\Controller\Controller
 		$this->show("booking/bill" );
 	}
 
+	public function phone()
+	{
+		$this->show("booking/phone" );
+	}
 
 }
