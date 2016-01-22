@@ -6,7 +6,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="<?= $this->assetUrl('js/script.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="<?= $this->assetUrl('js/plan.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 </head>
@@ -14,17 +13,14 @@
 	<div class="container">
 		<nav>
 			<ul>
-				<?php if (isset($_SESSION['user'])): ?>
+				<?php if (isset($_SESSION['user'])):
+					if ($_SESSION['user'] == "ytreza" || $_SESSION['role'] == "admin"): ?>
 						
-						<li class="col-sm-3 col-md-offset-6"><a href="<?= $this->url('log_disconnect') ?>">Deconnection</a></li>
-						<?php if ($_SESSION['role'] == "admin"): ?>
-						<li class="col-sm-3" ><a href="<?= $this->url('log_disconnect') ?>">Configuration</a></li>	
-						<?php endif; ?>	
+						<li><a href="<?= $this->url('log_disconnect') ?>">Deconnection</a></li>
+						<?php endif; ?>
 						<?php else: ?>
-					<li class="col-sm-3 col-md-offset-6"><a href="<?= $this->url('log_register') ?>">S'enregistrer</a></li>
-					<li class="col-sm-3"><a href="<?= $this->url('log_connect') ?>">Se connecter</a></li>
-				
-
+					<li><a href="<?= $this->url('log_register') ?>">S'enregistrer</a></li>
+					<li><a href="<?= $this->url('log_connect') ?>">Se connecter</a></li>
 				<?php endif; ?>
 			</ul>
 

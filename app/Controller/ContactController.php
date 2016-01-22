@@ -13,6 +13,13 @@
 			$this->show("contact/contact");
 		}
 
+		public function viewcontact()
+		{
+			$views = new \Manager\ContactManager();
+			$viewall = $views->viewcomplain();
+			$this->show('contact/viewcontact',['viewall'=>$viewall]);
+		}
+
 		public function whoarewe()
 		{
 			$this->show("contact/whoarewe");
