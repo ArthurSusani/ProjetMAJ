@@ -6,7 +6,8 @@ $w_routes = array(
 	['GET', 	'/comment', 			'Default#comment', 	'comment'],
 
 //----------------------------- Contact ----------------------------------			 				
-	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'], 		 				
+	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'],
+	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	 				
 	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 	 				
 	 	 	 				
 //----------------------------- Gestion Compte-----------------------------
