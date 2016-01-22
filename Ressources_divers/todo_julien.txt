@@ -5,4 +5,8 @@ OK	-Générer une facture
 
 =>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
 =>Modifier input date en Jquery UI datepicker
-=>Modifier Table intermédiaire pour les bookings
+=>Modifier Table intermédiaire pour les bookings pour avoir plusieurs booking par client
+=>Mettre les étages fait avec homestyler, découper les zones
+=>Mettre en place le QRcode
+=>Mettre les image en 3d dans la présentation.
+=>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.

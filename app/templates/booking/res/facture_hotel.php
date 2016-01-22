@@ -55,7 +55,7 @@ td    { vertical-align: top; }
     <br>
     <i>
         <b><u>Objet </u>: &laquo; Facture client Hotel Webforce3 &raquo;</b><br>
-        Compte client : Id client table client<br>
+        Compte client : <?php echo $id?><br>
         Référence du Dossier : Id table booking<br>
     </i>
     <br>
@@ -75,24 +75,21 @@ td    { vertical-align: top; }
         </tr>
     </table>
 <?php
-$nb_booking = 2;
+$nb_booking = 1;
 $produits = array();
 $total = 0;
 for ($k = 0; $k < $nb_booking; $k++) {
-	$num = rand(100000, 999999);
-	$nom = "chambre n°" . rand(1, 100);
-	$qua = rand(1, 20);
-	$prix = rand(100, 9999) / 100.;
-	$total += $prix * $qua;
-	$produits[] = array($num, $nom, $qua, $prix, rand(0, $qua));
+	$nom_chambre = "chambre n°" . $id_room;
+    $qua = rand(1, 20);
+    $total=$price * $qua;
 	?>
     <table cellspacing="0" style="width: 100%; border: solid 1px black; background: #F7F7F7; text-align: center; font-size: 10pt;">
         <tr>
-            <td style="width: 20%; text-align: center"><?php echo $num; ?></td>
-            <td style="width: 20%; text-align: center"><?php echo $nom; ?></td>
-            <td style="width: 20%; text-align: center"><?php echo number_format($prix, 2, ',', ' '); ?> &euro;</td>
+            <td style="width: 20%; text-align: center"><?php echo $id; ?></td>
+            <td style="width: 20%; text-align: center"><?php echo $id_room; ?></td>
+            <td style="width: 20%; text-align: center"><?php echo number_format($price, 2, ',', ' '); ?> &euro;</td>
             <td style="width: 20%; text-align: center"><?php echo $qua; ?></td>
-            <td style="width: 20%; text-align: center;"><?php echo number_format($prix * $qua, 2, ',', ' '); ?> &euro;</td>
+            <td style="width: 20%; text-align: center;"><?php echo number_format($price * $qua, 2, ',', ' '); ?> &euro;</td>
         </tr>
     </table>
 <?php

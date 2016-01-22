@@ -6,8 +6,7 @@ $w_routes = array(
 	['GET', 	'/comment', 			'Default#comment', 	'comment'],
 
 //----------------------------- Contact ----------------------------------			 				
-	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'],
-	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	 				
+	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'], 		 				
 	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 	 				
 	 	 	 				
 //----------------------------- Gestion Compte-----------------------------
@@ -32,6 +31,7 @@ $w_routes = array(
 	['GET|POST','/booking/map/pay/[:id]','booking#pay', 	'booking_pay'],
 	['GET|POST','/booking/bill/[:id]', 		'booking#bill', 	'booking_bill'],		
 	['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
+	['GET', 	'/booking/phone', 		'booking#phone', 	'booking_phone'],	
 	
 //---------------------------- Option -------------------------------------
 	['GET', 	'/setting/index', 'setting#index', 	'setting_index'],

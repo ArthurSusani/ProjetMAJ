@@ -8,7 +8,7 @@
 	<p>
 		blablabla bla blabla blabla bla blablabla !
 		<?php
-			if(isset($_SESSION['role'])){ // user deconnecter 
+			if(isset($_SESSION['user']['role'])){ // user deconnecté 
 				$url =  $this->url('booking_map');
 				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> Réservation </a>" ." blablabla";
 			}else{ 

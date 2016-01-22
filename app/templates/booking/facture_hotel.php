@@ -14,9 +14,9 @@ require_once  '/../../../vendor/autoload.php';
 
 
 
-// echo "<br>tableau indice prenom: $firstname , indice nom: $lastname<br>";
-
+// echo "<br>tableau indice prenom: $firstname , indice nom: $lastname<br>, prix: $price";
 // die();
+
 try {
 	// get the HTML
 	ob_start();
