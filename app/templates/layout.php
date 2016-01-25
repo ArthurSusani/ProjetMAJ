@@ -104,14 +104,15 @@
 
 			</header>
 			<div class="main_container">
+				<hr>			
 				<h2><?= $this->e($title) ?></h2>
-				<hr>
+
 				<section class="centered">
 					<?= $this->section('main_content') ?>
 				</section>
 		
 		<footer>
-		<br>
+		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 		</div>

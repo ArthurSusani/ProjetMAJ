@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Accueil !']) ?>
+<?php $this->layout('layout', ['title' => 'Bienvenue Sur WF3Hotel']) ?>
 
 <?php $this->start('main_content') ?>
 		<div class="container">
