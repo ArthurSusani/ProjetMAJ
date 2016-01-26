@@ -41,6 +41,6 @@ $w_routes = array(
 	['GET', 	'/setting/book', 'setting#book', 	'setting_book'],
 
 //---------------------------Status/Erreur----------------------------------
-	['GET|POST', '/status/warning/[:string]', 'status#sender', 'status_sender'],
-	['GET|POST', '/status/warning/[:string]', 'status#show', 'status_show'],
+	['POST', '/status/sender/[:string]', 'status#sender', 'status_sender'],
+
 );

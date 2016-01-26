@@ -47,7 +47,8 @@ class LogController extends \W\Controller\Controller
 				echo '<script>alert("L\'Utilisateur existe déja!");</script>';
 			}
 			else{
-				echo '<script>alert("Utilisateur créé avec succès");</script>';
+				$string = "Utilisateur créé avec succès";
+				$this->show('status/sender', ['string' => $string]);
 			}
 			
 
