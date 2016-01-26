@@ -31,4 +31,17 @@
 			$result = $sth->fetchAll(\PDO::FETCH_ASSOC);
 			return $result;
 		}
+
+		public function findByListId($contactid){
+
+			if(!is_numeric($contactid)){
+				return false;
+			}
+
+			$sql = 'SELECT * FROM contact WHERE id=:id';
+			$sth = $this->dbh->prepare($sql);
+			$sth->bindValue(':id', $contactid);
+			$sth->execute();
+			return $sth->fetchAll();
+		}
 	}

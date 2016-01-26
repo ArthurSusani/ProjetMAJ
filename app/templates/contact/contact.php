@@ -10,12 +10,24 @@
 				<option value="Madame">Madame</option>
 				<option value="Monsieur">Monsieur</option>
 			</select>
-			<p>Nom :</p><input type="text" name="firstname" value="" placeholder="">
-			<p>Prénom :</p><input type="text" name="lastname" value="" placeholder="">
-			<p>Téléphone :</p><input type="tel" name="phone" value="" placeholder="">
-			<p>Email :</p><input type="email" name="mail" value="" placeholder="">
-			<p>Sujet :</p><input type="text" name="subject" value="" placeholder="">
-			<p>Message :</p><textarea name="message" form="form_contact" cols="60" rows="6"></textarea>
+			<div class="input_div">
+				<label for="firstname">Nom :</label>
+				<input type="text" name="firstname" value="" placeholder="">
+				<label for="lastname">Prénom :</label>
+				<input type="text" name="lastname" value="" placeholder="">
+			</div>
+			<div class="input_div">	
+				<label for="phone">Téléphone :</label>
+				<input type="tel" name="phone" value="" placeholder="">
+				<label for="mail">Adresse Email :</label>
+				<input type="email" name="mail" value="" placeholder="">
+			</div>
+			<div class="input_div">
+				<label for="subject">Sujet :</label>
+				<input type="text" name="subject" value="" placeholder="">
+				<label for="message">Message :</label>
+				<textarea name="message" form="form_contact" cols="60" rows="6"></textarea>
+			</div>
 			<input type="submit" class="btn" name="send" value="Envoyer">
 		</form>
 	</div>

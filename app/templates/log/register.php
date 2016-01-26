@@ -22,17 +22,19 @@
 			<input  type="text" name="lastname" value="" placeholder="Votre nom">
 		</div>
 		<div class="clearfix"></div>
-		<div class="input_div">
-			<label for="address">Adresse postale</label><p>Veuillez entrer votre adresse postale!</p>
-			<input  type="text" name="address" value="" placeholder="rue...">
-		</div>
-		<div class="input_div">
-			<label for="postalCode">Code postal</label><p>Veuillez entrer votre code postal!</p>
-			<input  type="text" name="postalCode" value="" placeholder="#####">
-		</div>
-		<div class="input_div">
-			<label for="city">Ville </label><p>Veuillez entrer votre ville</p>
-			<input  type="text" name="city" value="" placeholder="Votre ville">
+		<div>
+			<div class="input_div">
+				<label for="address">Adresse postale</label><p>Veuillez entrer votre adresse postale!</p>
+				<input  type="text" name="address" value="" placeholder="rue...">
+			</div>
+			<div class="input_div">
+				<label for="postalCode">Code postal</label><p>Veuillez entrer votre code postal!</p>
+				<input  type="text" name="postalCode" value="" placeholder="#####">
+			</div>
+			<div class="input_div">
+				<label for="city">Ville </label><p>Veuillez entrer votre ville</p>
+				<input  type="text" name="city" value="" placeholder="Votre ville">
+			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">

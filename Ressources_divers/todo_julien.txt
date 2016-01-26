@@ -10,3 +10,4 @@ OK	-Générer une facture
 =>Mettre en place le QRcode
 =>Mettre les image en 3d dans la présentation.
 =>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.
+=>Faire une fonction de récupération de mot de passe avec phpmailer. Voir le tp C:\xampp\htdocs\julien\d34

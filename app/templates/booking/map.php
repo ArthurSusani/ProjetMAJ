@@ -1,12 +1,16 @@
+
+
 <?php $this->layout('layout', ['title' => 'Reservation']) ?>
+
 
 <?php $this->start('main_content') ?>
 
+
 <form action="<?= $this->url('booking_pay') ?>" method="post" accept-charset="utf-8">
 	<label for="date_start">Arrivé le </label>
-	<input type="date" name="date_start" value="" placeholder="">
+	<input type="date" name="date_start" id="datepicker_start" value="" placeholder="">
 	<label for="date_end">Depart le </label>
-	<input type="date" name="date_end"	 value="" placeholder="">
+	<input type="date" name="date_end"	id="datepicker_end" value="" placeholder="">
 
 		<section>
 			<h1>Plan de l'hotel</h1>
@@ -41,7 +45,14 @@
 		</section>
 		<input type="hidden" name="data" value="">
 
-	<button type="submit">Confirmer</button>
+	<button type="submit" id="submitMap">Confirmer</button>
 </form>
 
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('js') ?>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<?php $this->stop('js') ?>
+<?php $this->start('css') ?>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<?php $this->stop('css') ?>

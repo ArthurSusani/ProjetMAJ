@@ -8,4 +8,6 @@
 
 <h2>Gestion des avis</h2>
 
+<h2><a href="<?= $this->url('contact/viewcontact') ?>">Gestion des demandes</a></h2>
+
 <?php $this->stop('main_content') ?>

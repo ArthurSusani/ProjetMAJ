@@ -20,6 +20,13 @@
 			$this->show('contact/viewcontact',['viewall'=>$viewall]);
 		}
 
+		public function details($id)
+		{
+			$details = new \Manager\ContactManager();
+			$viewall = $details->findByListId($id);
+			$this->show("contact/details", ['viewall'=>$viewall]);
+		}
+
 		public function whoarewe()
 		{
 			$this->show("contact/whoarewe");

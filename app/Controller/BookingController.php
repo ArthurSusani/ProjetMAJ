@@ -57,14 +57,19 @@ class BookingController extends \W\Controller\Controller
 		$BookingInfo=$newbm->getBookingInfoByClientId($clientId);
 		if($BookingInfo===false){
 			echo 'aucun info booking pour cet id client ou id incorrect';
+			die();
 		}
-		// var_dump($ClientInfo);
-		// var_dump($BookingInfo);
-		//Je fusionne les 2 tableaux pour en faire un seul pour le passer a la méthode show pour générer le pdf
-		//attention si j'ai 2 colonnes id qui portent le meme nom id je n'aurais que le premier champ id, donc
-		//mettre des nom différents
+		echo "<br>tableau ClientInfo: <br>";
+		var_dump($ClientInfo);
+		echo "<br>tableau BookingInfo: <br>";
+		var_dump($BookingInfo);
+		echo "<br>tableau fusion:<br>";
+		/*Je fusionne les 2 tableaux pour en faire un seul pour le passer a la méthode show pour générer le pdf
+		attention si j'ai 2 colonnes id qui portent le meme nom id je n'aurais que le premier champ id, donc
+		mettre un nom différent pour un des deux, donc j'ai id_booking au lieu de id*/
 		$ClientInfoAll=array_merge($ClientInfo,$BookingInfo);
-		var_dump($ClientInfoAll);	
+		var_dump($ClientInfoAll);
+		die();	
 		//var_dump($_SESSION);
 		echo "<br>";
 		//var_dump($tab);
@@ -80,6 +85,7 @@ class BookingController extends \W\Controller\Controller
 	public function Phone(){
 		$this->show('booking/phone');
 	}
+
 
 
 }

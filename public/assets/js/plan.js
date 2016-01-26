@@ -1,4 +1,14 @@
 $(function() {
+	//on creer un élement datepicker de JqueryUi avec les options par défaut.
+	
+$( "#datepicker_start" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+$( "#datepicker_end" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
 
 	var roomLock = [	
 			[[0, 120],[2, 120],[0, 120],[2, 150],[2, 80],[0, 120],[0, 120],[0, 80],[0, 80]],
