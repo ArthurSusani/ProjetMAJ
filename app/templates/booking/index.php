@@ -6,19 +6,20 @@
 	<div class="wallpaper">
 	</div>
 	<p>
-		blablabla bla blabla blabla bla blablabla !
+		Bienvenue dans notre système de reservation en ligne !
 		<?php
 
 			if(isset($_SESSION['user']['role'])){ // user deconnecté 
 
 
 				$url =  $this->url('booking_map');
-				echo "blablabla USER CONNECT ". "<a href='$url' title='Reservation'> Réservation </a>" ." blablabla";
+				echo "Pour continuer vers la reservation clicker sur". "<a href='$url' title='Reservation'> Réservation </a>";
 			}else{ 
 				$url =  $this->url('log_register');
-				echo "<a href='$url' title='Inscription'> Inscription </a></p>";
+				echo "Il est nécessaire d'être connecté pour accéder au service reservation.";
+				echo "<ul><li>Si vous n'ètes pas inscrit :<a href='$url' title='Inscription'> Inscription </a></p></li>";
 				$url2= $this->url('log_connect');
-				echo "<p>blablabla USER NOT CONNECT ". "<a href='$url2' title='Inscription'> Connection </a>";
+				echo "<li>Pour vous connectez :<a href='$url2' title='Inscription'> Connection </a></li></ul>";
 			}
 
 		?>
