@@ -8,7 +8,10 @@
 	<p>
 		Bienvenue dans notre système de reservation en ligne !
 		<?php
-			if(isset($_SESSION['user']['role'])){ // user deconnecter 
+
+			if(isset($_SESSION['user']['role'])){ // user deconnecté 
+
+
 				$url =  $this->url('booking_map');
 				echo "Pour continuer vers la reservation clicker sur". "<a href='$url' title='Reservation'> Réservation </a>";
 			}else{ 

@@ -1,7 +1,7 @@
 $(function(){
 	console.log('Dom Loaded');
 
-	$('form #cont').on("submit", function(evt){
+	$('#cont').on("submit", function(evt){
 		// Variable qui confirme ou infirme l'envoi du formulaire
 		var sendit=true;
 

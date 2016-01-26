@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/contact.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
+		<?= $this->section('css') ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="<?= $this->assetUrl('js/javascript.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
@@ -29,9 +30,7 @@
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
-
-
-
+		<?= $this->section('js') ?>
 	</head>
 	<body>
 		
@@ -46,7 +45,6 @@
 
 							<li><a href="<?= $this->url('log_disconnect') ?>" title="">
 							<span class="glyphicon glyphicon-remove"></span> Deconnexion</a></li>
-
 
 						<?php if ($_SESSION["user"]["role"] == "admin"): ?>
 

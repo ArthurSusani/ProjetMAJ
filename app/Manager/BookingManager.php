@@ -51,12 +51,11 @@
 			return false;
 			}
 			//requete préparée
-		$sql = 'SELECT * FROM booking WHERE id=:id';
+		$sql = 'SELECT * FROM bookings WHERE id_user=:id';
 		//echo $sql;
 		$sth = $this->dbh->prepare($sql);
 		$sth->bindValue(':id', $id_user);
 		$sth->execute();
-		//un simple fetch et pas un fetchall car on récupère un seul tableau d'infos client
 		return $sth->fetch(\PDO::FETCH_ASSOC);
 		}
 
