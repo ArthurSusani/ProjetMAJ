@@ -1,14 +1,28 @@
 $(function() {
 	//on creer un élement datepicker de JqueryUi avec les options par défaut.
-	
-$( "#datepicker_start" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
-$( "#datepicker_end" ).datepicker({
-      changeMonth: true,
-      changeYear: true
-    });
+	//dd-M-yy
+	$( "#datepicker_start" ).datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat: "yy-mm-dd", 
+		minDate:  0,//les dates antérieures a la date du jour sont inactives...
+		//quand on selectionne le datepicker1 alors ajuste le datepicker2 pour que les dates antérieure soientt inactives
+		onSelect: function(date){            
+			var date1 = $('#datepicker_start').datepicker('getDate');           
+			var date = new Date( Date.parse( date1 ) ); 
+			date.setDate( date.getDate() + 1 );        
+			var newDate = date.toDateString(); 
+			newDate = new Date( Date.parse( newDate ) );                      
+			$('#datepicker_end').datepicker("option","minDate",newDate);            
+		}
+	});
+	$( "#datepicker_end" ).datepicker({
+		changeMonth: true,
+		changeYear: true,
+		dateFormat: "yy-mm-dd"
+	});
+
+
 
 	var roomLock = [	
 			[[0, 120],[2, 120],[0, 120],[2, 150],[2, 80],[0, 120],[0, 120],[0, 80],[0, 80]],
@@ -29,6 +43,11 @@ $( "#datepicker_end" ).datepicker({
 
 	console.log('roomScan load');
 
+
+	alertMsg = function (msg){
+		bootbox.alert(msg, function() {	
+		});		
+	}
 
 	nbRoomView = function(nbRoom){
 		var stringRoom = "Vous avez selectionné "+nbRoom+" chambre";
@@ -88,6 +107,7 @@ $( "#datepicker_end" ).datepicker({
 		etage = $('#ascenseur option:selected').val();
 		roomScan();
 		viewStage();
+		
 
 	}
 
@@ -98,7 +118,8 @@ $( "#datepicker_end" ).datepicker({
 
 
 	roomScan();
-
+	//Julien: message de bienvenue avec bootbox
+	alertMsg('Veuillez selectionner votre date de début de séjour et votre date de fin ci dessous');
 	$('.chambre').on('click', roomSelect );
 	$('#ascenseur').on('change', switchStage);
 
