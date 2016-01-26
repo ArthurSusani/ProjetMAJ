@@ -1,0 +1,14 @@
+div .windowSender{
+	width: 40%;
+	height: 40%;
+	margin:auto;
+	border:1px solid black;
+	margin-top: 100px;
+	background-color: white;
+}
+
+div .windowSender p{
+	padding:30px;
+	font-size: 20px;
+}
+
