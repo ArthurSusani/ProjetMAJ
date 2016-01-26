@@ -3,8 +3,8 @@ OK-avancer dans la page réservation pour faire afficher le choix de la chambre a
 OK	-Faire le lien avec la table bookings
 OK	-Générer une facture
 
-=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
-=>Modifier input date en Jquery UI datepicker
+OK reste a pour voir affiche la facture dans l'espace client=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
+OK=>Modifier input date en Jquery UI datepicker
 =>Modifier Table intermédiaire pour les bookings pour avoir plusieurs booking par client
 =>Mettre les étages fait avec homestyler, découper les zones
 =>Mettre en place le QRcode

@@ -44,7 +44,7 @@ class BookingController extends \W\Controller\Controller
 		//je n'autorise cette fonction que si un utilisateur avec le role user est connecté
 		
 		if(isset($_SESSION['user'])){
-		echo "argument clientId de la fonction bill: $clientId<br>";
+		//echo "argument clientId de la fonction bill: $clientId<br>";
 		$newbm = new \Manager\BookingManager();
 		//recupère les infos d'un client par son id dans un tableau
 		$ClientInfo=$newbm->getClientInfoByClientId($clientId);
@@ -59,21 +59,21 @@ class BookingController extends \W\Controller\Controller
 			echo 'aucun info booking pour cet id client ou id incorrect';
 			die();
 		}
-		echo "<br>tableau ClientInfo: <br>";
+		/*echo "<br>tableau ClientInfo: <br>";
 		var_dump($ClientInfo);
 		echo "<br>tableau BookingInfo: <br>";
 		var_dump($BookingInfo);
-		echo "<br>tableau fusion:<br>";
+		echo "<br>tableau fusion:<br>";*/
+
 		/*Je fusionne les 2 tableaux pour en faire un seul pour le passer a la méthode show pour générer le pdf
 		attention si j'ai 2 colonnes id qui portent le meme nom id je n'aurais que le premier champ id, donc
 		mettre un nom différent pour un des deux, donc j'ai id_booking au lieu de id*/
 		$ClientInfoAll=array_merge($ClientInfo,$BookingInfo);
-		var_dump($ClientInfoAll);
-		die();	
-		//var_dump($_SESSION);
-		echo "<br>";
-		//var_dump($tab);
-		echo 'indice 0 tableau:'. $ClientInfo['firstname'];
+		//var_dump($ClientInfoAll);
+		$bookingDays=$this->CalcBookingDuration($ClientInfoAll['begin'],$ClientInfoAll['end']);
+		//je rajoute un élement nombre jour booking a la fin de mon tableau
+		$ClientInfoAll['bookingDays']=$bookingDays;
+		// die();
 		//je passe en paramètre au template un tableau qui contient les données clients pour construction du pdf
 		$this->show("booking/facture_hotel",$ClientInfoAll);
 		}
@@ -85,7 +85,17 @@ class BookingController extends \W\Controller\Controller
 	public function Phone(){
 		$this->show('booking/phone');
 	}
+	//julien: fonction qui calcule et retourne la durée d'une reservation
+	public function CalcBookingDuration($begin,$end){
 
+	$strtime_begin = strtotime($begin);
+	$strtime_end= strtotime($end);
+    $datediff = $strtime_end - $strtime_begin;
+   	$datediff_floor= floor($datediff/(60*60*24));
+   	//si la date de début et la date de fin son identique alors la durée du séjour est de 1
+	//donc il faut toujours ajouter 1 au nombre de jour
+   	return $datediff_floor+1;
+	}
 
 
 }
