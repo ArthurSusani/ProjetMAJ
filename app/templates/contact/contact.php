@@ -1,9 +1,10 @@
 <?php $this->layout('layout', ['title' => 'Contact']) ?>
 
 <?php $this->start('main_content') ?>
+<p> En cas de soucis, d'écrivez nous votre problème. Nous y repondrons dans les plus breve délai. </p>
 	<div class="contact">
 		<h2>Nous contacter</h2>
-				
+		
 		<form action="#" method="post" accept-charset="utf-8" id="form_contact">
 			<p>Titre :</p>
 			<div class="input_div" id="select_contact">
