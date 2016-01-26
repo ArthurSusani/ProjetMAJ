@@ -5,7 +5,7 @@
 	<div class="contact">
 		<h2>Nous contacter</h2>
 		
-		<form action="#" method="post" accept-charset="utf-8" id="form_contact">
+		<form action="<?= $this->url('contact_phpmailer') ?>" method="post" accept-charset="utf-8" id="form_contact">
 			<p>Titre :</p>
 			<div class="input_div" id="select_contact">
 				<select name="title" size="1">
@@ -16,19 +16,19 @@
 			<hr>
 			<div class="input_div">
 				<label for="firstname">Nom :</label>
-				<input type="text" name="firstname" value="" placeholder="">
+				<input type="text" name="firstname" value="<?php if(isset($_SESSION['firstname'])){echo $_SESSION['firstname'];}?>" placeholder="">
 			</div>
 			<div class="input_div">
 				<label for="lastname">Prénom :</label>
-				<input type="text" name="lastname" value="" placeholder="">
+				<input type="text" name="lastname" value="<?php if(isset($_SESSION['lastname'])){echo $_SESSION['lastname'];}?>" placeholder="">
 			</div>
 			<div class="input_div">	
 				<label for="phone">Téléphone :</label>
-				<input type="tel" name="phone" value="" placeholder="">
+				<input type="tel" name="phone" value="<?php if(isset($_SESSION['phone'])){echo $_SESSION['phone'];}?>" placeholder="">
 			</div>
 			<div class="input_div">
 				<label for="mail">Adresse Email :</label>
-				<input type="email" name="mail" value="" placeholder="">
+				<input type="email" name="mail" value="<?php if(isset($_SESSION['mail'])){echo $_SESSION['mail'];}?>" placeholder="">
 			</div>
 			<div class="input_div">
 				<label for="subject">Sujet :</label>
