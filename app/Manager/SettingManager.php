@@ -4,7 +4,7 @@ namespace Manager;
 
 
 
-class LogsManager extends \W\Manager\Manager
+class SettingManager extends \W\Manager\Manager
 {
 
 }

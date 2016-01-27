@@ -25,7 +25,8 @@ class LogController extends \W\Controller\Controller
 		if (isset($_POST['save']) && isset($_POST['password']) && isset($_POST['mail']) &&
 			isset($_POST['address']) && isset($_POST['postalCode']) && isset($_POST['city']) &&
 			!empty($_POST['password']) && !empty($_POST['mail']) &&
-			!empty($_POST['address']) && !empty($_POST['postalCode']) && !empty($_POST['city'])) {
+			!empty($_POST['address']) && !empty($_POST['postalCode']) && !empty($_POST['city'] && isset($_POST['phone']) &&
+			!empty($_POST['phone']))) {
 			//echo ('clic sur formulaire enregistrement client');
 			$LogsManager = new \Manager\LogsManager();
 			//je stock toutes les variables du formulaire dans un tableau
@@ -39,6 +40,7 @@ class LogController extends \W\Controller\Controller
 				'adressClient' => $_POST['address'],
 				'postcodeClient' => $_POST['postalCode'],
 				'cityClient' => $_POST['city'],
+				'telephone' => $_POST['phone'],
 			);
 			//var_dump($myClient);
 			$res=$LogsManager->insert($myClient, true);
@@ -74,7 +76,8 @@ class LogController extends \W\Controller\Controller
 			$usersManager = new \Manager\LogsManager();
 			$user = $usersManager->find($userId);
 			$authentifManager->logUserIn($user);
-			$this->show('default/home');
+			$string = "Bonjour ".$_SESSION['user']['lastname']." ". $_SESSION['user']['firstname'] .", vous ètes connecté.";
+			$this->show('status/sender', ['string' => $string]);
 		} 
 		$this->show("log/connect/error");
 	}

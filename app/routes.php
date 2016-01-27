@@ -5,13 +5,13 @@ $w_routes = array(
 	['GET', 	'/about', 				'Default#about', 	'about'],
 	['GET', 	'/comment', 			'Default#comment', 	'comment'],
 
-//----------------------------- Contact ----------------------------------			 				
+//------------------------------Contact-------------------------------------			 				
 	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'],
 	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	 				
 	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 
 	['GET|POST', 	'/contact/phpmailer', 	'Contact#phpmailer', 'contact_phpmailer'],				
 	 	 	 				
-//----------------------------- Gestion Compte-----------------------------
+//------------------------------Gestion Compte------------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
 	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
 	['GET|POST','/log/register', 		'Log#register', 	'log_register'], 				
@@ -20,13 +20,13 @@ $w_routes = array(
 	['GET|POST','/log/connect/confirm', 'Log#confirm', 		'log_confirm'], 
 	['GET|POST','/log/disconnect', 		'Log#disconnect', 	'log_disconnect'], 	
 
-//----------------------------- Présentation-------------------------------
+//------------------------------Présentation--------------------------------
 	['GET', 	'/introduct/index', 	'Introduct#index', 	'introduct_index'], 
 	['GET', 	'/introduct/room', 		'Introduct#room', 	'introduct_room'], 		
 	['GET', 	'/introduct/hostel', 	'Introduct#hostel', 'introduct_hostel'], 	
 	['GET', 	'/introduct/area', 		'Introduct#area', 	'introduct_area'],	 
 
-//------------------------------Réservation--------------------------------
+//------------------------------Réservation---------------------------------
 	['GET', 	'/booking/index', 		'booking#index', 	'booking_index'],	  
 	['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 	['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
@@ -35,10 +35,13 @@ $w_routes = array(
 	['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
 	['GET', 	'/booking/phone', 		'booking#phone', 	'booking_phone'],	
 	
-//---------------------------- Option -------------------------------------
+//------------------------------Option--------------------------------------
 	['GET', 	'/setting/index', 'setting#index', 	'setting_index'],
-	['GET', 	'/setting/user', 'setting#user', 	'setting_user'],
-	['GET', 	'/setting/book', 'setting#book', 	'setting_book'],
+	['GET|POST', 	'/setting/users', 'setting#users', 	'setting_users'],
+	['GET|POST', 	'/setting/book', 'setting#book', 	'setting_book'],
+	['GET|POST', 	'/setting/user/[:id]', 'setting#user', 	'setting_user'],
+	['GET|POST', 	'/setting/usersave/[:id]', 'setting#usersave', 	'setting_usersave'],
+	['GET|POST', 	'/setting/userdel/[:id]', 'setting#userdel', 	'setting_userdel'],
 
 //---------------------------Status/Erreur----------------------------------
 	['POST', '/status/sender/[:string]', 'status#sender', 'status_sender'],

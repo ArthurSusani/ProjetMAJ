@@ -2,6 +2,7 @@
 
 <?php $this->start('css') ?>
 	<link rel="stylesheet" href="<?= $this->assetUrl('css/status.css') ?>">
+	<meta http-equiv="refresh" content="<?php echo $nb; ?>;<?= $this->url($link) ?>" />
 <?php $this->stop('css') ?>
 
 
