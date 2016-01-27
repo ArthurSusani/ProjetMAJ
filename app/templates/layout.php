@@ -31,7 +31,6 @@
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
 
 
-
 	</head>
 	<body>
 		
@@ -109,13 +108,12 @@
 				<section class="centered">
 					<?= $this->section('main_content') ?>
 				</section>
-		
-		<footer>
-		<br>
-		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
-		</footer>		
-		</div>
+			</div>
 
+
+			<footer>
+			<p>Hotel du numérique - Venez y faire dormir votre PC - Free Wifi</p>
+			</footer>
 
 </body>
 </html>

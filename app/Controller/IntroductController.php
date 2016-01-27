@@ -4,9 +4,18 @@
 
 	class IntroductController extends \W\Controller\Controller
 	{
-		public function room()
+		public function room(){
+
+			$rooms = new \Manager\IntroductManager();
+			$rooms = $rooms->room();
+			$this->show('introduct/room',['rooms'=>$rooms]);
+		}
+
+		public function roomdetail($id)
 		{
-			$this->show("introduct/room");
+			$rooms = new \Manager\IntroductManager();
+			$rooms = $rooms->findByListId($id);
+			$this->show("introduct/roomdetail", ['rooms'=>$rooms]);
 		}
 
 		public function hostel()

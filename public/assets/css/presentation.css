@@ -8,7 +8,7 @@
 	border-right: 1px solid black;
 	border-bottom: 1px solid white;
 	background-color: white;
-	height: 950px;
+	height: 900px;
 }
 
 #presentation>h2{
@@ -21,7 +21,7 @@
 	text-align: justify;
 	text-align: center;
 	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 18px;
+	font-size: 19px;
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
@@ -34,6 +34,12 @@
 	height: 500px;
 }
 
+#presentation>img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .js #requirejs{
 	display: none;
 }
@@ -44,4 +50,8 @@
 
 .no-js main{
 	display: none;
+}
+
+.clearfix{
+	clear: both;
 }
