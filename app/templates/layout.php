@@ -110,10 +110,8 @@
 			</div>
 		
 		<footer>
-		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
-		</div>
 
 </body>
 </html>

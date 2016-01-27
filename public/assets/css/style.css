@@ -134,13 +134,13 @@ div .container{
 	color: black;
 }
 
-/*footer{
+footer{
 	text-align: center;
 	background-color: black;
 	color: white;
 	width: 100%;
 	border: 1px solid white;
-}*/
+}
 
 footer>p{
 	padding: 10px;
@@ -185,12 +185,8 @@ label{
 select{
 	font-family: 'Josefin Sans', sans-serif;
 
-footer{
+/*footer{
 	margin: 30px;
 	position: absolute;
 	bottom:0px;
-}
-
-.input_div{
-	
-}
+}*/

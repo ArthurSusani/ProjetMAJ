@@ -7,3 +7,4 @@ Générer des PDF a partir de fichiers HTML: http://html2pdf.fr/
 Creer un batiment en 3d en ligne : http://fr.homestyler.com/designprofile/ad5243f0-1bd7-4b3d-95b2-d73691af25fc
 Modèle de site: http://www.prince-de-conde.com/fr/ www.manoirhotel.com
 Comment mettre des évenements sur un calendrier Jquery UI: http://stackoverflow.com/questions/5578259/jquery-ui-datepicker-how-to-add-clickable-events-on-particular-dates
+Traduire site avec api google translate: http://blog.security-helpzone.com/internet/integrer-google-traduction-a-son-site.html
