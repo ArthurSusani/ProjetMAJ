@@ -4,6 +4,10 @@
 <!-- ajout d'un code javascript pour vérifier le formulaire -->
 <!-- on peut mettre un attribut required pour forcer le remplissage d'un input en javascript sur les navigateurs récents -->
 <script src="<?=$this->assetUrl('js/checkForm.js')?>" type="text/javascript" charset="utf-8" async defer></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 	<h2>Enregistrement compte client:</h2>
 	<hr>
 

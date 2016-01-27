@@ -3,6 +3,15 @@ OK-avancer dans la page réservation pour faire afficher le choix de la chambre a
 OK	-Faire le lien avec la table bookings
 OK	-Générer une facture
 
-=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
-=>Modifier input date en Jquery UI datepicker
-=>Modifier Table intermédiaire pour les bookings
+OK reste a pour voir affiche la facture dans l'espace client=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
+OK=>Modifier input date en Jquery UI datepicker
+=>Modifier Table intermédiaire pour les bookings pour avoir plusieurs booking par client
+=>Mettre les étages fait avec homestyler, découper les zones
+=>Mettre en place le QRcode
+=>Mettre les image en 3d dans la présentation.
+=>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.
+=>Faire une fonction de récupération de mot de passe avec phpmailer. Voir le tp C:\xampp\htdocs\julien\d34
+=>Faire une page avec gestion de code d'erreur
+=>Faire AJAX
+=>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
+=>Rajouter dans la facture un endroit ou je place la date début et de fin du séjour et pas seulement le nombre de journée.

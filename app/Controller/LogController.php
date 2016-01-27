@@ -26,7 +26,7 @@ class LogController extends \W\Controller\Controller
 			isset($_POST['address']) && isset($_POST['postalCode']) && isset($_POST['city']) &&
 			!empty($_POST['password']) && !empty($_POST['mail']) &&
 			!empty($_POST['address']) && !empty($_POST['postalCode']) && !empty($_POST['city'])) {
-			echo ('clic sur formulaire enregistrement client');
+			//echo ('clic sur formulaire enregistrement client');
 			$LogsManager = new \Manager\LogsManager();
 			//je stock toutes les variables du formulaire dans un tableau
 			//conversion de l'input type date dans le bon format (sens inversé) pour le type date de SQL
@@ -40,8 +40,16 @@ class LogController extends \W\Controller\Controller
 				'postcodeClient' => $_POST['postalCode'],
 				'cityClient' => $_POST['city'],
 			);
-			var_dump($myClient);
-			$LogsManager->insert($myClient, true);
+			//var_dump($myClient);
+			$res=$LogsManager->insert($myClient, true);
+			//si le résultat de insert est false alors l'utilisateur existe déja et on affiche un popup d'alerte
+			if($res===false){
+				echo '<script>alert("L\'Utilisateur existe déja!");</script>';
+			}
+			else{
+				echo '<script>alert("Utilisateur créé avec succès");</script>';
+			}
+			
 
 		}
 		$this->show("log/register");
