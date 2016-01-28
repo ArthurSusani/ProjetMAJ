@@ -22,6 +22,7 @@
 		<script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="<?= $this->assetUrl('js/script.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
 		<script src="<?= $this->assetUrl('js/jquery.fancybox.pack.js') ?>" type="text/javascript" ></script>
+		<script src="<?= $this->assetUrl('js/note.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
