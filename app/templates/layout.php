@@ -107,11 +107,11 @@
 					<?= $this->section('main_content') ?>
 				</section>
 		
-		<footer>
+<!-- 		<footer>
 		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
-		</div>
+		</div> -->
 
 
 </body>

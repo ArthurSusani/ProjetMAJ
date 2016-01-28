@@ -9,7 +9,7 @@ body{
 	background: linear-gradient(to top, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 450%;
     background-repeat: no-repeat;  
-    min-height: 800px; 
+    min-height: 1000px; 
 }
 
 #menu1{
@@ -172,8 +172,7 @@ div .container{
     margin-right: auto;
 }
 
+
 footer{
-	margin: 30px;
-	position: absolute;
-	bottom:0px;
+	
 }

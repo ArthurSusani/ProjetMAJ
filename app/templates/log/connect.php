@@ -11,7 +11,7 @@
 			<input type="password" name="pwdVal" value="" placeholder="Votre mot de passe">
 		</div>
 		<div class="clearfix"></div>
-		<button type="submit">je suis un bouton</button>
+		<button type="submit">Connexion</button>
 	</form>
 
 

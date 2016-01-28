@@ -15,3 +15,5 @@ OK=>Modifier input date en Jquery UI datepicker
 =>Faire AJAX
 =>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
 =>Rajouter dans la facture un endroit ou je place la date début et de fin du séjour et pas seulement le nombre de journée.
+=>Fixer le footer en bas
+=>Fonction pour récupérer les chambres oqp

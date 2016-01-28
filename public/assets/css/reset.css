@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -181,9 +181,11 @@ table {
 /*------------------------------PLAN DES CHAMBRES---------------------------------------*/
 
 .plan{
-	width: 800px;
-	height: 600px;
-	background-image: url(../img/plan1.jpg);
+	margin-top: 30px;
+	width: 1400px;
+	height: 500px;
+	/*background-image: url(../img/plan1.jpg);*/
+	background-image: url('../img/etage_0_homestyler_perso.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: none;
@@ -197,20 +199,138 @@ table {
 }
 
 .chambre:hover{
-	background-color: rgba(125,255,125,0.25);
+	background-color: rgba(125,255,125,0.5);
+}
+
+#legend_locked{
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	margin-top:20px;
+	background-color: #FF5050;
+	margin-right: 0px;
+	float: left;
+}
+#legend_locked_p{
+	margin-top:40px;
+	margin-left: 100px;
+}
+
+#legend_booked{
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	margin-top:20px;
+	background-color: #7DFF7D;
+	float:left;
+}
+#legend_booked_p{
+	margin-top:40px;
+	margin-left: 100px;
+}
+.clearfix{
+	clear: both;
+}
+
+#nbRoomSelect{
+	margin-top: 50px;
+	font-size: 25px;
+}
+
+#map_legend_title{
+margin-top: 20px;
 }
 
 #n0{
-	width:160px;
-	height:222px;
+	width: 260px;
+	height: 186px;
+	margin-left: 95px;
 	margin-right:0;
-	margin-left:222px;
-	margin-top:38px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
 
 #n1{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n2{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n3{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n4{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+
+#n5{
+	width: 260px;
+	height: 186px;
+	margin-left: 95px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+
+#n6{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n7{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n8{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n9{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+
+/*#n1{
 	width:160px;
 	height:222px;
 	margin-right:0;
@@ -287,5 +407,5 @@ table {
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
-/*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
+*/
+/*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------

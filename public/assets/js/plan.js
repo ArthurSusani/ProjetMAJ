@@ -25,10 +25,10 @@ $(function() {
 
 
 	var roomLock = [	
-			[[0, 120],[2, 120],[0, 120],[2, 150],[2, 80],[0, 120],[0, 120],[0, 80],[0, 80]],
-			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80]],
-			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80]],
-			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80]]
+			[[0, 120],[2, 120],[0, 120],[2, 150],[2, 80],[0, 120],[0, 120],[0, 80],[0, 80],[0, 80]],
+			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80],[0, 80]],
+			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80],[0, 80]],
+			[[0, 120],[0, 120],[0, 120],[0, 150],[0, 80],[0, 120],[0, 120],[0, 80],[0, 80],[0, 80]]
 				]; // a faire en DB 
 
 				//0 : libre
@@ -44,11 +44,6 @@ $(function() {
 	console.log('roomScan load');
 
 
-	alertMsg = function (msg){
-		bootbox.alert(msg, function() {	
-		});		
-	}
-
 	nbRoomView = function(nbRoom){
 		var stringRoom = "Vous avez selectionné "+nbRoom+" chambre";
 		if (nbRoom > 1) {stringRoom+="s"};
@@ -59,9 +54,9 @@ $(function() {
 
 		roomLock[etage].forEach(function(element, index){
 			if (roomLock[etage][index][0] == 1) {
-				$("#n"+index).css('background-color', 'rgba(125,255,125,0.25)');
+				$("#n"+index).css('background-color', 'rgba(125,255,125,0.7)');
 			}else if(roomLock[etage][index][0] == 2){
-				$("#n"+index).css('background-color', 'rgba(255,80,80,0.25)');
+				$("#n"+index).css('background-color', 'rgba(255,80,80,0.7)');
 			}else{
 				$("#n"+index).css('background-color', 'rgba(125,255,125,0)');
 			}
@@ -80,7 +75,7 @@ $(function() {
 
 					roomSelects.push(index);
 
-					console.log(roomSelects);
+					//console.log(roomSelects);
 					
 				}
 			});
@@ -91,7 +86,7 @@ $(function() {
 		var id = $(this).attr('id');
 		var clrId = id.replace(/\D+/g,'');
 		if (roomLock[etage][clrId][0] == 0) {
-			$(this).css('background-color', 'rgba(125,255,125,0.25)');
+			$(this).css('background-color', 'rgba(125,255,125,0.7)');
 			nbRoomLock++;
 			roomLock[etage][clrId][0] = 1;
 		}else if(roomLock[etage][clrId][0] == 1){
@@ -107,7 +102,6 @@ $(function() {
 		etage = $('#ascenseur option:selected').val();
 		roomScan();
 		viewStage();
-		
 
 	}
 
@@ -116,13 +110,26 @@ $(function() {
 		$('#stageRoomSelect').text(stringStage);
 	}
 
+	alertMsg = function (msg){
+		bootbox.alert(msg, function() {	
+		});		
+	}
 
 	roomScan();
-	//Julien: message de bienvenue avec bootbox
-	alertMsg('Veuillez selectionner votre date de début de séjour et votre date de fin ci dessous');
+
 	$('.chambre').on('click', roomSelect );
 	$('#ascenseur').on('change', switchStage);
+	//requete ajax pour envoi l'id de le chambre selectionnée
+	$("#submitMapAjax").click(function(){
+     
+    $.ajax({
+       url : 'more_com.php', // La ressource ciblée
+       type : 'GET' // Le type de la requête HTTP.
+    });
+   
+});
 
-	
+	//Julien: message de bienvenue avec bootbox
+	alertMsg('Veuillez selectionner votre date de début de séjour et votre date de fin ci dessous');	
 
 });
