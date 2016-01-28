@@ -7,7 +7,7 @@
 		{
 			if(isset($_POST['send'])){
 				$opinionManager = new \Manager\OpinionManager();
-				$opinionManager->insertopinion($_POST['id'],$_POST['room'],$_POST['message']);
+				$opinionManager->insertopinion($_POST['id'],$_POST['datebegin'],$_POST['dateend'],$_POST['room'],$_POST['rate'],$_POST['comment']);
 			}
 			$this->show("opinion/opinion");
 		}
