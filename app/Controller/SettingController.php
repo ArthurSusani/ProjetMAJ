@@ -59,6 +59,6 @@ class SettingController extends \W\Controller\Controller
 		if($user->delete($id)){
 			$string = "L'utilisateur vient d'être supprimé avec succès.";
 		}else{$string = "Impossible de supprimé cette utilisateur.";}
-		$this->show("status/sender",[ $string , 3, "setting_users"] );
+		$this->show("status/sender",["string"=> $string ,"nb"=> 3, "link"=> "setting_users"] );
 	}
 }

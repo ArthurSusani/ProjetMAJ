@@ -47,6 +47,13 @@ table {
 h1, h2, h3{
 	font-family: 'Cinzel', serif;
 }
+p{
+	font-size: 18px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+ section {
+	box-sizing: border-box;
+ }
 
 /*--------------------------Register----------------------------*/
 
@@ -102,8 +109,6 @@ h1, h2, h3{
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	
-	color: white;
 	border-style: none;
 }
 
@@ -124,6 +129,23 @@ h1, h2, h3{
 #form_contact{
 	padding-bottom: 0px;
 }
+/*--------------------------UserConfig-------------------------*/
+
+#form_user_config{
+	box-sizing: border-box;
+	width: 100%;
+}
+#form_user_config input{
+	margin: 10px;
+	width: 100%;
+}
+#form_user_config .input_div{
+	box-sizing: border-box;
+	width: 48%;
+	float: left;
+	margin: 1%;
+}
+
 /*--------------------------Connect----------------------------*/
 
 #form_connect .input_div{
@@ -287,84 +309,7 @@ h1, h2, h3{
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-/*#n1{
-	width:160px;
-	height:222px;
-	margin-right:0;
-	margin-left:0;
-	margin-top:38px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
 
-#n2{
-	width:160px;
-	height:222px;
-	margin-right:0;
-	margin-left:0;
-	margin-top:38px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n3{ 
-	width:216px;
-	height: 220px;
-	margin-right:0;
-	margin-left:10px;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n4{
-	width:80px;
-	height: 220px;
-	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-
-#n5{
-	width:157px;
-	height:222px;
-	margin-right:0;
-	margin-left:0;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-
-#n6{
-	width:157px;
-	height:222px;
-	margin-right:0;
-	margin-left:0;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-
-#n7{
-	width:80px;
-	height: 220px;
-	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-
-#n8{
-	width:80px;
-	height: 220px;
-	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-*/
 /*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
 
 #presentation img{
@@ -373,8 +318,50 @@ h1, h2, h3{
 }
 
 .imgTeam{
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 50px;
+}
+
+/*-------------------------CONTACT--------------------------------
+
+.contact{
+	height: 800px;
+	width: 1200px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: white;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contact>h2{
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#form_contact{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contact>p{
+	text-align: center;
+}
+
+.about{
+	height: 900px;
+	width: 1200px;
+	border-top: 1px solid white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: white;
+	margin-left: auto;
+    margin-right: auto;
 }
 

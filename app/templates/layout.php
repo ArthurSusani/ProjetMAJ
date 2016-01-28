@@ -13,9 +13,7 @@
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/chambre.css') ?>">
-		<link rel="stylesheet" href="<?= $this->assetUrl('css/presentation.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
-		<link rel="stylesheet" href="<?= $this->assetUrl('css/contact.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
 		<?= $this->section('css') ?>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -48,7 +46,11 @@
 						<?php if ($_SESSION["user"]["role"] == "admin"): ?>
 
 							<li><a href="<?= $this->url('setting_index') ?>" title="">
-							<span class="glyphicon glyphicon-wrench"></span> Configuration</a></li>
+							<span class="glyphicon glyphicon-wrench"></span> Configuration Admin</a></li>
+						<?php else: ?>
+							<li><a href="<?= $this->url('log_userconfig') ?>" title="">
+							<span class="glyphicon glyphicon-wrench"></span> Configuration Compte</a></li>
+
 
 						<?php endif; ?>	
 						<?php else: ?>
@@ -112,9 +114,8 @@
 		
 		<footer>
 		<hr>
-		<p><!--Hotel du numerique - Venez y faire dormir votre PC - Free Wifi--></p>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
-		</div>
 
 </body>
 </html>

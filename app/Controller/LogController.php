@@ -79,7 +79,8 @@ class LogController extends \W\Controller\Controller
 			$string = "Bonjour ".$_SESSION['user']['lastname']." ". $_SESSION['user']['firstname'] .", vous ètes connecté.";
 			$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb' => 3]);
 		} 
-		$this->show("log/connect/error");
+		$string = "Mauvais Mot de passe/Adresse Email";
+		$this->show('status/sender', ['string' => $string, 'link'=> 'log/connect', 'nb' => 3]);
 	}
 
 
@@ -102,4 +103,34 @@ class LogController extends \W\Controller\Controller
 		$manager->deleteInfoUsers();
 		$this->show('default/home');
 	}
+
+	public function userconfig()
+	{
+		$manager = new \Manager\LogsManager();
+		$id = $_SESSION['user']['id'];
+		$user = $manager->find($id);
+		$this->show("log/userconfig", ['user' => $user]);
+	}
+
+	public function usersave()
+	{
+		$manager = new \Manager\LogsManager();
+		$id = $_SESSION['user']['id'];
+		$userConf = [
+			"lastname" => $lastname = strval (filter_var( filter_var( $_POST['lastname'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"firstname" => $firstname = strval (filter_var( filter_var( $_POST['firstname'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"adressClient" => $adressClient = strval (filter_var( filter_var( $_POST['address'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"postcodeClient" => $postcodeClient = strval (filter_var( filter_var( $_POST['postalCode'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"cityClient" => $cityClient = strval (filter_var( filter_var( $_POST['city'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"telephone" => $telephone = strval (filter_var( filter_var( $_POST['phone'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"birthday" => $birthday = strval (filter_var( filter_var( $_POST['birthday'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+			"mail" => $mail = strval (filter_var( filter_var( $_POST['mail'], FILTER_SANITIZE_STRING), FILTER_SANITIZE_SPECIAL_CHARS)),
+		];
+
+		if($manager->update($userConf, $id)){
+			echo "oui";
+		}else{echo "non";}
+		$user = $manager->find($id);
+		$this->show("log/userconfig", ['user' => $user]);
+}
 }

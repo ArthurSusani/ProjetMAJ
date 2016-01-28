@@ -13,9 +13,10 @@
 
 		public function roomdetail($id)
 		{
-			$rooms = new \Manager\IntroductManager();
-			$rooms = $rooms->findByListId($id);
-			$this->show("introduct/roomdetail", ['rooms'=>$rooms]);
+			$room = new \Manager\IntroductManager();
+			$rooms = $room->findByListId($id);
+			$allRoom = $room ->room();
+			$this->show("introduct/roomdetail", ['rooms'=>$rooms, 'allRoom'=> $allRoom]);
 		}
 
 		public function hostel()

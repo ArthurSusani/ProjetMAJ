@@ -3,15 +3,18 @@
 <?php $this->start('main_content') ?>
 
 <div id="rooms">
-	<ul>
-	<?php foreach ($rooms as $room) : ?>
-	    <li>
-	    <a href="<?= $this->url('introduct_roomdetail', ['id' => $room['id']]) ?>">
-	    <?= $room['name'] ?></a>
-	    </li>
-	    <?php endforeach ?>
-	</ul>
-
+	<nav>
+	<h3>Nos chambres :</h3>
+		<ul>
+		<?php foreach ($allRoom as $room) : ?>
+		    <li>
+		    <a href="<?= $this->url('introduct_roomdetail', ['id' => $room['id']]) ?>">
+		    <?= $room['name'] ?></a>
+		    </li>
+		    <?php endforeach ?>
+		</ul>
+	
+	</nav>
 
 	<div class='chambre'>
 		<ul>
@@ -27,3 +30,7 @@
 </div>
 
 <?php $this->stop('main_content') ?>
+
+<?php $this->start('css') ?>
+	<link rel="stylesheet" href="<?= $this->assetUrl('css/presentation.css') ?>">
+<?php $this->stop('css') ?>

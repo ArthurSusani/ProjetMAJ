@@ -9,16 +9,23 @@ $w_routes = array(
 	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'],
 	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	 				
 	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 
-	['GET|POST', 	'/contact/phpmailer', 	'Contact#phpmailer', 'contact_phpmailer'],				
-	 	 	 				
-//------------------------------Gestion Compte------------------------------
+	['GET|POST', '/contact/phpmailer', 	'Contact#phpmailer', 'contact_phpmailer'],	
+
+//--------------------------------- Avis ----------------------------------	
+
+	['GET|POST','/opinion/opinion', 	'Opinion#opinion', 	'opinion_insert'],
+	['GET',		'/opinion/showopinion', 'Opinion#showopinion','opinion_show'],			
+
+//------------------------------ Gestion Compte -----------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
 	['GET|POST', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
 	['GET|POST','/log/register', 		'Log#register', 	'log_register'], 				
-	['GET|POST', 	'/log/config', 			'Log#config', 		'log_config'], 	
+	['GET|POST', 	'/log/config', 		'Log#config', 		'log_config'], 	
 	['GET|POST','/log/connect/error', 	'Log#error', 		'log_error'], 		
 	['GET|POST','/log/connect/confirm', 'Log#confirm', 		'log_confirm'], 
 	['GET|POST','/log/disconnect', 		'Log#disconnect', 	'log_disconnect'], 	
+	['GET|POST','/log/userconfig', 		'Log#userconfig', 	'log_userconfig'],
+	['GET|POST','/log/usersave', 		'Log#usersave', 	'log_usersave'],
 
 //------------------------------Présentation--------------------------------
 	['GET', 	'/introduct/index', 	'Introduct#index', 	'introduct_index'], 
@@ -28,6 +35,7 @@ $w_routes = array(
 	['GET', 	'/introduct/area', 		'Introduct#area', 	'introduct_area'],	 
 
 //------------------------------Réservation---------------------------------
+
 	['GET', 	'/booking/index', 		'booking#index', 	'booking_index'],	  
 	['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 	['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
@@ -46,5 +54,4 @@ $w_routes = array(
 
 //---------------------------Status/Erreur----------------------------------
 	['GET|POST', '/status/sender/[:string]/[:link]', 'status#sender', 'status_sender'],
-
 );

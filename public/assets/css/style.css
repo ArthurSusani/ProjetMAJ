@@ -48,6 +48,7 @@ body{
 	width: 1200px;
 	height: 1000px;
 	box-sizing: border-box;
+	margin-bottom: 100px;
 }
 
 div .container{
@@ -55,9 +56,6 @@ div .container{
 	padding-left: 0px;
 }
 
-#rooms{
-	padding:50px;
-}
 
 .clearfix{
 	clear: both;
@@ -136,13 +134,13 @@ div .container{
 	color: black;
 }
 
-/*footer{
+footer{
 	text-align: center;
 	background-color: black;
 	color: white;
 	width: 100%;
 	border: 1px solid white;
-}*/
+}
 
 footer>p{
 	padding: 10px;
@@ -171,6 +169,7 @@ footer>p{
 	font-size: 20px;
 	padding-left: 20px;
 	text-align: center;
+	font-family: 'Cinzel', sans-serif;
 }
 
 #adresse>img{
@@ -179,10 +178,6 @@ footer>p{
     margin-right: auto;
 }
 
-<<<<<<< HEAD
-
-footer{
-=======
 label{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bolder;
@@ -191,13 +186,16 @@ label{
 select{
 	font-family: 'Josefin Sans', sans-serif;
 
-footer{
+/*footer{
 	margin: 30px;
 	position: absolute;
 	bottom:0px;
+
 }
 
 .input_div{
->>>>>>> origin/master
+
 	
 }
+
+}*/
