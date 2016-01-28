@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Bienvenue Sur WF3Hotel']) ?>
+<?php $this->layout('layout', ['title' => 'Bienvenue Sur WebForce3']) ?>
 
 <?php $this->start('main_content') ?>
 		<div class="container">

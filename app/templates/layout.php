@@ -27,8 +27,8 @@
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
-
 		<?= $this->section('js') ?>
+		
 
 	</head>
 	<body>
@@ -100,11 +100,12 @@
 			<div class="clearfix"></div>
 
 			</header>
-			<div class="main_container">
+			<div class="container">
 				<hr>			
-				<h2><?= $this->e($title) ?></h2>
+				
 
 				<section class="centered">
+				<h2><?= $this->e($title) ?></h2>
 					<?= $this->section('main_content') ?>
 				</section>
 			</div>

@@ -54,7 +54,7 @@
 		<div class="clearfix"></div>
 		<button type="submit">Sauvegarder changemment</button>
 	</form>
-	<form action="<?= $this->url('setting_userdel', ['id' => $user['id'] ]) ?>" method="get" accept-charset="utf-8">
+	<form action=" <?= $this->url('setting_userdel', ['id' => $user['id'] ]) ?> " method="post" accept-charset="utf-8">
 	<button type="submit">Supprimer Utilisateur</button>
 	</form>
 <?php $this->stop('main_content') ?>

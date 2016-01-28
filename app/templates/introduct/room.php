@@ -13,7 +13,7 @@
   </ul>
 
 
-  <div class="chambre">
+  <div>
   	<p>Toutes nos chambres donnent sur la rue de Seine. Elles sont au nombre de deux par étage et la suite,
   	  légèrement mansardée, occupe l'intégralité du dernier et sixième étage.
   Les chambres double, d'une superficie moyenne de 18m², se trouvent sur le palier à droite : 

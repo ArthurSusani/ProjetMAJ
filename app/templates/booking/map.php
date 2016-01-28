@@ -34,6 +34,8 @@
 				</div>
 				<div class="chambre" id="n8">
 				</div>
+				<div class="chambre" id="n9">
+				</div>				
 			</div>
 			<select id="ascenseur">
 				<option value="0">rez de chaussée</option>

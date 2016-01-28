@@ -56,8 +56,9 @@ class SettingController extends \W\Controller\Controller
 	public function userdel($id)
 	{
 		$user = new \Manager\LogsManager();
-		//$user->delete($id);
-		$string = "L'utilisateur vient d'être supprimé avec succès.";
+		if($user->delete($id)){
+			$string = "L'utilisateur vient d'être supprimé avec succès.";
+		}else{$string = "Impossible de supprimé cette utilisateur.";}
 		$this->show("status/sender",[ $string , 3, "setting_users"] );
 	}
 }

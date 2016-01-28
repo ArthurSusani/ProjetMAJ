@@ -13,7 +13,7 @@ $w_routes = array(
 	 	 	 				
 //------------------------------Gestion Compte------------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
-	['GET', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
+	['GET|POST', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
 	['GET|POST','/log/register', 		'Log#register', 	'log_register'], 				
 	['GET|POST', 	'/log/config', 			'Log#config', 		'log_config'], 	
 	['GET|POST','/log/connect/error', 	'Log#error', 		'log_error'], 		
@@ -45,6 +45,6 @@ $w_routes = array(
 	['GET|POST', 	'/setting/userdel/[:id]', 'setting#userdel', 	'setting_userdel'],
 
 //---------------------------Status/Erreur----------------------------------
-	['POST', '/status/sender/[:string]', 'status#sender', 'status_sender'],
+	['GET|POST', '/status/sender/[:string]/[:link]', 'status#sender', 'status_sender'],
 
 );

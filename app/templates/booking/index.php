@@ -1,7 +1,7 @@
-<?php $this->layout('layout', ['title' => 'Reservation']) ?>
+<?php $this->layout('layout', ['title' => 'Reservation en Ligne']) ?>
 
 <?php $this->start('main_content') ?>
-	<h2>Réservation ici </h2>
+	
 	
 	<div class="wallpaper">
 	</div>

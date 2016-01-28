@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+ http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -44,7 +44,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+h1, h2, h3{
+	font-family: 'Cinzel', serif;
+}
 
 /*--------------------------Register----------------------------*/
 
@@ -181,9 +183,10 @@ table {
 /*------------------------------PLAN DES CHAMBRES---------------------------------------*/
 
 .plan{
-	width: 800px;
-	height: 600px;
-	background-image: url(../img/plan1.jpg);
+	width: 1400px;
+	height: 500px;
+	/*background-image: url(../img/plan1.jpg);*/
+	background-image: url('../img/etage_0_homestyler_perso.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color: none;
@@ -196,21 +199,95 @@ table {
 	float: left;
 }
 
-.chambre:hover{
-	background-color: rgba(125,255,125,0.25);
-}
-
 #n0{
-	width:160px;
-	height:222px;
+	width: 260px;
+	height: 186px;
+	margin-left: 95px;
 	margin-right:0;
-	margin-left:222px;
-	margin-top:38px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
 
 #n1{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n2{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n3{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n4{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+
+#n5{
+	width: 260px;
+	height: 186px;
+	margin-left: 95px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+
+#n6{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n7{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n8{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+#n9{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+/*#n1{
 	width:160px;
 	height:222px;
 	margin-right:0;
@@ -287,5 +364,17 @@ table {
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
+*/
 /*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
+
+#presentation img{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.imgTeam{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+

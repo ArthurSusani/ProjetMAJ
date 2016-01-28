@@ -6,9 +6,11 @@ namespace Controller;
 
 class StatusController extends \W\Controller\Controller
 {
-	public function sender($string, $nb = 4, $link = "home")
+	public function sender($string, $link = "home" , $nb = 4)
 	{
-		$this->show('status_sender', ['string' => $string]);
+		echo "fr";
+		die();
+		$this->show('status/sender', ['string' => $string, 'link' => $link, 'nb' => $nb]);
 	}
 
 }

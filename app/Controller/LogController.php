@@ -50,7 +50,7 @@ class LogController extends \W\Controller\Controller
 			}
 			else{
 				$string = "Utilisateur créé avec succès";
-				$this->show('status/sender', ['string' => $string]);
+				$this->show('status/sender', ['string' => $string, 'link'=> 'log_connect', 'nb'=> 2]);
 			}
 			
 
@@ -77,7 +77,7 @@ class LogController extends \W\Controller\Controller
 			$user = $usersManager->find($userId);
 			$authentifManager->logUserIn($user);
 			$string = "Bonjour ".$_SESSION['user']['lastname']." ". $_SESSION['user']['firstname'] .", vous ètes connecté.";
-			$this->show('status/sender', ['string' => $string]);
+			$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb' => 3]);
 		} 
 		$this->show("log/connect/error");
 	}
