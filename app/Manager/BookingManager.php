@@ -59,4 +59,18 @@
 		return $sth->fetch(\PDO::FETCH_ASSOC);
 		}
 
+		//fonction qui retourne le prix d'une chambre par son id
+		public function getRoomPriceByRoomId($id_room){
+			if (!is_numeric($id_user)){
+				return false;
+			}
+			$sql = 'SELECT price FROM rooms WHERE id=:id_room';
+		//echo $sql;
+			$sth = $this->dbh->prepare($sql);
+			$sth->bindValue(':id', $id_room);
+			$sth->execute();
+		//un simple fetch et pas un fetchall car on récupère un seul tableau d'infos client
+			return $sth->fetch(\PDO::FETCH_ASSOC);			
+		}
+
 	}

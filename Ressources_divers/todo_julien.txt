@@ -11,3 +11,7 @@ OK=>Modifier input date en Jquery UI datepicker
 =>Mettre les image en 3d dans la présentation.
 =>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.
 =>Faire une fonction de récupération de mot de passe avec phpmailer. Voir le tp C:\xampp\htdocs\julien\d34
+=>Faire une page avec gestion de code d'erreur
+=>Faire AJAX
+=>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
+=>Rajouter dans la facture un endroit ou je place la date début et de fin du séjour et pas seulement le nombre de journée.

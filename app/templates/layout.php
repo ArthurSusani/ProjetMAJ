@@ -27,6 +27,7 @@
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
+
 		<?= $this->section('js') ?>
 
 	</head>
@@ -106,13 +107,13 @@
 				<section class="centered">
 					<?= $this->section('main_content') ?>
 				</section>
+			</div>
 		
 		<footer>
 		<hr>
 		<p><!--Hotel du numerique - Venez y faire dormir votre PC - Free Wifi--></p>
 		</footer>		
 		</div>
-
 
 </body>
 </html>

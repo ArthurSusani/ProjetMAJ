@@ -134,12 +134,17 @@ div .container{
 	color: black;
 }
 
-.footer{
+/*footer{
 	text-align: center;
 	background-color: black;
 	color: white;
 	width: 100%;
 	border: 1px solid white;
+}*/
+
+footer>p{
+	padding: 10px;
+	font-family: 'Cinzel', serif;
 }
 
 #map {
@@ -172,7 +177,25 @@ div .container{
     margin-right: auto;
 }
 
+<<<<<<< HEAD
 
 footer{
+=======
+label{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+}
+
+select{
+	font-family: 'Josefin Sans', sans-serif;
+
+footer{
+	margin: 30px;
+	position: absolute;
+	bottom:0px;
+}
+
+.input_div{
+>>>>>>> origin/master
 	
 }

@@ -22,7 +22,8 @@ $w_routes = array(
 
 //------------------------------Présentation--------------------------------
 	['GET', 	'/introduct/index', 	'Introduct#index', 	'introduct_index'], 
-	['GET', 	'/introduct/room', 		'Introduct#room', 	'introduct_room'], 		
+	['GET', 	'/introduct/room', 		'Introduct#room', 	'introduct_room'],
+	['GET', 	'/introduct/roomdetail/[:id]', 'Introduct#roomdetail', 'introduct_roomdetail'], 		
 	['GET', 	'/introduct/hostel', 	'Introduct#hostel', 'introduct_hostel'], 	
 	['GET', 	'/introduct/area', 		'Introduct#area', 	'introduct_area'],	 
 

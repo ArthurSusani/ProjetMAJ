@@ -1,8 +1,8 @@
-<?php $this->layout('layout', ['title' => 'Contact']) ?>
+<?php $this->layout('layout', ['title' => 'contact']) ?>
 
 <?php $this->start('main_content') ?>
 <p> En cas de soucis, d'écrivez nous votre problème. Nous y repondrons dans les plus breve délai. </p>
-	<div class="contact">
+
 		<h2>Nous contacter</h2>
 		
 		<form action="<?= $this->url('contact_phpmailer') ?>" method="post" accept-charset="utf-8" id="form_contact">
@@ -58,6 +58,5 @@
 
 			<button type="submit" id="button">Envoyer</button>
 		</form>
-	</div>
 	
 <?php $this->stop('main_content') ?>

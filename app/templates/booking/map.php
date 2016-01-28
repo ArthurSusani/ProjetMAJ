@@ -8,9 +8,9 @@
 
 <form action="<?= $this->url('booking_pay') ?>" method="post" accept-charset="utf-8">
 	<label for="date_start">Arrivé le </label>
-	<input type="date" name="date_start" id="datepicker_start" value="" placeholder="">
+	<input type="text" name="date_start" id="datepicker_start" value="" placeholder="" >
 	<label for="date_end">Depart le </label>
-	<input type="date" name="date_end"	id="datepicker_end" value="" placeholder="">
+	<input type="text" name="date_end"	id="datepicker_end" value="" placeholder="" >
 
 		<section>
 			<h1>Plan de l'hotel</h1>
@@ -52,6 +52,7 @@
 
 <?php $this->start('js') ?>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" type="text/javascript" charset="utf-8"></script>
 <?php $this->stop('js') ?>
 <?php $this->start('css') ?>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
