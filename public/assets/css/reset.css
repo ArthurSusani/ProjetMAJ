@@ -44,7 +44,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+h1, h2, h3{
+	font-family: 'Cinzel', serif;
+}
+p{
+	font-size: 18px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+ section {
+	box-sizing: border-box;
+ }
 
 /*--------------------------Register----------------------------*/
 
@@ -120,6 +129,23 @@ table {
 #form_contact{
 	padding-bottom: 0px;
 }
+/*--------------------------UserConfig-------------------------*/
+
+#form_user_config{
+	box-sizing: border-box;
+	width: 100%;
+}
+#form_user_config input{
+	margin: 10px;
+	width: 100%;
+}
+#form_user_config .input_div{
+	box-sizing: border-box;
+	width: 48%;
+	float: left;
+	margin: 1%;
+}
+
 /*--------------------------Connect----------------------------*/
 
 #form_connect .input_div{
@@ -179,7 +205,10 @@ table {
 /*------------------------------PLAN DES CHAMBRES---------------------------------------*/
 
 .plan{
+<<<<<<< HEAD
 	margin-top: 30px;
+=======
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 	width: 1400px;
 	height: 500px;
 	/*background-image: url(../img/plan1.jpg);*/
@@ -196,6 +225,7 @@ table {
 	float: left;
 }
 
+<<<<<<< HEAD
 .chambre:hover{
 	background-color: rgba(125,255,125,0.5);
 }
@@ -239,6 +269,8 @@ table {
 margin-top: 20px;
 }
 
+=======
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 #n0{
 	width: 260px;
 	height: 186px;
@@ -252,6 +284,7 @@ margin-top: 20px;
 	width: 260px;
 	height: 186px;
 	margin-left: 0px;
+<<<<<<< HEAD
 	margin-right:0;
 	margin-bottom:0;
 	box-sizing: border-box;
@@ -335,79 +368,141 @@ margin-top: 20px;
 /*#n1{
 	width:160px;
 	height:222px;
+=======
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 	margin-right:0;
-	margin-left:0;
-	margin-top:38px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
 #n2{
-	width:160px;
-	height:222px;
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
 	margin-right:0;
-	margin-left:0;
-	margin-top:38px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-#n3{ 
-	width:216px;
-	height: 220px;
+#n3{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
 	margin-right:0;
-	margin-left:10px;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
 #n4{
-	width:80px;
-	height: 220px;
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
 	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
 
 #n5{
-	width:157px;
-	height:222px;
+	width: 260px;
+	height: 186px;
+	margin-left: 95px;
+	margin-top:40px;
 	margin-right:0;
-	margin-left:0;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
 
 #n6{
-	width:157px;
-	height:222px;
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
 	margin-right:0;
-	margin-left:0;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
 #n7{
-	width:80px;
-	height: 220px;
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
 	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
 #n8{
-	width:80px;
-	height: 220px;
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
 	margin-right:0;
-	margin-left:0px;
-	margin-top:50px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
+#n9{
+	width: 260px;
+	height: 186px;
+	margin-left: 0px;
+	margin-top:40px;
+	margin-right:0;
+	margin-bottom:0;
+	box-sizing: border-box;
+}
+<<<<<<< HEAD
 */
 /*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------
+=======
+
+/*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
+
+#presentation img{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.imgTeam{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 50px;
+}
+
+/*-------------------------CONTACT--------------------------------
+
+.contact{
+	height: 800px;
+	width: 1200px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: white;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contact>h2{
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#form_contact{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.contact>p{
+	text-align: center;
+}
+
+.about{
+	height: 900px;
+	width: 1200px;
+	border-top: 1px solid white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-color: white;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5

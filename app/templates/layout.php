@@ -13,9 +13,7 @@
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/chambre.css') ?>">
-		<link rel="stylesheet" href="<?= $this->assetUrl('css/presentation.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
-		<link rel="stylesheet" href="<?= $this->assetUrl('css/contact.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
 		<?= $this->section('css') ?>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -24,11 +22,12 @@
 		<script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="<?= $this->assetUrl('js/script.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
 		<script src="<?= $this->assetUrl('js/jquery.fancybox.pack.js') ?>" type="text/javascript" ></script>
+		<script src="<?= $this->assetUrl('js/note.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
-
 		<?= $this->section('js') ?>
+		
 
 	</head>
 	<body>
@@ -48,7 +47,11 @@
 						<?php if ($_SESSION["user"]["role"] == "admin"): ?>
 
 							<li><a href="<?= $this->url('setting_index') ?>" title="">
-							<span class="glyphicon glyphicon-wrench"></span> Configuration</a></li>
+							<span class="glyphicon glyphicon-wrench"></span> Configuration Admin</a></li>
+						<?php else: ?>
+							<li><a href="<?= $this->url('log_userconfig') ?>" title="">
+							<span class="glyphicon glyphicon-wrench"></span> Configuration Compte</a></li>
+
 
 						<?php endif; ?>	
 						<?php else: ?>
@@ -102,9 +105,10 @@
 			</header>
 			<div class="container">
 				<hr>			
-				<h2><?= $this->e($title) ?></h2>
+				
 
 				<section class="centered">
+				<h2><?= $this->e($title) ?></h2>
 					<?= $this->section('main_content') ?>
 				</section>
 			</div>
@@ -118,6 +122,7 @@
 
 =======
 		<footer>
+		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 >>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974

@@ -71,10 +71,10 @@
 							if(!$mail->send()) {
 							    $string = 'Le message n\'a pas pu être envoyé.<br>';
 							    $string .= 'Mailer Error: ' . $mail->ErrorInfo;
-							    $this->show('status/sender', ['string' => $string]);
+							    $this->show('status/sender', ['string' => $string, 'link'=> 'contact_contact', 'nb'=> 3]);
 							}else{
 								$string = "Votre message a bien été enregistré, notre équipe y repondra dans les plus brèves delai. Merci.";
-								$this->show('status/sender', ['string' => $string]);
+								$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb'=> 4]);
 							}
 
 						}else{

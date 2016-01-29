@@ -35,6 +35,10 @@
 				<label for="city">Ville </label><p>Veuillez entrer votre ville</p>
 				<input  type="text" name="city" value="" placeholder="Votre ville">
 			</div>
+			<div class="input_div">
+				<label for="phone">Téléphone </label><p>Veuillez entrer votre numéro de téléphone</p>
+				<input  type="number" name="phone" value="" placeholder="Votre GSM">
+			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="input_div">

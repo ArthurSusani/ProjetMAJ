@@ -7,7 +7,7 @@ body{
 	background: #8e9eab; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to top, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to top, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: 450%;
+    background-size: 100%;
     background-repeat: no-repeat;  
     min-height: 1000px; 
 }
@@ -47,15 +47,15 @@ body{
 .container{
 	width: 1200px;
 	height: 1000px;
-
 	box-sizing: border-box;
-	border-top:1px solid black;
+	margin-bottom: 100px;
 }
 
 div .container{
 	padding-right: 0px;
 	padding-left: 0px;
 }
+
 
 .clearfix{
 	clear: both;
@@ -165,16 +165,40 @@ footer>p{
 	font-weight: bold;
 }
 
-#adresse>p{
-	font-size: 20px;
-	padding-left: 20px;
+.hotel>p{
+	font-size: 17px;
 	text-align: center;
+<<<<<<< HEAD
+	font-family: 'Cinzel', sans-serif;
+=======
+	padding-bottom: 10px;
+>>>>>>> 9cc1ed1f4cba90db5bbb1af251ccf05cc8c5ef0a
 }
 
-#adresse>img{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
+.hotel>img{
+	margin-left: 60px;
+}
+
+.hotel{
+	float: left;
+	width: 310px;
+	height: 298px;
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+}
+
+.code{
+	float: left;
+	width: 280px;
+	padding-top: 45px;
+	padding-left: 20px;
+}
+
+.code>p{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 <<<<<<< HEAD
@@ -195,5 +219,17 @@ select{
 	margin: 30px;
 	position: absolute;
 	bottom:0px;
+<<<<<<< HEAD
 }*/
 >>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
+=======
+
+}
+
+.input_div{
+
+	
+}
+
+}*/
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
