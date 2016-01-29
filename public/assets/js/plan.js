@@ -63,6 +63,18 @@ $(function() {
 		});
 	}
 
+	roomScan2 =function(){
+		var str_tab_booked;
+		str_tab_booked=$("#str_tab_booked_room").val();
+		console.log('tableau',str_tab_booked);
+		var strlen=str_tab_booked.length;
+		var nb_booked_room=(strlen+1)/2;
+		console.log('nb booked',nb_booked_room);
+		for (var i = 0; i < nb_booked_room; i++) {
+			
+		};
+	}	
+
 	roomValid =function(){
 
 		roomLock.forEach( function(element, index) {
@@ -116,6 +128,7 @@ $(function() {
 	}
 
 	roomScan();
+	roomScan2();
 
 	$('.chambre').on('click', roomSelect );
 	$('#ascenseur').on('change', switchStage);

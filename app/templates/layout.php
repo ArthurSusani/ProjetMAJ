@@ -27,6 +27,7 @@
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
 		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
+
 		<?= $this->section('js') ?>
 
 	</head>
@@ -99,20 +100,27 @@
 			<div class="clearfix"></div>
 
 			</header>
-			<div class="main_container">
+			<div class="container">
 				<hr>			
 				<h2><?= $this->e($title) ?></h2>
 
 				<section class="centered">
 					<?= $this->section('main_content') ?>
 				</section>
+			</div>
 		
+<<<<<<< HEAD
 <!-- 		<footer>
 		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 		</div> -->
 
+=======
+		<footer>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
+		</footer>		
+>>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
 
 </body>
 </html>

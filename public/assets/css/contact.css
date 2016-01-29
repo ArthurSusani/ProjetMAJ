@@ -1,11 +1,5 @@
-.main_container{
-width: 1200px;
-margin: auto;
-
-}
-
 .contact{
-	height: 900px;
+	height: 800px;
 	width: 1200px;
 	border-top: 1px solid black;
 	border-left: 1px solid black;
@@ -22,10 +16,8 @@ margin: auto;
 	text-align: center;
 }
 
-.form1{
-	margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+.contact>p{
+	text-align: center;
 }
 
 .about{

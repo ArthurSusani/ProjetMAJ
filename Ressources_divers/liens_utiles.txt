@@ -8,3 +8,4 @@ Creer un batiment en 3d en ligne : http://fr.homestyler.com/designprofile/ad5243
 Modèle de site: http://www.prince-de-conde.com/fr/ www.manoirhotel.com
 Comment mettre des évenements sur un calendrier Jquery UI: http://stackoverflow.com/questions/5578259/jquery-ui-datepicker-how-to-add-clickable-events-on-particular-dates
 Faire une redirection avec x secondes: http://forum.alsacreations.com/topic-6-18701-1-Redirection-vers-une-page-apres-quelques-secondes-en-PHP.html
+Traduire site avec api google translate: http://blog.security-helpzone.com/internet/integrer-google-traduction-a-son-site.html

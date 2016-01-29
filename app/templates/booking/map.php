@@ -25,6 +25,7 @@
 			<p id="legend_booked_p">Chambre(s) que vous avez sélectionnée(s)</p>
 			<div class="clearfix">
 			</div>
+			<p id="book_stat">Il y a un actuellement <b><?= $nb_booked_room?></b> chambre(s) réservée(s) sur <b><?= $nb_room?></b> chambres disponibles</p> 
 			<p id="nbRoomSelect">Vous avez selectionné 0 chambre</p>
 			<div class="plan">
 				<div class="chambre" id="n0">
@@ -57,6 +58,7 @@
 			<p id="stageRoomSelect">Vous ètes au rez de chaussée</p>
 		</section>
 		<input type="hidden" name="data" value="">
+		<input id="str_tab_booked_room" type="hidden" name="tab_booked_room" value="<?= $tableau_booked_room ?>">
 
 	<button type="submit" id="submitMap">Confirmer</button>
 	<button type="submit" id="submitMapAjax">Envoi Ajax</button>
@@ -67,6 +69,8 @@
 <?php $this->start('js') ?>
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="ajax.js" type="text/javascript"></script>
+
 <?php $this->stop('js') ?>
 <?php $this->start('css') ?>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">

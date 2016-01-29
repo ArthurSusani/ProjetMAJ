@@ -4,8 +4,12 @@
 
 	<ul>	
 		<?php foreach ($viewall as $view) : ?>	
-			<li><?= $view['subject'] ?><br>
-			<?= $view['message'] ?></li>		
+			<li>
+			<p>Expéditeur : <?= $view['firstname']; echo " " ?><?= $view['lastname'] ?></p>
+			Télèphone : <?= $view['phone'] ?><br>
+			Email : <?= $view['mail'] ?><br>
+			Sujet : <?= $view['subject'] ?><br>
+			Message : <?= $view['message'] ?></li>		
 		<?php endforeach ?>
 	</ul>
 
