@@ -5,7 +5,7 @@
 	class IntroductManager extends \W\Manager\Manager
 	{
 		public function room(){
-			$sql = 'SELECT * FROM rooms';
+			$sql = 'SELECT * FROM rooms LIMIT 5';
 			$sth = $this->dbh->prepare($sql);
 			$sth->execute();
 

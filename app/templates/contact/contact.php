@@ -17,9 +17,7 @@
 			</div>
 			<br>
 			<div class="input_div">
-<<<<<<< HEAD
-<<<<<<< HEAD
-				<label for="firstname">Nom :</label><!-- Si connecté, rempli les champs avec les infos du compte -->
+				<label for="firstname">Nom* :</label><!-- Si connecté, rempli les champs avec les infos du compte -->
 				<input type="text" name="firstname" value="<?php if(isset($_SESSION['user']['firstname'])){
 					echo $_SESSION['user']['firstname'];
 				}elseif (isset($_POST['firstname'])){
@@ -27,7 +25,7 @@
 					}; ?>" placeholder="">
 			</div>
 			<div class="input_div">
-				<label for="lastname">Prénom :</label>
+				<label for="lastname">Prénom* :</label>
 				<input type="text" name="lastname" value="<?php if(isset($_SESSION['user']['lastname'])){
 					echo $_SESSION['user']['lastname'];
 				}elseif (isset($_POST['lastname'])){
@@ -35,7 +33,7 @@
 					}; ?>" placeholder="">
 			</div>
 			<div class="input_div">	
-				<label for="phone">Téléphone :</label>
+				<label for="phone">Téléphone* :</label>
 				<input type="tel" name="phone" value="<?php if(isset($_SESSION['user']['phone'])){
 					echo $_SESSION['user']['phone'];
 				}elseif (isset($_POST['phone'])){
@@ -43,32 +41,13 @@
 					}; ?>" placeholder="">
 			</div>
 			<div class="input_div">
-				<label for="mail">Adresse Email :</label>
+				<label for="mail">Adresse Email* :</label>
 				<input type="email" name="mail" value="<?php if(isset($_SESSION['user']['mail'])){
 					echo $_SESSION['user']['mail'];
 				}elseif (isset($_POST['mail'])){
 					echo $_POST['mail'];
 					}; ?>" placeholder="">
-=======
-				<label for="firstname">Nom :</label>
-=======
-				<label for="firstname">Nom* :</label>
->>>>>>> 9cc1ed1f4cba90db5bbb1af251ccf05cc8c5ef0a
-				<input type="text" name="firstname" value="" placeholder="">
-			</div>
-			<div class="input_div">
-				<label for="lastname">Prénom* :</label>
-				<input type="text" name="lastname" value="" placeholder="">
-			</div>
-			<div class="input_div">	
-				<label for="phone">Téléphone* :</label>
-				<input type="tel" name="phone" value="" placeholder="">
-			</div>
-			<div class="input_div">
-				<label for="mail">Adresse Email* :</label>
-				<input type="email" name="mail" value="" placeholder="">
->>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
-			</div>
+
 			<div class="input_div">
 				<label for="subject">Sujet* :</label>
 				<input type="text" name="subject" value="" placeholder="">

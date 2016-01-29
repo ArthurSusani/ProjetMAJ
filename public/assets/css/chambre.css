@@ -7,9 +7,36 @@
 	border-right: 1px solid black;
 	border-bottom: 1px solid white;
 	background-color: white;
-	height: 700px;
+	height: 1050px;
 	padding:20px;
 
+}
+
+#rooms>div>p:nth-of-type(1){
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+
+#rooms>div>p:nth-of-type(2){
+	width: 1000px;
+	padding-left: 100px;
+	text-align: justify;
+}
+
+#rooms>div>ul{
+	width: 1000px;
+	padding-left: 100px;
+}
+
+#rooms>div>h4{
+	padding-left: 70px;
+}
+
+#rooms>.desc>img{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .chambre>ul>li>img{

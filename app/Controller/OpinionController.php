@@ -7,7 +7,7 @@
 		{
 			if(isset($_POST['send'])){
 				$opinionManager = new \Manager\OpinionManager();
-				$opinionManager->insertopinion($_POST['id'],$_POST['datebegin'],$_POST['dateend'],$_POST['room'],$_POST['rate'],$_POST['comment']);
+				$opinionManager->insertopinion($_POST['datestart'],$_POST['dateend'],$_POST['room'],$_POST['rate'],$_POST['comment']);
 			}
 			$this->show("opinion/opinion");
 		}
@@ -18,12 +18,5 @@
 			$viewall = $view->viewopinion();
 			$this->show('opinion/showopinion',['viewall'=>$viewall]);
 		}
-
-		/*public function details($id)
-		{
-			$details = new \Manager\OpinionManager();
-			$viewall = $details->findByListId($id);
-			$this->show("contact/details", ['viewall'=>$viewall]);
-		}*/
 	}
 ?>

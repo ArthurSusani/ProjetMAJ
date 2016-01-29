@@ -3,15 +3,14 @@
 
 	class OpinionManager extends \W\Manager\Manager
 	{
-		public function insertopinion($id,$datestart,$dateend,$room,$rate,$comment)
+		public function insertopinion($datestart,$dateend,$room,$rate,$comment)
 		{
-			if(empty($id) || empty($datestart) || empty($dateend) || empty($room) || empty($rate) || empty($comment)){
+			if(empty($datestart) || empty($dateend) || empty($room) || empty($rate) || empty($comment)){
 				return false;
 			}
 
-		$sql = 'INSERT INTO contact() VALUES (:id,:datestart,:dateend,:room,:rate,:comment)';
+		$sql = 'INSERT INTO opinion(datestart,dateend,room,rate,comment) VALUES (:datestart,:dateend,:room,:rate,:comment)';
 		$sth = $this->dbh->prepare($sql);
-		$sth->bindValue(':id', $id);
 		$sth->bindValue(':datestart', $datestart);
 		$sth->bindValue(':dateend', $dateend);
 		$sth->bindValue(':room', $room);

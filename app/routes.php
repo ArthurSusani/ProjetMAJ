@@ -18,9 +18,9 @@ $w_routes = array(
 
 //------------------------------ Gestion Compte -----------------------------
 	['GET', 	'/log/index', 			'Log#index', 		'log_index'],
-	['GET|POST', 	'/log/connect', 		'Log#connect', 		'log_connect'], 					
+	['GET|POST', '/log/connect', 		'Log#connect', 		'log_connect'], 					
 	['GET|POST','/log/register', 		'Log#register', 	'log_register'], 				
-	['GET|POST', 	'/log/config', 		'Log#config', 		'log_config'], 	
+	['GET|POST', '/log/config', 		'Log#config', 		'log_config'], 	
 	['GET|POST','/log/connect/error', 	'Log#error', 		'log_error'], 		
 	['GET|POST','/log/connect/confirm', 'Log#confirm', 		'log_confirm'], 
 	['GET|POST','/log/disconnect', 		'Log#disconnect', 	'log_disconnect'], 	
@@ -45,7 +45,7 @@ $w_routes = array(
 	['GET', 	'/booking/phone', 		'booking#phone', 	'booking_phone'],	
 	
 //------------------------------Option--------------------------------------
-	['GET', 	'/setting/index', 'setting#index', 	'setting_index'],
+	['GET', 		'/setting/index', 'setting#index', 	'setting_index'],
 	['GET|POST', 	'/setting/users', 'setting#users', 	'setting_users'],
 	['GET|POST', 	'/setting/book', 'setting#book', 	'setting_book'],
 	['GET|POST', 	'/setting/user/[:id]', 'setting#user', 	'setting_user'],

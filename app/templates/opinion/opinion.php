@@ -6,11 +6,19 @@
 	<form action="#" method="post" accept-charset="utf-8" id="form_contact">
 			<div class="input_div">
 				<label for="firstname">Nom :</label>
-				<input type="text" name="firstname" value="<?php if(isset($_SESSION['firstname'])){echo $_SESSION['firstname'];}?>" placeholder="">
+				<input type="text" name="firstname" value="<?php if(isset($_SESSION['user']['firstname'])){
+					echo $_SESSION['user']['firstname'];
+				}elseif (isset($_POST['firstname'])){
+					echo $_POST['firstname'];
+					}; ?>" placeholder="">
 			</div>
 			<div class="input_div">
 				<label for="lastname">Prénom :</label>
-				<input type="text" name="lastname" value="<?php if(isset($_SESSION['lastname'])){echo $_SESSION['lastname'];}?>" placeholder="">
+				<input type="text" name="lastname" value="<?php if(isset($_SESSION['user']['lastname'])){
+					echo $_SESSION['user']['lastname'];
+				}elseif (isset($_POST['lastname'])){
+					echo $_POST['lastname'];
+					}; ?>" placeholder="">
 			</div>
 			<div class="input_div">
 				<label for="datestart">Date de début :</label>

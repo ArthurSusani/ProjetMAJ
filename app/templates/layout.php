@@ -12,8 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+		<link rel="stylesheet" href="<?= $this->assetUrl('css/presentation.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/chambre.css') ?>">
+		<link rel="stylesheet" href="<?= $this->assetUrl('css/contact.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
+
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
 		<?= $this->section('css') ?>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -114,7 +117,6 @@
 			</div>
 		
 		<footer>
-		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 
