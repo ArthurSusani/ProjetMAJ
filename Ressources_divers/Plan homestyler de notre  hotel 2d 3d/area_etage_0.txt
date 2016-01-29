@@ -1,0 +1,16 @@
+<img src="url/to/your/image.jpg" alt="" usemap="#Map" />
+<map name="Map" id="Map">
+<--haut de l'étage-->
+    <area alt="" title="" href="#" shape="poly" coords="95,6,358,4,359,192,95,191" />
+    <area alt="" title="" href="#" shape="poly" coords="620,5,620,190,363,192,361,5" />
+    <area alt="" title="" href="#" shape="poly" coords="624,5,887,5,888,192,622,191" />
+    <area alt="" title="" href="#" shape="poly" coords="1152,4,1152,191,890,192,890,5" />
+    <area alt="" title="" href="#" shape="poly" coords="1155,4,1418,3,1417,192,1154,191" />
+<--bas de l'étage-->
+    <area alt="" title="" href="#" shape="poly" coords="95,229,358,225,358,423,96,421" />
+    <area alt="" title="" href="#" shape="poly" coords="620,228,620,424,360,422,362,225" />
+    <area alt="" title="" href="#" shape="poly" coords="887,227,887,422,623,424,623,228" />
+    <area alt="" title="" href="#" shape="poly" coords="1154,422,1152,225,891,228,890,423" />
+    <area alt="" title="" href="#" shape="poly" coords="1417,227,1419,424,1156,421,1154,225" />
+</map>
+

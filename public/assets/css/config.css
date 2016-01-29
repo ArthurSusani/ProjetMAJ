@@ -1,5 +1,8 @@
 table{
+<<<<<<< HEAD
+=======
 	background-color: white;
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 	width: 100%;
 	border: 1px solid black;
 	text-align: center;
@@ -12,6 +15,8 @@ tr{
 td, th{
 	border-left:1px solid black;
 	text-align: center;
+<<<<<<< HEAD
+=======
 	padding: 5px;
 }
 
@@ -23,4 +28,5 @@ ul .listconfig{
 
 div .menuConf{
 	margin-left: 50px;
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 }

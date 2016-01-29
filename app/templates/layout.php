@@ -116,9 +116,18 @@
 				</section>
 			</div>
 		
+<<<<<<< HEAD
+<!-- 		<footer>
+		<hr>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
+		</footer>		
+		</div> -->
+
+=======
 		<footer>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
+>>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
 
 </body>
 </html>

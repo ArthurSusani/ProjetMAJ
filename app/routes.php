@@ -52,6 +52,14 @@ $w_routes = array(
 	['GET|POST', 	'/setting/usersave/[:id]', 'setting#usersave', 	'setting_usersave'],
 	['GET|POST', 	'/setting/userdel/[:id]', 'setting#userdel', 	'setting_userdel'],
 
+<<<<<<< HEAD
+//------------------------------ Status/Erreur --------------------------------
+	['GET|POST', '/status/warning/[:string]', 'status#sender', 'status_sender'],
+	['GET|POST', '/status/warning/[:string]', 'status#show', 'status_show'],
+// test ajax
+	['GET|POST', '/testajax', 'booking#map_ajax', 'ajax_send'],
+=======
 //---------------------------Status/Erreur----------------------------------
 	['GET|POST', '/status/sender/[:string]/[:link]', 'status#sender', 'status_sender'],
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 );

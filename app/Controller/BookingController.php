@@ -18,9 +18,26 @@ class BookingController extends \W\Controller\Controller
 
 	public function map()
 	{
-		$this->show("booking/map");
+		$BookingManager = new \Manager\BookingManager();
+		//var_dump($BookingManager->isRoomBooked(4));
+		//var_dump($BookingManager->getRoomPriceByRoomId(4));
+		//var_dump('nb room',$BookingManager->getNumberOfRooms());
+		//var_dump('tableau id room',$BookingManager->getAllRoomsId());
+		$tab_booked_room=$BookingManager->getAllBookedRooms();
+		$nb_room=$BookingManager->getNumberOfRooms();
+		$nb_book_room=$BookingManager->getNumberBookedRooms();
+		//var_dump("nb book room",$nb_book_room);
+		$str=$BookingManager->bookedRoomsArrayIntoString($tab_booked_room);
+		$this->show("booking/map",['nb_booked_room'=>$nb_book_room,'nb_room'=>$nb_room,'tableau_booked_room'=>$str]);
 	}
-	
+	//traitement ajax
+	public function map_ajax(){
+		if(isset($_POST){
+		$date_start = $_POST['ajax_date_start'];
+		$date_end = $_POST['ajax_date_end'];
+		}
+	}
+
 	public function pay()
 	{
 		echo 'methode pay';

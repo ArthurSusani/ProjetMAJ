@@ -6,12 +6,22 @@ OK	-Générer une facture
 OK reste a pour voir affiche la facture dans l'espace client=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
 OK=>Modifier input date en Jquery UI datepicker
 =>Modifier Table intermédiaire pour les bookings pour avoir plusieurs booking par client
+<<<<<<< HEAD
+OK=>Mettre les étages fait avec homestyler, découper les zones
+=>Mettre en place le QRcode
+=======
 =>Mettre les étages fait avec homestyler, découper les zones
 OK=>Mettre en place le QRcode
+>>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 =>Mettre les image en 3d dans la présentation.
 =>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.
 =>Faire une fonction de récupération de mot de passe avec phpmailer. Voir le tp C:\xampp\htdocs\julien\d34
-Ok=>Faire une page avec gestion de code d'erreur
+OK=>Faire une page avec gestion de code d'erreur
 =>Faire AJAX
-=>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
+OK=>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
 =>Rajouter dans la facture un endroit ou je place la date début et de fin du séjour et pas seulement le nombre de journée.
+=>Fixer le footer en bas
+=>Fonction pour récupérer les chambres oqp
+=>Rajouter possibilité dans l'espace client de voir les réservations, de les supprimer
+=>Il faut que chaque booking ait un id_room unique, donc en BDD mettre la colonne en unique
+=>Faire jonction avec le site tripadvisor avec l'api
