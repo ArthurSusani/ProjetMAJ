@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Bureau des réclamations']) ?>
+<?php $this->layout('layout', ['title' => 'Ce que disent nos clients']) ?>
 
 <?php $this->start('main_content') ?>
 	<div class="opinion">

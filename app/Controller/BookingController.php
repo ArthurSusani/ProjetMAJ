@@ -31,8 +31,9 @@ class BookingController extends \W\Controller\Controller
 		$this->show("booking/map",['nb_booked_room'=>$nb_book_room,'nb_room'=>$nb_room,'tableau_booked_room'=>$str]);
 	}
 	//traitement ajax
-	public function map_ajax(){
-		if(isset($_POST){
+	public function map_ajax()
+	{
+		if(isset($_POST)){
 		$date_start = $_POST['ajax_date_start'];
 		$date_end = $_POST['ajax_date_end'];
 		}

@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Inscription !'])?>
+<?php $this->layout('layout', ['title' => 'Enregistrement compte client:'])?>
 
 <?php $this->start('main_content')?>
 <!-- ajout d'un code javascript pour vérifier le formulaire -->
@@ -8,7 +8,6 @@
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-	<h2>Enregistrement compte client:</h2>
 	<hr>
 
 	<form action="#" method="post" accept-charset="utf-8" id="form_register">

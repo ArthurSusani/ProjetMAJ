@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Nos chambres']) ?>
+<?php $this->layout('layout', ['title' => 'Les chambres']) ?>
 
 <?php $this->start('main_content') ?>
 

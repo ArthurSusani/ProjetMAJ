@@ -187,7 +187,4 @@ class BookingManager extends \W\Manager\Manager
 		}
 	}
 
-	public function get
-
-
-}
+	public function get(body);

@@ -5,18 +5,48 @@
 		
 		public function opinion()
 		{
-			if(isset($_POST['send'])){
-				$opinionManager = new \Manager\OpinionManager();
-				$opinionManager->insertopinion($_POST['datestart'],$_POST['dateend'],$_POST['room'],$_POST['rate'],$_POST['comment']);
+			$insert = false;
+			$opinionManager = new \Manager\OpinionManager();
+			if(isset($_POST['submit'])){
+				$opinion = [
+					"id_logs"=>$_SESSION['user']['id'],
+					"datestart"=> date('Y/m/d', strtotime($_POST['datestart'])),
+					"dateend"=> date('Y/m/d', strtotime($_POST['dateend'])),
+					"room"=>$_POST['room'],
+					"rate"=>$_POST['rate'],
+					"comment"=>$_POST['comment']
+						];
+				if ($opinionManager->insert($opinion)) {
+					$insert = true;
+				}
 			}
-			$this->show("opinion/opinion");
+			$viewall = $opinionManager->viewopinion();
+
+			if (empty($viewall)) {
+				$viewall = "Il n'y a actuellement aucun commentaire.";
+			}
+			if ($insert) {
+				$string = "Votre commentaire a bien été enregistré";
+				$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb'=> 4]);
+			}
+			$this->show('opinion/opinion',['viewall'=>$viewall]);
 		}
 
-		public function showopinion()
+
+
+		/*public function showopinion()
 		{
 			$view = new \Manager\OpinionManager();
 			$viewall = $view->viewopinion();
-			$this->show('opinion/showopinion',['viewall'=>$viewall]);
-		}
+
+			$this->redirectToRoute('opinion_insert',['viewall'=>$viewall]);
+		}*/
+
+		/*public function details($id)
+		{
+			$details = new \Manager\OpinionManager();
+			$viewall = $details->findByListId($id);
+			$this->show("contact/details", ['viewall'=>$viewall]);
+		}*/
 	}
 ?>

@@ -92,7 +92,8 @@
 								<li><a href="<?= $this->url('booking_phone') ?>">Par téléphone</a></li>
 							</ul>
 						</li>
-						<li><a href="<?=  $this->url('comment') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
+					
+						<li><a href="<?=  $this->url('opinion_show') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
 						<li class="dropdown">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">A propos<b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -114,20 +115,18 @@
 				<h2><?= $this->e($title) ?></h2>
 					<?= $this->section('main_content') ?>
 				</section>
-			</div>
-		
-<<<<<<< HEAD
+			</div>		
+
 <!-- 		<footer>
 		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
 		</div> -->
 
-=======
 		<footer>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
->>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
+
 
 </body>
 </html>

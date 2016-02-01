@@ -65,12 +65,6 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-#rooms>nav>ul>li:nth-of-type(1){
-	list-style: none;
-	text-decoration: underline;
-	font-size: 18px;
-}
-
 #rooms>nav>ul>li>a {
 	color: black;
 	text-decoration: none;
