@@ -3,7 +3,8 @@
 <?php $this->start('main_content') ?>
 
 	<div class="opinion">
-		<ul><?php if (is_array($viewall)):?>
+		<ul>
+			<?php if (is_array($viewall)):?>
 			<?php foreach ($viewall as $view) : ?>	
 				<li>
 					Nom : <?= $view['firstname'] ?>

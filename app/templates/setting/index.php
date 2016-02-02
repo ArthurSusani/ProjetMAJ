@@ -11,8 +11,8 @@
 		<p>Ici, gérer les différents utilisateurs(Changer infos, role,etc...)</p>
 		<a href=" <?= $this->url('setting_users') ?> " title="">Gestionnaire</a>
 
-		<li><h3>Gestion des avis</h3></li>
-		<a href="" title=""></a>
+		<li><h3>Gestion des réclamations</h3></li>
+		<a href=" <?= $this->url('contact_view') ?> " title="">Gestionnaire</a>
 	</ul>	
 </div>
 

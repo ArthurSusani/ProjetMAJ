@@ -31,7 +31,8 @@
 		{
 			$this->show("contact/whoarewe");
 		}
-		public function phpmailer()
+
+		public function PHPMailer()
 		{
 			if(isset($_POST['mail'])){
 				$mail = $this->inputMailSanitize($_POST['mail']);

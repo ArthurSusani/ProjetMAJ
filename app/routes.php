@@ -6,13 +6,14 @@ $w_routes = array(
 
 //------------------------------Contact-------------------------------------			 				
 	['GET|POST','/contact/contact', 	'Contact#contact', 	'contact_contact'],
-	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	 				
+	['GET',		'/contact/showcontact', 'Contact#viewcontact','contact_view'],	
+	['GET',		'/contact/details/[:id]', 'Contact#details','contact_details'],	 				
 	['GET', 	'/contact/whoarewe', 	'Contact#whoarewe', 'contact_whoarewe'], 
 	['GET|POST','/contact/phpmailer', 	'Contact#phpmailer', 'contact_phpmailer'],	
 
 //--------------------------------- Avis ----------------------------------	
 
-	['GET|POST','/opinion/opinion/[:viewall]', 	'Opinion#opinion', 	'opinion_insert'],
+	['GET|POST','/opinion/opinion', 	'Opinion#opinion', 	'opinion_insert'],
 	['GET|POST','/opinion/opinion', 'Opinion#opinion','opinion_show'],			
 
 //------------------------------ Gestion Compte -----------------------------
@@ -32,15 +33,16 @@ $w_routes = array(
 	['GET', 	'/introduct/room', 		'Introduct#room', 	'introduct_room'],
 	['GET', 	'/introduct/roomdetail/[:id]', 'Introduct#roomdetail', 'introduct_roomdetail'], 		
 	['GET', 	'/introduct/hostel', 	'Introduct#hostel', 'introduct_hostel'], 	
-	['GET', 	'/introduct/area', 		'Introduct#area', 	'introduct_area'],	 
+	['GET', 	'/introduct/area', 		'Introduct#area', 	'introduct_area'],	
+	['GET', 	'/introduct/area3d', 	'Introduct#area3d', 'introduct_room_3d'], 
 
 //------------------------------Réservation---------------------------------
 
 	['GET', 	'/booking/index', 		'booking#index', 	'booking_index'],	  
 	['GET', 	'/booking/map', 		'booking#map', 		'booking_map'],
 	['POST', 	'/booking/error', 		'booking#error', 	'booking_error'],	
-	['GET|POST','/booking/map/pay/[:id]','booking#pay', 	'booking_pay'],
-	['GET|POST','/booking/bill/[:id]', 	'booking#bill', 	'booking_bill'],		
+	['GET|POST','/booking/map/pay',		'booking#pay', 		'booking_pay'],
+	['GET|POST','/booking/bill/[:id]/[:id_booking]', 'booking#bill', 'booking_bill'],		
 	['POST', 	'/booking/map/confirm', 'booking#confirm', 	'booking_confirm'],
 	['GET', 	'/booking/phone', 		'booking#phone', 	'booking_phone'],	
 	
@@ -55,6 +57,9 @@ $w_routes = array(
 	['GET|POST', '/setting/bookdel', 	'setting#bookdel', 	'setting_bookdel'],
 	['GET|POST', '/setting/commentdel', 'setting#commentdel','setting_commentdel'],
 
-//---------------------------Status/Erreur----------------------------------
+// ------------------------------- test ajax ------------------------------------
+	['POST', '/booking/getbookedmap', 'booking#getbookedmapmethod', 'ajax_send'],
+
+//------------------------------ Status/Erreur -----------------------------------
 	['GET|POST', '/status/sender/[:string]/[:link]', 'status#sender', 'status_sender'],
 );
