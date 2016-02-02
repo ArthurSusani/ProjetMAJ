@@ -1,0 +1,81 @@
+@media screen and (max-width: 480px) { 
+
+	body{
+		background-repeat: repeat;
+	}
+
+    #menu1>nav>ul{
+    	margin-left: -40px;
+    }
+
+    #menu1>nav>ul>li>a{
+    	font-size:12px;
+
+    }
+
+	#menu2>nav>ul>li>a{
+		font-size:10px;
+	}
+
+	#menu2>nav>ul>li{
+		margin-left: 0px;
+	}
+
+	p{
+		font-size: 12px;
+	}
+
+	hr{	
+		margin-top:10px;
+		margin-bottom:0px;
+	}
+
+	#accueil {
+		width: 480px;
+	}
+
+	#accueil p{
+		font-size: 14px;
+		width: 80%;
+	}
+
+	.container{
+		width: 480px;
+	}
+
+	#map{
+		width: 100%;
+	}
+
+	#adresse{
+		width: 100%;
+		float: left;
+	}
+
+	.hotel{
+		width: 50%;
+	}
+
+	.code{
+		width: 50%;
+	}
+
+	#presentation {
+		width: 100%;
+	}
+
+	.hotel img{
+		margin-left: 30px;
+	}
+
+	.form_div textarea{
+		width: 150px;
+		height: 150px;
+	}
+
+	.wallpaper{
+		width: 80%;
+		height: 180px;
+	}
+
+}

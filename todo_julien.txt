@@ -1,0 +1,29 @@
+OK-Voir avec Maxime pour intégrer Html2PDF dans le projet, l'install avec composer require dans le dossier ProjetMAJ ne fonctionne pas, quand on lance les examples, il met une erreur qu'il ne trouve pas l'autoload.
+OK-avancer dans la page réservation pour faire afficher le choix de la chambre avec le code de arthur
+OK	-Faire le lien avec la table bookings
+OK	-Générer une facture
+
+OK reste a pour voir affiche la facture dans l'espace client=>Garder les fichiers pdf des factures dans un dossier a part et proposer au client de télécharger sa facture quand il est dans son espace.
+OK=>Modifier input date en Jquery UI datepicker
+OK=>Modifier Table intermédiaire pour les bookings pour avoir plusieurs booking par client
+OK=>Mettre les étages fait avec homestyler, découper les zones
+OK=>Mettre en place le QRcode
+OK=>Mettre les image en 3d dans la présentation.
+KO=>Mettre un phpmailer pour envoyer un mail de notif pour le prévenir que sa reservation est bien ok.
+KO=>Faire une fonction de récupération de mot de passe avec phpmailer. Voir le tp C:\xampp\htdocs\julien\d34
+OK=>Faire une page avec gestion de code d'erreur
+OK=>Faire AJAX
+OK=>Changer le datepicker pour inscription client et rajouter un champ numéro de tel
+OK=>Rajouter dans la facture un endroit ou je place la date début et de fin du séjour et pas seulement le nombre de journée.
+OK=>Fixer le footer en bas
+OK=>Fonction pour récupérer les chambres oqp
+OK=>Rajouter possibilité dans l'espace client de voir les réservations, de les supprimer
+OK=>Ajouter prix dans dessin de chaque chambre?
+OK=>Mettre l'emplacement correct dans le google map de notre adresse de l'hotel?
+
+
+=>Faire jonction avec le site tripadvisor avec l'api
+OK=>J'ai le haut du texte bouffé sur la page http://localhost/ProjetMAJ/public/booking/map
+OK=>Pouvoir réserver juste pour une seule nuité?
+KO=>Corriger la facture en PDF avec le nombre de lignes qui va bien et le bon prix pour chaque chambre
+OK=>Régler problème du http://localhost/ProjetMAJ/public/booking/bill/11/[:id_booking] et la route avec 2 arguments?

@@ -1,3 +1,0 @@
-gerer booking
-gerer utilisateur
-gerer commentaire 

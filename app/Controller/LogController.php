@@ -25,8 +25,8 @@ class LogController extends \W\Controller\Controller
 		if (isset($_POST['save']) && isset($_POST['password']) && isset($_POST['mail']) &&
 			isset($_POST['address']) && isset($_POST['postalCode']) && isset($_POST['city']) &&
 			!empty($_POST['password']) && !empty($_POST['mail']) &&
-			!empty($_POST['address']) && !empty($_POST['postalCode']) && !empty($_POST['city'] && isset($_POST['phone']) &&
-			!empty($_POST['phone']))) {
+			!empty($_POST['address']) && !empty($_POST['postalCode']) && !empty($_POST['city']) && isset($_POST['phone']) &&
+			!empty($_POST['phone'])) {
 			//echo ('clic sur formulaire enregistrement client');
 			$LogsManager = new \Manager\LogsManager();
 			//je stock toutes les variables du formulaire dans un tableau
@@ -49,7 +49,7 @@ class LogController extends \W\Controller\Controller
 				echo '<script>alert("L\'Utilisateur existe déja!");</script>';
 			}
 			else{
-				$string = "Utilisateur créé avec succès";
+				$string = "Utilisateur créé avec succès.";
 				$this->show('status/sender', ['string' => $string, 'link'=> 'log_connect', 'nb'=> 2]);
 			}
 			
@@ -79,8 +79,8 @@ class LogController extends \W\Controller\Controller
 			$string = "Bonjour ".$_SESSION['user']['lastname']." ". $_SESSION['user']['firstname'] .", vous ètes connecté.";
 			$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb' => 3]);
 		} 
-		$string = "Mauvais Mot de passe/Adresse Email";
-		$this->show('status/sender', ['string' => $string, 'link'=> 'log/connect', 'nb' => 3]);
+		$string = "Mauvais Mot de passe/Adresse Email.";
+		$this->show('status/sender', ['string' => $string, 'link'=> 'log_connect', 'nb' => 3]);
 	}
 
 
@@ -92,7 +92,7 @@ class LogController extends \W\Controller\Controller
 
 	public function error()
 	{
-		echo "Impossible de ce connecter, mauvais mdp ou mauvais login";
+		echo "Impossible de ce connecter, mauvais mot de passe ou mauvais login.";
 	}
 
 	public function disconnect()
@@ -107,9 +107,11 @@ class LogController extends \W\Controller\Controller
 	public function userconfig()
 	{
 		$manager = new \Manager\LogsManager();
+		$booking = new \Manager\BookingManager();
 		$id = $_SESSION['user']['id'];
 		$user = $manager->find($id);
-		$this->show("log/userconfig", ['user' => $user]);
+		$book = $booking->getBookingInfoByClientId($id);
+		$this->show("log/userconfig", ['user' => $user, 'book'=> $book]);
 	}
 
 	public function usersave()
@@ -132,5 +134,18 @@ class LogController extends \W\Controller\Controller
 		}else{echo "non";}
 		$user = $manager->find($id);
 		$this->show("log/userconfig", ['user' => $user]);
-}
+	}
+
+	public function bookdel($id)
+	{
+		$deleteBook = new \Manager\BookingManager();
+		if ($deleteBook->deleteBooking($id)) {
+			$string = "Votre réservation à bien été supprimé.";
+			$this->show('status/sender', ['string' => $string, 'link'=> 'log_userconfig', 'nb' => 3]);
+		}else{ 
+			$string = "Erreur de suppression, votre réservation est toujours effective.";
+			$this->show('status/sender', ['string' => $string, 'link'=> 'log_userconfig', 'nb' => 3]);
+		}
+
+	}
 }

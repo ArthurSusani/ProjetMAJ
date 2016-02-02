@@ -1,7 +1,7 @@
-<?php $this->layout('layout', ['title' => 'Connection !']) ?>
+<?php $this->layout('layout', ['title' => 'Connexion !']) ?>
 
 <?php $this->start('main_content') ?>
-	<h2>Let's Connect.</h2>
+	<h2>Espace de connexion.</h2>
 
 	<form action="<?= $this->url('log_confirm') ?>" method="post" accept-charset="utf-8" id="form_connect">
 		<div class="input_div">
@@ -11,7 +11,7 @@
 			<input type="password" name="pwdVal" value="" placeholder="Votre mot de passe">
 		</div>
 		<div class="clearfix"></div>
-		<button type="submit">Connexion</button>
+		<button id="btn_connect" class="btn" type="submit">Connexion</button>
 	</form>
 
 

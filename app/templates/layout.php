@@ -14,18 +14,17 @@
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/chambre.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
+		<link rel="stylesheet" href="<?= $this->assetUrl('css/responsive.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
 		<?= $this->section('css') ?>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="<?= $this->assetUrl('js/javascript.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
 		<script src="<?= $this->assetUrl('js/jquery.flexslider.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="<?= $this->assetUrl('js/script.js') ?>" type="text/javascript" charset="utf-8" async defer></script>
 		<script src="<?= $this->assetUrl('js/jquery.fancybox.pack.js') ?>" type="text/javascript" ></script>
 		<script src="<?= $this->assetUrl('js/note.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script src="<?= $this->assetUrl('js/googlemaps.js') ?>"></script>
-		<script src="<?= $this->assetUrl('js/plan.js') ?>"></script>
 		<?= $this->section('js') ?>
 		
 
@@ -33,7 +32,7 @@
 	<body>
 		
 		<header>
-			<div id="menu1">
+			<div id="menu1" class="navbar-fixed-top">
 				<nav>
 					<!-- affichage du logo, cela décale tout si je l'affiche -->
 					<!-- <a href="" title=""><img src="../img/logo-chrome.png" alt="Logo hotel" width="100" height="100" /></a> -->
@@ -62,13 +61,11 @@
 							<span class="glyphicon glyphicon-off"></span> Connexion</a></li>
 
 						<?php endif; ?>	
-
-						<li><a href="#langages" title="language">Langue</a></li>
 					</ul>
 				</nav>
 			</div>	
 		
-			<div id="menu2">
+			<div id="menu2" class="navbar-fixed-top">
 				<nav>
 					<!-- 2ème barre de navigation -->
 					<ul>
@@ -79,6 +76,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="<?=  $this->url('introduct_hostel') ?>">Notre hôtel</a></li>
 								<li><a href="<?=  $this->url('introduct_room') ?>">Nos chambres</a></li>
+								<li><a href="<?=  $this->url('introduct_room_3d') ?>">Vue 3D de nos chambres</a></li>
 							</ul>
 						</li>
 						<!-- fin d'un menu déroulant avec bootstrap -->
@@ -89,10 +87,10 @@
 								<li><a href="<?= $this->url('booking_phone') ?>">Par téléphone</a></li>
 							</ul>
 						</li>
-						<li><a href="<?=  $this->url('comment') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
+						<li><a href="<?=  $this->url('opinion_insert') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
 						<li class="dropdown">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">A propos<b class="caret"></b></a>
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu" id="resize_about">
 								<li><a href="<?=  $this->url('contact_contact') ?>">Contact</a></li>
 								<li><a href="<?=  $this->url('about') ?>">Qui sommes nous</a></li>
 							</ul>
@@ -113,19 +111,10 @@
 				</section>
 			</div>
 		
-<<<<<<< HEAD
-<!-- 		<footer>
+		<footer class="navbar-fixed-bottom">
 		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
-		</div> -->
-
-=======
-		<footer>
-		<hr>
-		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
-		</footer>		
->>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
 
 </body>
 </html>
