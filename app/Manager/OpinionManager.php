@@ -29,6 +29,7 @@
 			$result = $sth->fetchAll(\PDO::FETCH_ASSOC);
 			return $result;
 		}
+<<<<<<< HEAD
 
 
 		/*public function findByListId($contactid){
@@ -43,5 +44,7 @@
 			$sth->execute();
 			return $sth->fetchAll();
 		}*/
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 	}
 ?>

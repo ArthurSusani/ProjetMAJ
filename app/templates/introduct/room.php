@@ -1,4 +1,4 @@
-<?php $this->layout('layout', ['title' => 'Nos chambres']) ?>
+<?php $this->layout('layout', ['title' => 'Les chambres']) ?>
 
 <?php $this->start('main_content') ?>
 
@@ -12,8 +12,7 @@
     <?php endforeach ?>
   </ul>
 
-
-  <div>
+  <div class="desc">
   	<p>Toutes nos chambres donnent sur la rue de Seine. Elles sont au nombre de deux par étage et la suite,
   	  légèrement mansardée, occupe l'intégralité du dernier et sixième étage.
   Les chambres double, d'une superficie moyenne de 18m², se trouvent sur le palier à droite : 
@@ -31,6 +30,8 @@
    l’étage et sans voisin… Cette chambre d'une superficie moyenne de 32m²,
     dispose d’une vue imprenable sur les toits de Paris et offre tout le
      confort nécessaire grâce à son lit Queen Size et son jacuzzi dans sa salle de bain de marbre gris.</p>
+
+     <img src="" alt="" width="" height="">
 
   <h4>Equipements dans toutes les chambres :</h4>
 

@@ -3,19 +3,32 @@
 <?php $this->start('main_content') ?>
 
 	<div class="opinion">
+<<<<<<< HEAD
 		<ul><?php if (is_array($viewall)):?>
+=======
+		<ul>
+			<?php if (is_array($viewall)):?>
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 			<?php foreach ($viewall as $view) : ?>	
 				<li>
 					Nom : <?= $view['firstname'] ?>
 					<?= $view['lastname'] ?><br>				
 					Séjour du : <?= $view['datestart'] ?> au : <?= $view['dateend'] ?><br>
+<<<<<<< HEAD
 					Dans la chambre <?= $view['room'] ?><br>
+=======
+					Dans la <?= $view['room'] ?><br>
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 					Note : <?= $view['rate'] ?><br>
 					Commentaire : <?= $view['comment'] ?>
 				</li>
 			<?php endforeach; ?>
 			<?php else: ?>
+<<<<<<< HEAD
 				<p><?php echo $viewall." de la tete"; ?>
+=======
+				<p><?php echo $viewall ?>
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 			<?php endif; ?>
 		</ul>
 	</div>
@@ -87,7 +100,12 @@
 		</div>
 	<?php else: ?>
 		<div class="contact disconnect">
+<<<<<<< HEAD
 			<p>Connectez vous pour pouvoir laisser votre avis.</p>
+=======
+			<p><a href='<?= $this->url('log_connect')?>' title='Inscription'>Connectez-vous</a> pour pouvoir laisser votre avis.</p>
+			<p>Pas encore de compte? <a href="<?= $this->url('log_register')?>" title="Inscription">Inscrivez-vous!<p>
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 		</div>
 	<?php endif; ?>
 <?php $this->stop('main_content') ?>

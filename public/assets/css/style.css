@@ -141,15 +141,15 @@ div .container{
 }
 
 footer{
-	text-align: center;
 	background-color: black;
-	color: white;
 	width: 100%;
 	border: 1px solid white;
 }
 
 footer>p{
 	padding: 10px;
+	color: white;
+	text-align: center;
 	font-family: 'Cinzel', serif;
 }
 
@@ -215,9 +215,16 @@ select{
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+<<<<<<< HEAD
 #rooms ul{
 	margin:20px;
 	font-family: 'Alegreya Sans', sans-serif;
+=======
+/*footer{
+	margin: 30px;
+	position: absolute;
+	bottom:0px;
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 
 }
 
@@ -233,6 +240,7 @@ select{
 	height: 100px;
 }
 
+<<<<<<< HEAD
 
 
 .lien_pdf a{
@@ -248,3 +256,6 @@ select{
 #ul_standard_tel>li{
 font-size: 30px;
 }
+=======
+}*/
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd

@@ -27,7 +27,11 @@
 			}
 			if ($insert) {
 				$string = "Votre commentaire a bien été enregistré";
+<<<<<<< HEAD
 				$this->show('status/sender', ['string' => $string, 'link'=> 'opinion_show', 'nb'=> 4]);
+=======
+				$this->show('status/sender', ['string' => $string, 'link'=> 'home', 'nb'=> 4]);
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 			}
 			$this->show('opinion/opinion',['viewall'=>$viewall]);
 		}

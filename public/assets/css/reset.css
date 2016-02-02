@@ -234,8 +234,11 @@ p{
 /*------------------------------PLAN DES CHAMBRES---------------------------------------*/
 
 .plan{
+<<<<<<< HEAD
 
 	margin-top: 30px;
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 	width: 1400px;
 	height: 420px;
 	background-image: url('../img/etage_0_homestyler_perso.png');
@@ -251,6 +254,7 @@ p{
 	float: left;
 }
 
+<<<<<<< HEAD
 
 
 #legend_locked{
@@ -292,6 +296,8 @@ p{
 margin-top: 20px;
 }
 
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 #n0{
 	width: 260px;
 	height: 186px;
@@ -380,6 +386,7 @@ margin-top: 20px;
 	box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 #n0>p{
     font-size: 22px;
     margin-top: 112px;
@@ -485,6 +492,8 @@ margin-top: 20px;
 }
 
 
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 /*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
 
 #presentation img{

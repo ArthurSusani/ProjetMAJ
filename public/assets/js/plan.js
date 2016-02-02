@@ -138,6 +138,7 @@ $(function() {
 		$('#nbRoomSelect').text(stringRoom);
 	}
 
+<<<<<<< HEAD
 
 	displayBookedRooms =function(tab){
 		
@@ -150,12 +151,27 @@ $(function() {
 			tab.forEach(function(element, index){
 			//console.log('index',index,'element',element);
 			$("#n"+(element-1)).css('background-color', 'rgba(255,80,80,0.7)');
+=======
+	roomScan =function(){
+
+		roomLock[etage].forEach(function(element, index){
+			if (roomLock[etage][index][0] == 1) {
+				$("#n"+index).css('background-color', 'rgba(125,255,125,0.5)');
+			}else if(roomLock[etage][index][0] == 2){
+				$("#n"+index).css('background-color', 'rgba(255,80,80,0.5)');
+			}else{
+				$("#n"+index).css('background-color', 'rgba(125,255,125,0)');
+			}
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 		});
 	}
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 	roomValid =function(){
 
 		roomLock.forEach( function(element, index) {
@@ -179,6 +195,7 @@ $(function() {
 		var lockedRoom=getBookedRooms();
 	
 		var id = $(this).attr('id');
+<<<<<<< HEAD
 	
 		var clickedRoomId = id.replace(/\D+/g,'');
 	
@@ -186,6 +203,11 @@ $(function() {
 		if (roomLock[clickedRoomId] == 0) {
 			$(this).css('background-color', 'rgba(125,255,125,0.7)');
 
+=======
+		var clrId = id.replace(/\D+/g,'');
+		if (roomLock[etage][clrId][0] == 0) {
+			$(this).css('background-color', 'rgba(125,255,125,0.5)');
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 			nbRoomLock++;
 			roomLock[clickedRoomId] = 1;
 		}else if(roomLock[clickedRoomId] == 1){
@@ -216,6 +238,7 @@ $(function() {
 		RoomSelectCount= function(){
 		return nbRoomLock;
 	}
+<<<<<<< HEAD
 
 	
 
@@ -262,6 +285,18 @@ $(function() {
     	} 
 	});
 
+=======
+	
+	alertMsg = function (msg){
+		bootbox.alert(msg, function() {	
+		});		
+	}
+
+	roomScan();
+
+	$('.chambre').on('click', roomSelect );
+	$('#ascenseur').on('change', switchStage);
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 
 	//Julien: message de bienvenue avec bootbox
 	alertMsg('Veuillez selectionner votre date de début de séjour et votre date de fin ci dessous');

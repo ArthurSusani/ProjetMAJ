@@ -34,6 +34,7 @@ class BookingController extends \W\Controller\Controller
 		//var_dump($str);
 		$this->show("booking/map",['nb_room'=>$nb_room]);
 	}
+<<<<<<< HEAD
 
 	//méthode traitement ajax qui va renvoyer la réponse ajax vers le script ajax.js
 	public function getbookedmapmethod(){
@@ -46,6 +47,14 @@ class BookingController extends \W\Controller\Controller
 			$date_end = $_POST['data_date_end'];
 			//je lance ma recherche dans la base SQL et je renvois les données en mode text brut ici
 			$BookingManager->SendAjaxAllBookedRooms($date_start,$date_end);
+=======
+	//traitement ajax
+	public function map_ajax()
+	{
+		if(isset($_POST)){
+		$date_start = $_POST['ajax_date_start'];
+		$date_end = $_POST['ajax_date_end'];
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 		}
 	}
 

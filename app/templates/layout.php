@@ -12,9 +12,15 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/reset.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/style.css') ?>">
+		<link rel="stylesheet" href="<?= $this->assetUrl('css/presentation.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/chambre.css') ?>">
+		<link rel="stylesheet" href="<?= $this->assetUrl('css/contact.css') ?>">
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/flexslider.css') ?>">
+<<<<<<< HEAD
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/responsive.css') ?>">
+=======
+
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 		<link rel="stylesheet" href="<?= $this->assetUrl('css/jquery.fancybox.css') ?>" type="text/css" media="screen" />
 		<?= $this->section('css') ?>	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -87,7 +93,12 @@
 								<li><a href="<?= $this->url('booking_phone') ?>">Par téléphone</a></li>
 							</ul>
 						</li>
+<<<<<<< HEAD
 						<li><a href="<?=  $this->url('opinion_insert') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
+=======
+					
+						<li><a href="<?=  $this->url('opinion_show') ?>" title="Avis"><span class="glyphicon glyphicon-comment"></span> Avis</a></li>
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 						<li class="dropdown">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">A propos<b class="caret"></b></a>
 							<ul class="dropdown-menu" id="resize_about">
@@ -109,12 +120,27 @@
 				<h2><?= $this->e($title) ?></h2>
 					<?= $this->section('main_content') ?>
 				</section>
+<<<<<<< HEAD
 			</div>
 		
 		<footer class="navbar-fixed-bottom">
 		<hr>
 		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
 		</footer>		
+=======
+			</div>		
+
+<!-- 		<footer>
+		<hr>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
+		</footer>		
+		</div> -->
+
+		<footer>
+		<p>Hotel du numerique - Venez y faire dormir votre PC - Free Wifi</p>
+		</footer>		
+
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 
 </body>
 </html>

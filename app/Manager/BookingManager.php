@@ -274,6 +274,7 @@ public function isRoomBooked($id_room,$date_start,$date_end)
 		}
 	}
 
+<<<<<<< HEAD
 	public function deleteBooking($id)
 	{
 		$sql = 'DELETE FROM bookings WHERE id_booking = :id';
@@ -288,3 +289,6 @@ public function isRoomBooked($id_room,$date_start,$date_end)
 
 
 }
+=======
+	public function get(body);
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd

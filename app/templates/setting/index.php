@@ -12,10 +12,13 @@
 		<p>Ici, gérer les différents utilisateurs(Changer infos, role,etc...)</p>
 		<a href=" <?= $this->url('setting_users') ?> " title="utilisateurs">Gestionnaire</a>
 
+<<<<<<< HEAD
 		<li><h3>Gestion des avis</h3></li>
 		<p>Ici, gérer les commentaires laissés par les utilisateurs(modérer,supprimer, sanctionner, etc ...)</p>
 		<a href=" <?= $this->url('setting_comment') ?> " title="avis">Gestionnaire</a>
 		
+=======
+>>>>>>> 37f9ea48e75cbd9dffb339153f4f1b0df57526fd
 		<li><h3>Gestion des réclamations</h3></li>
 		<a href=" <?= $this->url('contact_view') ?> " title="">Gestionnaire</a>
 	</ul>	
