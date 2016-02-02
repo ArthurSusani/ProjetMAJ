@@ -2,6 +2,8 @@
 
 <?php $this->start('main_content') ?>
 
+<img src="<?= $this->assetUrl('img/standard_telephonique.jpg') ?>" alt="">
+
 <p>Le service de réservation téléphonique est disponible de 8h à 20h, du lundi au dimanche.</p>
 <ul>
 	<li>Numéro de téléphone : 03 82 54 70 30 (prix d'un appel local)</li>
