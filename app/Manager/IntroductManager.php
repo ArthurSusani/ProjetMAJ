@@ -5,7 +5,7 @@
 	class IntroductManager extends \W\Manager\Manager
 	{
 		public function room(){
-			$sql = 'SELECT * FROM rooms';
+			$sql = 'SELECT * FROM rooms LIMIT 5';
 			$sth = $this->dbh->prepare($sql);
 			$sth->execute();
 
@@ -20,6 +20,19 @@
 			}
 
 			$sql = 'SELECT * FROM rooms WHERE id=:id';
+			$sth = $this->dbh->prepare($sql);
+			$sth->bindValue(':id', $id);
+			$sth->execute();
+			return $sth->fetchAll();
+		}
+
+		public function findByBookingId($id){
+
+			if(!is_numeric($id)){
+				return false;
+			}
+
+			$sql = 'SELECT * FROM rooms WHERE id =:id';
 			$sth = $this->dbh->prepare($sql);
 			$sth->bindValue(':id', $id);
 			$sth->execute();

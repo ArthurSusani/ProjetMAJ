@@ -9,10 +9,15 @@ body{
 	background: linear-gradient(to top, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     background-repeat: no-repeat;  
-    min-height: 1000px; 
+    min-height: 800px;
 }
 
+#resize_about{
+ 	 margin-left: -77px;
+ }
+ 
 #menu1{
+	z-index: 10;
 	height: 40px;
 	background-color: black;
 	position: fixed;
@@ -23,6 +28,7 @@ body{
 }
 
 #menu2{
+	z-index: 1;
 	width: 100%;
 	background-color: white;
 	padding-top: 50px;
@@ -46,14 +52,15 @@ body{
 
 .container{
 	width: 1200px;
-	height: 1000px;
 	box-sizing: border-box;
 	margin-bottom: 100px;
+	margin-top: 40px;
 }
 
 div .container{
 	padding-right: 0px;
 	padding-left: 0px;
+
 }
 
 
@@ -99,8 +106,7 @@ div .container{
 	margin-left: auto;
 	margin-right: auto;
 	height: 700px;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+	border: 1px solid black;
 }
 
 #accueil p{
@@ -148,7 +154,7 @@ footer>p{
 }
 
 #map {
-	width:600px;
+	width:50%;
 	height:300px;
 	float: left;
 	border: 1px solid black;
@@ -159,7 +165,7 @@ footer>p{
 	float: right;
 	background-color: white;
 	height: 300px;
-	width: 600px;
+	width: 50%;
 	border: 1px solid black;
 	font-family: 'Cinzel', serif;
 	font-weight: bold;
@@ -168,11 +174,8 @@ footer>p{
 .hotel>p{
 	font-size: 17px;
 	text-align: center;
-<<<<<<< HEAD
 	font-family: 'Cinzel', sans-serif;
-=======
 	padding-bottom: 10px;
->>>>>>> 9cc1ed1f4cba90db5bbb1af251ccf05cc8c5ef0a
 }
 
 .hotel>img{
@@ -183,16 +186,18 @@ footer>p{
 	float: left;
 	width: 310px;
 	height: 298px;
-	border: 1px solid white;
+
 	background-color: black;
 	color: white;
 }
 
 .code{
 	float: left;
-	width: 280px;
-	padding-top: 45px;
-	padding-left: 20px;
+	margin: auto;
+	padding-left: 35px;
+	padding-top: 30px;
+
+
 }
 
 .code>p{
@@ -201,12 +206,6 @@ footer>p{
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
-
-footer{
-	
-}
-=======
 label{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bolder;
@@ -214,22 +213,38 @@ label{
 
 select{
 	font-family: 'Josefin Sans', sans-serif;
+}
 
-/*footer{
-	margin: 30px;
-	position: absolute;
-	bottom:0px;
-<<<<<<< HEAD
-}*/
->>>>>>> b363e7db5dea69187877a1c88e392dcaf1304974
-=======
+#rooms ul{
+	margin:20px;
+	font-family: 'Alegreya Sans', sans-serif;
 
 }
 
-.input_div{
-
-	
+.lien_pdf{
+	box-sizing: border-box;
+	float: left;
+	margin:20px;
+	text-align: center;
 }
 
-}*/
->>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
+.lien_pdf img{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+.lien_pdf a{
+	margin-top: 40px;
+	padding:20px;
+	color: black;
+}
+
+#img_standard_tel{
+	margin: auto;
+	width: 80%;
+}
+#ul_standard_tel>li{
+font-size: 30px;
+}

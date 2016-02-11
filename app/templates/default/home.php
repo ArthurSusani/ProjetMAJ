@@ -1,7 +1,7 @@
 <?php $this->layout('layout', ['title' => 'Bienvenue Sur WebForce3']) ?>
 
 <?php $this->start('main_content') ?>
-		<div class="container">
+		<div class="">
 			<div id="accueil">
 
 				<p>Bienvenue sur le site de l'hotel webforce3<br>
@@ -12,7 +12,7 @@
 		
 			<div id="map">
 				<script>
-					google.maps.event.addDomListener(window, 'load', initMap);
+					google.maps.event.addDomListener(window, 'load', initMap());
 				</script>
 			</div>
 

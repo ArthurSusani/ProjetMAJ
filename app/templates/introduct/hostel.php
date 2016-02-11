@@ -13,7 +13,7 @@
 				<li><a class="grouped_elements" rel="group1" href="image_big_3.jpg"><img src="../../public/assets/img/hotel_restaurant.jpg" alt="hotel_restaurant"/></a></li>
 			</ul>
 		</div>-->
-		<img src="../../public/assets/img/hotel_front.jpg" alt="" height="400" width="700">
+		<img src="<?= $this->assetUrl('img/hotel_front.jpg') ?>" alt="" height="400" width="700">
 	<p>L’Hôtel WebForce 3 se situe, en plein cœur de Piennes,
 	dans la partie de la rue Gino Raimondi la plus ancienne, qui était au XIIIème
 	siècle le chemin du fossé de la ville de Piennes aboutissant à la Piennes…

@@ -103,6 +103,11 @@ p{
 	height: 30px;
 	border-radius: 5px;
 }
+.contact{
+	background-color: white;
+	border: 1px solid black; 
+	padding:20px;
+}
 
 #form_contact #button{
 	text-align: center;
@@ -162,8 +167,9 @@ p{
 	border-radius: 5px;
 }
 
-#form_connect #button{
+#form_connect #btn_connect{
 	text-align: center;
+	margin-left: 45%;
 	padding: 10px;
 
 }
@@ -174,6 +180,29 @@ p{
 }
 #form_connect label{
 	font-size: 20px;
+}
+
+/*---------------------------Opinion-----------------------------*/
+#form_opinion {
+	box-sizing: border-box;
+}
+
+.form_div{
+	width: 38%;
+	float: left;
+	margin-right:10px;
+}
+
+.form_div .input_div input{
+	width: 100%;
+}
+
+.form_div #note label{
+
+}
+
+.form_div select{
+	margin-top: 10px;
 }
 
 
@@ -205,13 +234,10 @@ p{
 /*------------------------------PLAN DES CHAMBRES---------------------------------------*/
 
 .plan{
-<<<<<<< HEAD
+
 	margin-top: 30px;
-=======
->>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 	width: 1400px;
-	height: 500px;
-	/*background-image: url(../img/plan1.jpg);*/
+	height: 420px;
 	background-image: url('../img/etage_0_homestyler_perso.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -225,10 +251,7 @@ p{
 	float: left;
 }
 
-<<<<<<< HEAD
-.chambre:hover{
-	background-color: rgba(125,255,125,0.5);
-}
+
 
 #legend_locked{
 	height: 50px;
@@ -269,8 +292,6 @@ p{
 margin-top: 20px;
 }
 
-=======
->>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
 #n0{
 	width: 260px;
 	height: 186px;
@@ -279,12 +300,10 @@ margin-top: 20px;
 	margin-bottom:0;
 	box-sizing: border-box;
 }
-
 #n1{
 	width: 260px;
 	height: 186px;
 	margin-left: 0px;
-<<<<<<< HEAD
 	margin-right:0;
 	margin-bottom:0;
 	box-sizing: border-box;
@@ -359,96 +378,112 @@ margin-top: 20px;
 	margin-right:0;
 	margin-bottom:0;
 	box-sizing: border-box;
+}
+
+#n0>p{
+    font-size: 22px;
+    margin-top: 112px;
+    margin-right: 136px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+#n1>p{
+    font-size: 22px;
+    margin-top: 112px;
+    margin-right: 136px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+#n2>p{
+    font-size: 22px;
+    margin-top: 112px;
+    margin-right: 136px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+#n3>p{
+    font-size: 22px;
+    margin-top: 112px;
+    margin-right: 136px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+#n4>p{
+    font-size: 22px;
+    margin-top: 112px;
+    margin-right: 136px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: white;
+}
+#n5>p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 136px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+#n6>p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 136px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+#n7>p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 136px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+#n8>p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 136px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+#n9>p{
+    font-size: 22px;
+    margin-top: 40px;
+    margin-right: 136px;
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 #book_stat{
-margin-top: 20px;
+	margin-top: 20px;
 }
 
-/*#n1{
-	width:160px;
-	height:222px;
-=======
->>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n2{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n3{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n4{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
+#ButtonGetDateBooking{
+	margin-left: 50%;
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
 }
 
-#n5{
-	width: 260px;
-	height: 186px;
-	margin-left: 95px;
-	margin-top:40px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
+#booked_room_datepicker{
+	font-weight: bold;
+}
+#submitMap{
+	margin-left: 50%;
+	margin-top:20px;
+	height: 50px;
+	width: 100px;
+	font-size: 20px;
+	border-radius: 30px;
 }
 
-#n6{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-top:40px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n7{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-top:40px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n8{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-top:40px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-#n9{
-	width: 260px;
-	height: 186px;
-	margin-left: 0px;
-	margin-top:40px;
-	margin-right:0;
-	margin-bottom:0;
-	box-sizing: border-box;
-}
-<<<<<<< HEAD
-*/
-/*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------
-=======
 
 /*-----------------------------------FIN DU PLAN DES CHAMBRES-----------------------------------------------------*/
 
@@ -505,4 +540,3 @@ margin-top: 20px;
     margin-right: auto;
 }
 
->>>>>>> 03886a062dbad8126fb2be5a2f09fb43c1d83da5

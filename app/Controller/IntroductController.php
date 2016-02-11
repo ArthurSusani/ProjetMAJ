@@ -33,6 +33,9 @@
 		{
 			$this->show("introduct/index");
 		}
+		public function area3d(){
+			$this->show("introduct/area3d");
+		}
 		/*public function details($idToDisplay)
 		{
 			$accountsManager = new \Manager\AccountsManager();

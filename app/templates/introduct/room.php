@@ -41,7 +41,7 @@
   	<li>- Salle de bain individuelle avec baignoire (Jacuzzi dans la suite)</li>
   	<li>- Lit Queen ou King size</li>
   	<li>- Double vitrage</li>
-  	<li>- Ecran plat avec un bouquet de 65 chaînes internationales</li>
+  	<li>- Ecran plat avec un bouquet de 265 chaînes internationales</li>
   	<li>- Bureau</li>
   	<li>- Coffre-fort individuel</li>
   	<li>- Accès wifi gratuit</li>

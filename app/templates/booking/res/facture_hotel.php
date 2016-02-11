@@ -55,7 +55,7 @@ td    { vertical-align: top; }
     <br>
     <i>
         <b><u>Objet </u>: &laquo; Facture client Hotel Webforce3 &raquo;</b><br>
-        Compte client : <?= $id?><br>
+        Compte client : <?= $id_user?><br>
         Référence du Dossier : <?= $id_booking ?><br>
     </i>
     <br>
@@ -63,15 +63,14 @@ td    { vertical-align: top; }
     Madame, Monsieur, Cher Client,<br>
     <br>
     <br>
-    Voici le récapitulatif de votre facture concernant le dossier <b>N°<?= $id_booking ?></b><br>
+    Voici le récapitulatif de votre facture de la réservation <b>N°<?= $id_booking ?></b> concernant le séjour du <?= date('d/m/Y',strtotime($begin)) ?> au <?= date('d/m/Y',strtotime($end)) ?> <br>
     <br>
     <table cellspacing="0" style="width: 100%; border: solid 1px black; background: #E7E7E7; text-align: center; font-size: 10pt;">
         <tr>
-            <th style="width: 20%">Réf client</th>
-            <th style="width: 20%">Numéro chambre</th>
-            <th style="width: 20%">Prix chambre/jour</th>
-            <th style="width: 20%">Nombre de jour</th>
-            <th style="width: 20%">Prix TTC</th>
+            <th style="width: 25%">Réf client</th>
+            <th style="width: 25%">Numéro chambre(s)</th>
+            <th style="width: 25%">Nombre de jour(s)</th>
+            <th style="width: 25%">Prix TTC</th>
         </tr>
     </table>
 <?php
@@ -84,11 +83,10 @@ for ($k = 0; $k < $nb_booking; $k++) {
 	?>
     <table cellspacing="0" style="width: 100%; border: solid 1px black; background: #F7F7F7; text-align: center; font-size: 10pt;">
         <tr>
-            <td style="width: 20%; text-align: center"><?= $id; ?></td>
-            <td style="width: 20%; text-align: center"><?= $id_room; ?></td>
-            <td style="width: 20%; text-align: center"><?= number_format($price, 2, ',', ' '); ?> &euro;</td>
-            <td style="width: 20%; text-align: center"><?= $bookingDays; ?></td>
-            <td style="width: 20%; text-align: center;"><?= number_format($price * $bookingDays, 2, ',', ' '); ?> &euro;</td>
+            <td style="width: 25%; text-align: center"><?= $id_user; ?></td>
+            <td style="width: 25%; text-align: center"><?= $id_room; ?></td>
+            <td style="width: 25%; text-align: center"><?= $bookingDays; ?></td>
+            <td style="width: 25%; text-align: center;"><?= number_format($price, 2, ',', ' '); ?> &euro;</td>
         </tr>
     </table>
 <?php
@@ -97,7 +95,7 @@ for ($k = 0; $k < $nb_booking; $k++) {
     <table cellspacing="0" style="width: 100%; border: solid 1px black; background: #E7E7E7; text-align: center; font-size: 10pt;">
         <tr>
             <th style="width: 87%; text-align: right;">Total : </th>
-            <th style="width: 13%; text-align: right;"><?= number_format($total, 2, ',', ' '); ?> &euro;</th>
+            <th style="width: 13%; text-align: right;"><?= number_format($price , 2, ',', ' '); ?> &euro;</th>
         </tr>
     </table>
     <nobreak>

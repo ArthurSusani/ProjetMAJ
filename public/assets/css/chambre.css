@@ -1,11 +1,11 @@
 #rooms{
-	width: 1200px;
+	width: 100%;
 	margin-left: auto;
     margin-right: auto;
-	border-top: 1px solid white;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid white;
+
+	border: 1px solid black;
+
+
 	background-color: white;
 	height: 700px;
 	padding:20px;
@@ -38,15 +38,12 @@
 	font-family: 'Josefin Sans', sans-serif;
 }
 
-#rooms>nav>ul>li:nth-of-type(1){
-	list-style: none;
-	text-decoration: underline;
-	font-size: 18px;
-}
+
 
 #rooms>nav>ul>li>a {
 	color: black;
 	text-decoration: none;
+	font-size: 18px;
 }
 
 .chambre {
@@ -58,7 +55,7 @@
 .chambre>p {
 	text-align: justify;
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Helvetica Neue','Helvetica','Arial', sans-serif;
 }
 
 .chambre>ul{

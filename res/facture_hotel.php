@@ -64,7 +64,7 @@ td    { vertical-align: top; }
     Madame, Monsieur, Cher Client,<br>
     <br>
     <br>
-    Voici le récapitulatif de votre facture concernant le dossier <b>Id table booking</b><br>
+    Voici le récapitulatif de votre facture de la réservation <b>N°<?= $id_booking ?></b> concernant le séjour du <?= date('d/m/Y',strtotime($begin)) ?> au <?= date('d/m/Y',strtotime($end)) ?> <br>
     <br>
     <table cellspacing="0" style="width: 100%; border: solid 1px black; background: #E7E7E7; text-align: center; font-size: 10pt;">
         <tr>

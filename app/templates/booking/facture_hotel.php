@@ -17,6 +17,7 @@ require_once  '/../../../vendor/autoload.php';
 
 
 try {
+	
 	// get the HTML
 	ob_start();
 	//chemin du template pour la génération du pdf: C:\xampp\htdocs\ProjetMAJ\app\templates\booking\res
@@ -36,7 +37,9 @@ try {
 	//die();
 	$html2pdf->Output(__DIR__ .'\res\pdf\facture_hotel_'.$id_booking.'.pdf');
 	//ensuite on sauvegarder le fichier dans le dossier 'pdf' du dossier res
-	$html2pdf->Output(__DIR__ .'\res\pdf\facture_hotel_'.$id_booking.'.pdf','F');
+	//$html2pdf->Output(__DIR__ .'\res\pdf\facture_hotel_'.$id_booking.'.pdf','F');
+	//je sauvegarde dans le dossier pdf dans asset pour etre accessible depuis le framework...
+	$html2pdf->Output(__DIR__ .'\res\..\..\..\..\public\assets\pdf\facture_hotel_'.$id_booking.'.pdf','F');
 } catch (Html2PdfException $e) {
 	$formatter = new ExceptionFormatter($e);
 	echo $formatter->getHtmlMessage();

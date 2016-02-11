@@ -32,8 +32,8 @@
 			<td><?php echo $value['mail'] ?></td>
 			<td><?php echo $value['role'] ?></td>
 			<td>
-				<form action="<?= $this->url('setting_user', ['id' => $value['id'] ]) ?>" method="get" accept-charset="utf-8">
-					<button type="submit">X</button>
+				<form action="<?= $this->url('setting_user') ?>" method="post" accept-charset="utf-8">
+					<button value="<?php echo $value['id']; ?>" name="id_users" type="submit">X</button>
 				</form>
 			</td>
 		</tr>

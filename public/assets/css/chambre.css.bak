@@ -1,0 +1,72 @@
+#rooms{
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+	border-top: 1px solid white;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid white;
+	background-color: white;
+	height: 700px;
+	padding:20px;
+
+}
+
+.chambre>ul>li>img{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#rooms>ul{
+	float: left;
+}
+
+.chambre>ul>li>h4{
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	text-decoration: underline;
+}
+
+.chambre>ul>li>p{
+	text-align: center;
+	font-family: 'Lobster', cursive;
+}
+
+#rooms>nav>ul>li {
+	list-style: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#rooms>nav>ul>li:nth-of-type(1){
+	list-style: none;
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+#rooms>nav>ul>li>a {
+	color: black;
+	text-decoration: none;
+}
+
+.chambre {
+	float: left;
+	width: 900px;
+	padding-left: 100px
+}
+
+.chambre>p {
+	text-align: justify;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.chambre>ul{
+	float: left;
+}
+
+.chambre>ul>li {
+	text-align: justify;
+	text-align: left;
+	font-family: 'Alegreya Sans', sans-serif;
+}
